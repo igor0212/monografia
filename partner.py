@@ -46,7 +46,7 @@ class Partner:
         city_id = City.get_id(property['bairro']['cidade']['nome'])        
         goal_id =  Util.sell if property['finalidade'] == 'venda' else Util.rent                
         number = property['numero'] if property['numero'] else " "
-        street = property['logradouro']
+        street = property['logradouro'] if property['logradouro'] else " "        
         size = property['area']        
         bedroom_number = property['quartos']
         room_number = property['salas']
@@ -55,10 +55,10 @@ class Partner:
         
         return Property.add(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)
 
-    def add_management(management, property_id):        
+    def add_management(management, property_id):
         price = management['preco']
-        tax_rate = management['valor_iptu']
-        property_tax = management['valor_condominio']
+        tax_rate = management['valor_iptu'] if management['valor_iptu'] else 0
+        property_tax = management['valor_condominio'] if management['valor_condominio'] else 0        
         is_available = True
         
         return Management.add(property_id, price, tax_rate, property_tax, is_available)
