@@ -9,7 +9,13 @@ class JSONEncoder(flask.json.JSONEncoder):
             return str(obj)
         return super(JSONEncoder, self).default(obj)
 
-class Util():
+class Util:
+
+    host = 'localhost'
+    database = 'monografia'
+    user = 'postgres'
+    password = '@Eliane9455'
+
     def get_field(name, type):
         try:
             if (type == 'int'):

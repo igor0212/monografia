@@ -14,7 +14,6 @@ def page_not_found(e):
 """ 
     Management Control
 """
-
 @app.route('/api/management/all', methods=['GET'])
 def api_management_all():
     query = 'select * from "Management"'
@@ -24,11 +23,10 @@ def api_management_all():
 def get_management():
     id = Util.get_field('id', 'int')
     query = 'select * from "Management" where Id = {} '.format(id)
-    data = DataBase.select(query)
-    result = {}
+    data = DataBase.select(query)    
     if(data):
-        result = jsonify(data[0])
-    return result
+        return jsonify(data[0])
+    return {}
 
 def add_management():
     property_id = Util.get_field('property_id', 'int')
