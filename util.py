@@ -35,7 +35,7 @@ class Util:
             else:
                 return "Util Error: Type {} not implemented.".format(type)
         except:
-            return "Util Error: No {} field provided. Please specify an {}.".format(name, name)
+            field = ""
         return field
 
     def format_search(search):        

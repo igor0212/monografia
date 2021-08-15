@@ -8,13 +8,6 @@ from management import Management
 class Partner:   
 
     def get(goal, type, location, name, city, state='mg'):
-        #url = 'https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&logradouros[]=logradouro_avenida-dos-engenheiros_belo-horizonte_mg'
-        #url = 'https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&bairros[]=centro_belo-horizonte_mg'
-        #url = 'https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=casa&bairros[]=santa-monica_belo-horizonte_mg'
-
-        #https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&logradouros[]=logradouro_avenida-dos-engenheiros_belo-horizonte_mg
-        #https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&logradouros[]=logradouros_avenida-dos-engenheiros_belo-horizonte_mg
-
         url = Util.get_url(goal, type, location, name, city, state)        
 
         response = requests.get(url = url)        
@@ -39,11 +32,11 @@ class Partner:
                 return "Partner Error: Add property error - {}".format(error)
 
             try:
-                Partner.add_management(property, property_id)
+                management_id = Partner.add_management(property, property_id)
             except Exception as error:
                 return "Partner Error: Add management error - {}".format(error)
 
-        return ('ok')
+        return property_id, management_id
             
     
     def add_property(property):                
@@ -52,7 +45,7 @@ class Partner:
         district_id = District.get_id(property['bairro']['nome'])                
         city_id = City.get_id(property['bairro']['cidade']['nome'])        
         goal_id =  Util.sell if property['finalidade'] == 'venda' else Util.rent                
-        number = property['numero'] if property['numero'] else ""
+        number = property['numero'] if property['numero'] else " "
         street = property['logradouro']
         size = property['area']        
         bedroom_number = property['quartos']
@@ -60,7 +53,7 @@ class Partner:
         bath_number = property['banheiros']        
         parking_number = property['vagas']                
         
-        Property.add(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)
+        return Property.add(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)
 
     def add_management(management, property_id):        
         price = management['preco']
@@ -68,7 +61,7 @@ class Partner:
         property_tax = management['valor_condominio']
         is_available = True
         
-        Management.add(property_id, price, tax_rate, property_tax, is_available)
+        return Management.add(property_id, price, tax_rate, property_tax, is_available)
 
             
 

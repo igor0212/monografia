@@ -16,7 +16,8 @@ class DataBase:
 
     def insert(query):
         id = None
-        query = '{} RETURNING id;'.format(query)        
+        query = '{} RETURNING id;'.format(query)     
+        print(query)   
         try:            
             conn = psycopg2.connect(host=Util.host, database=Util.database, user=Util.user, password=Util.password)
             cursor = conn.cursor()

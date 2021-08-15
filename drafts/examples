@@ -1,0 +1,6 @@
+#url = 'https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&logradouros[]=logradouro_avenida-dos-engenheiros_belo-horizonte_mg'
+#url = 'https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&bairros[]=centro_belo-horizonte_mg'
+#url = 'https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=casa&bairros[]=santa-monica_belo-horizonte_mg'
+
+#https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&logradouros[]=logradouro_avenida-dos-engenheiros_belo-horizonte_mg
+#https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&logradouros[]=logradouros_avenida-dos-engenheiros_belo-horizonte_mg

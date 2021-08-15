@@ -26,12 +26,10 @@ class Api:
         data = DataBase.select(query)
         return jsonify(data)   
    
-    @app.route('/api/property', methods=['GET', 'POST'])
-    def api_property():    
-        if request.method=='GET':        
-            return Property.get()
-        elif request.method=='POST':
-            return Property.add()
+    @app.route('/api/property', methods=['GET'])
+    def api_property():            
+        id = Util.get_field('id', 'int')
+        return Property.get(id)        
 
     """ 
         Management Control
@@ -42,12 +40,10 @@ class Api:
         data = DataBase.select(query)
         return jsonify(data)      
 
-    @app.route('/api/management', methods=['GET', 'POST'])
+    @app.route('/api/management', methods=['GET'])
     def api_management():    
-        if request.method=='GET':        
-            return Management.get()
-        elif request.method=='POST':
-            return Management.add()
+        id = Util.get_field('id', 'int')
+        return Management.get(id)
 
     """ 
         City Control
@@ -58,12 +54,10 @@ class Api:
         data = DataBase.select(query)
         return jsonify(data)      
 
-    @app.route('/api/city', methods=['GET', 'POST'])
-    def api_city():    
-        if request.method=='GET':        
-            return City.get()
-        elif request.method=='POST':
-            return City.add()
+    @app.route('/api/city', methods=['GET'])
+    def api_city():
+        id = Util.get_field('id', 'int')
+        return City.get(id)
 
     """ 
         District Control
@@ -74,12 +68,10 @@ class Api:
         data = DataBase.select(query)
         return jsonify(data)  
 
-    @app.route('/api/district', methods=['GET', 'POST'])
+    @app.route('/api/district', methods=['GET'])
     def api_district():    
-        if request.method=='GET':        
-            return District.get()
-        elif request.method=='POST':
-            return District.add()
+        id = Util.get_field('id', 'int')
+        return District.get(id)
 
     """ 
         Partner Control

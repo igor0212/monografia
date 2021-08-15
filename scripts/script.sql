@@ -75,8 +75,8 @@ INSERT INTO public."Type" ("name") VALUES('Condo');
 --DELETE 
 DELETE FROM "Management";
 DELETE FROM "Property";
-DELETE FROM "Type";
-DELETE FROM "Goal";
+--DELETE FROM "Type";
+--DELETE FROM "Goal";
 DELETE FROM "City";
 DELETE FROM "District";
 
