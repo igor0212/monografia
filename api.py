@@ -95,4 +95,68 @@ def api_management():
     elif request.method=='POST':
         return add_management()
 
+""" 
+    City Control
+"""
+@app.route('/api/city/all', methods=['GET'])
+def api_city_all():
+    query = 'select * from "City"'
+    data = DataBase.select(query)
+    return jsonify(data)   
+
+def get_city():
+    id = Util.get_field('id', 'int')
+    query = 'select * from "City" where Id = {} '.format(id)
+    data = DataBase.select(query)    
+    if(data):
+        return jsonify(data[0])
+    return {}
+
+def add_city():
+    name = Util.get_field('name', 'str')
+    query = """INSERT INTO public."City"(name)
+	           VALUES (\'{}\'); """.format(name)    
+    print(query)
+    DataBase.insert(query)
+    return('ok')
+
+@app.route('/api/city', methods=['GET', 'POST'])
+def api_city():    
+    if request.method=='GET':        
+        return get_city()
+    elif request.method=='POST':
+        return add_city()
+
+""" 
+    District Control
+"""
+@app.route('/api/district/all', methods=['GET'])
+def api_district_all():
+    query = 'select * from "District"'
+    data = DataBase.select(query)
+    return jsonify(data)   
+
+def get_district():
+    id = Util.get_field('id', 'int')
+    query = 'select * from "District" where Id = {} '.format(id)
+    data = DataBase.select(query)    
+    if(data):
+        return jsonify(data[0])
+    return {}
+
+def add_district():
+    name = Util.get_field('name', 'str')
+    query = """INSERT INTO public."District"(name)
+	           VALUES (\'{}\'); """.format(name)
+    print(query)
+    DataBase.insert(query)
+    return('ok')
+
+@app.route('/api/district', methods=['GET', 'POST'])
+def api_district():    
+    if request.method=='GET':        
+        return get_district()
+    elif request.method=='POST':
+        return add_district()
+
 app.run()	
