@@ -76,6 +76,11 @@ class Api:
     """ 
         Partner Control
     """
+    @app.route('/api/partner', methods=['GET'])
+    def api_partner():
+        code = Util.get_field('code', 'str')             
+        return Partner.get_by_code(code)
+
     @app.route('/api/partner/street', methods=['GET', 'POST'])
     def api_partner_street():
         goal = Util.get_field('goal', 'str')

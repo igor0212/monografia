@@ -13,6 +13,11 @@ class Partner:
         response = requests.get(url = url)        
         return response.json()
 
+    def get_by_code(code):
+        url = 'https://api.casamineira.com.br/busca-por-codigo?codigo={}'.format(code)        
+        response = requests.get(url = url)        
+        return response.json()
+
     def get_by_partner_id(id):
         query = 'select * from "Property" where partner_id = \'{}\' '.format(id)
         data = DataBase.select(query)           
@@ -20,13 +25,10 @@ class Partner:
             return data[0]
         return {}
 
-    def add(goal, type, location, name, city, state='mg'):       
-        
+    def add(goal, type, location, name, city, state='mg'):               
         url = Util.get_url(goal, type, location, name, city, state)
         response = requests.get(url = url)        
-
         response_json = response.json()
-
         properties = response_json['imoveis']        
 
         if(len(properties) == 0):
