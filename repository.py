@@ -1,11 +1,10 @@
 import psycopg2
 from util import Util
 
-conn = psycopg2.connect(host=Util.host, database=Util.database, user=Util.user, password=Util.password)
-
 class DataBase:    
     def select(query, args=(), one=False):
-        try:            
+        try:         
+            conn = psycopg2.connect(host=Util.host, database=Util.database, user=Util.user, password=Util.password)   
             cursor = conn.cursor()
             cursor.execute(query, args)
             r = [dict((cursor.description[i][0], value) \
@@ -17,6 +16,7 @@ class DataBase:
 
     def insert(query):
         try:            
+            conn = psycopg2.connect(host=Util.host, database=Util.database, user=Util.user, password=Util.password)
             cursor = conn.cursor()
             cursor.execute(query)
             conn.commit()

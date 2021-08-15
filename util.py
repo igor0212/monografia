@@ -22,8 +22,10 @@ class Util:
                 field = int(request.args[name])
             elif (type == 'float'):
                 field = float(request.args[name])
-            elif (type == 'bool'):
-                field = bool(request.args[name])
+            elif (type == 'bool'):                
+                field = request.args[name].lower() in ('true', 'True')                
+            elif (type == 'str'):
+                field = str(request.args[name])
             else:
                 return "Error: Type {} not implemented.".format(type)
         except:
