@@ -14,6 +14,21 @@ class District:
     def add():
         name = Util.get_field('name', 'str')
         query = """INSERT INTO public."District"(name)
-                VALUES (\'{}\'); """.format(name)    
-        DataBase.insert(query)
-        return('ok')
+                VALUES (\'{}\')""".format(name)    
+        return DataBase.insert(query)        
+
+    def get_by_name(name):
+        query = 'select * from "District" where Name = {} '.format(name)
+        data = DataBase.select(query)    
+        if(data):
+            return jsonify(data[0])
+        return {}
+
+    def get_id(name):        
+        data = District.get_by_name(name)
+        if(len(data) == 0):
+            data = District.get_by_name(name)
+            if(len(data) == 0):
+                return 'Error: Get district id'
+
+        return data['id']

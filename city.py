@@ -14,6 +14,21 @@ class City:
     def add():
         name = Util.get_field('name', 'str')
         query = """INSERT INTO public."City"(name)
-                VALUES (\'{}\'); """.format(name)        
-        DataBase.insert(query)
-        return('ok')
+                VALUES (\'{}\')""".format(name)        
+        return DataBase.insert(query)        
+
+    def get_by_name(name):
+        query = 'select * from "City" where Name = {} '.format(name)
+        data = DataBase.select(query)    
+        if(data):
+            return jsonify(data[0])
+        return {}
+
+    def get_id(name):        
+        data = City.get_by_name(name)
+        if(len(data) == 0):
+            data = City.get_by_name(name)
+            if(len(data) == 0):
+                return 'Error: Get city id'
+
+        return data['id']

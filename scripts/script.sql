@@ -29,7 +29,7 @@ CREATE TABLE public."Property" (
 	"district_id" int4 NOT NULL,
 	"city_id" int4 NOT NULL,
 	"goal_id" int4 NOT NULL,
-	"number" varchar(50) NOT NULL,
+	"number" varchar(50) NULL,
 	"street" varchar(100) NOT NULL,
 	"size" int4 NOT NULL,
 	"bedroom_number" int4 NOT NULL,
