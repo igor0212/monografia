@@ -40,7 +40,7 @@ class Partner:
             
     
     def add_property(property):                
-        partner_id = property['id']            
+        partner_id = property['codigo']            
         type_id =  Util.apartment if property['tipo']['nome'] == 'Apartamento' else Util.house                
         district_id = District.get_id(property['bairro']['nome'])                
         city_id = City.get_id(property['bairro']['cidade']['nome'])        
