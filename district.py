@@ -1,12 +1,11 @@
 from repository import DataBase
-from flask import jsonify
 
 class District:
     def get(id):                
         query = 'select * from "District" where Id = {} '.format(id)
         data = DataBase.select(query)    
         if(data):
-            return jsonify(data[0])
+            return data[0]
         return {}
 
     def add(name):
@@ -26,3 +25,10 @@ class District:
         if(not data):
             return District.add(name)            
         return data['id']
+
+    def get_all():        
+        query = 'select * from "District"'
+        data = DataBase.select(query)    
+        if(data):
+            return data
+        return []

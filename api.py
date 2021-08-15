@@ -21,57 +21,49 @@ class Api:
         Property Control
     """
     @app.route('/api/property/all', methods=['GET'])
-    def api_property_all():
-        query = 'select * from "Property"'
-        data = DataBase.select(query)
-        return jsonify(data)   
+    def api_property_all():        
+        return jsonify(Property.get_all())
    
     @app.route('/api/property', methods=['GET'])
     def api_property():            
         id = Util.get_field('id', 'int')
-        return Property.get(id)        
+        return jsonify(Property.get(id))
 
     """ 
         Management Control
     """
     @app.route('/api/management/all', methods=['GET'])
     def api_management_all():
-        query = 'select * from "Management"'
-        data = DataBase.select(query)
-        return jsonify(data)      
+        return jsonify(Management.get_all())    
 
     @app.route('/api/management', methods=['GET'])
     def api_management():    
         id = Util.get_field('id', 'int')
-        return Management.get(id)
+        return jsonify(Management.get(id))
 
     """ 
         City Control
     """
     @app.route('/api/city/all', methods=['GET'])
     def api_city_all():
-        query = 'select * from "City"'
-        data = DataBase.select(query)
-        return jsonify(data)      
+        return jsonify(City.get_all())
 
     @app.route('/api/city', methods=['GET'])
     def api_city():
         id = Util.get_field('id', 'int')
-        return City.get(id)
+        return jsonify(City.get(id))
 
     """ 
         District Control
     """
     @app.route('/api/district/all', methods=['GET'])
     def api_district_all():
-        query = 'select * from "District"'
-        data = DataBase.select(query)
-        return jsonify(data)  
+        return jsonify(District.get_all())
 
     @app.route('/api/district', methods=['GET'])
     def api_district():    
         id = Util.get_field('id', 'int')
-        return District.get(id)
+        return jsonify(District.get(id))
 
     """ 
         Partner Control
@@ -79,7 +71,11 @@ class Api:
     @app.route('/api/partner', methods=['GET'])
     def api_partner():
         code = Util.get_field('code', 'str')             
-        return Partner.get_by_code(code)
+        return jsonify(Partner.get_by_code(code))
+
+    @app.route('/api/partner/sold', methods=['GET'])
+    def api_partner_sold():        
+        return Partner.check_sold()
 
     @app.route('/api/partner/street', methods=['GET', 'POST'])
     def api_partner_street():

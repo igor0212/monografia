@@ -18,6 +18,31 @@ class Partner:
         response = requests.get(url = url)        
         return response.json()
 
+    def check_sold():        
+        properties = Property.get_all()
+        for property in properties:            
+            response = Partner.get_by_code(property['partner_id']) 
+            partner_properties = response['imoveis']
+            management = Management.get_by_property_id(property['id'])
+
+            #Check if property has been sold
+            if(len(partner_properties) == 0):                
+                Management.add(property['id'], management['price'], management['tax_rate'], management['property_tax'], False)
+                continue
+            
+            #Check if property value has changed
+            partner_property = partner_properties[0]
+            if partner_property and partner_property['preco'] != management['price']:
+                price = partner_property['preco']
+                tax_rate = partner_property['valor_iptu'] if partner_property['valor_iptu'] else 0
+                property_tax = partner_property['valor_condominio'] if partner_property['valor_condominio'] else 0                  
+                Management.add(property['id'], price, tax_rate, property_tax, True)
+                continue
+
+            print(property['partner_id'])
+
+        return('ok')        
+
     def get_by_partner_id(id):
         query = 'select * from "Property" where partner_id = \'{}\' '.format(id)
         data = DataBase.select(query)           
@@ -29,7 +54,7 @@ class Partner:
         url = Util.get_url(goal, type, location, name, city, state)
         response = requests.get(url = url)        
         response_json = response.json()
-        properties = response_json['imoveis']        
+        properties = response_json['imoveis']
 
         if(len(properties) == 0):
             return('No properties added')

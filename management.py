@@ -1,6 +1,5 @@
 from repository import DataBase
 from datetime import datetime
-from flask import jsonify
 
 class Management:
     def add(property_id, price, tax_rate, property_tax, is_available):                
@@ -14,5 +13,19 @@ class Management:
         query = 'select * from "Management" where Id = {} '.format(id)
         data = DataBase.select(query)    
         if(data):
-            return jsonify(data[0])
+            return data[0]
+        return {}
+
+    def get_all():        
+        query = 'select * from "Management"'
+        data = DataBase.select(query)    
+        if(data):
+            return data
+        return []
+
+    def get_by_property_id(id):        
+        query = 'select * from "Management" where property_id = {} order by created_on desc'.format(id)
+        data = DataBase.select(query)    
+        if(data):
+            return data[0]
         return {}
