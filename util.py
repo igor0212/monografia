@@ -10,7 +10,6 @@ class JSONEncoder(flask.json.JSONEncoder):
         return super(JSONEncoder, self).default(obj)
 
 class Util:
-
     host = 'localhost'
     database = 'monografia'
     user = 'postgres'

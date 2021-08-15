@@ -44,8 +44,7 @@ def add_property():
 
     query = """INSERT INTO public."Property"(
             	partner_id, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number)
-	            VALUES ({}, {}, {}, {}, {}, \'{}\', \'{}\', {}, {}, {}, {}, {}); """.format(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)    
-    print(query)
+	            VALUES ({}, {}, {}, {}, {}, \'{}\', \'{}\', {}, {}, {}, {}, {}); """.format(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)        
     DataBase.insert(query)
     return('ok')
 
@@ -115,8 +114,7 @@ def get_city():
 def add_city():
     name = Util.get_field('name', 'str')
     query = """INSERT INTO public."City"(name)
-	           VALUES (\'{}\'); """.format(name)    
-    print(query)
+	           VALUES (\'{}\'); """.format(name)        
     DataBase.insert(query)
     return('ok')
 
@@ -147,8 +145,7 @@ def get_district():
 def add_district():
     name = Util.get_field('name', 'str')
     query = """INSERT INTO public."District"(name)
-	           VALUES (\'{}\'); """.format(name)
-    print(query)
+	           VALUES (\'{}\'); """.format(name)    
     DataBase.insert(query)
     return('ok')
 
