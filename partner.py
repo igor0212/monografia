@@ -37,9 +37,7 @@ class Partner:
                 tax_rate = partner_property['valor_iptu'] if partner_property['valor_iptu'] else 0
                 property_tax = partner_property['valor_condominio'] if partner_property['valor_condominio'] else 0                  
                 Management.add(property['id'], price, tax_rate, property_tax, True)
-                continue
-
-            print(property['partner_id'])
+                continue            
 
         return('ok')        
 
