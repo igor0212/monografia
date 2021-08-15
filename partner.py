@@ -27,7 +27,7 @@ class Partner:
 
         response_json = response.json()
 
-        properties = response_json['imoveis']
+        properties = response_json['imoveis']        
 
         if(len(properties) == 0):
             return('No properties added')
@@ -35,30 +35,30 @@ class Partner:
         for property in properties:
             try:
                 property_id = Partner.add_property(property)
-            except:
-                return "Partner Error: Add property error"
+            except Exception as error:
+                return "Partner Error: Add property error - {}".format(error)
 
             try:
-                Partner.add_management(property_id, property)
-            except:
-                return "Partner Error: Add management error"
+                Partner.add_management(property, property_id)
+            except Exception as error:
+                return "Partner Error: Add management error - {}".format(error)
 
         return ('ok')
             
     
-    def add_property(property):
+    def add_property(property):                
         partner_id = property['id']            
-        type_id =  Util.apartment if property['tipo']['nome'] == 'Apartamento' else Util.house
-        district_id = District.get_id(property['bairro']['nome'])
-        city_id = City.get_id(property['bairro']['cidade']['nome'])
-        goal_id =  Util.sell if property['finalidade'] == 'venda' else Util.rent
-        number = property['numero']
+        type_id =  Util.apartment if property['tipo']['nome'] == 'Apartamento' else Util.house                
+        district_id = District.get_id(property['bairro']['nome'])                
+        city_id = City.get_id(property['bairro']['cidade']['nome'])        
+        goal_id =  Util.sell if property['finalidade'] == 'venda' else Util.rent                
+        number = property['numero'] if property['numero'] else ""
         street = property['logradouro']
-        size = property['area']
+        size = property['area']        
         bedroom_number = property['quartos']
         room_number = property['salas']
-        bath_number = property['banheiros']
-        parking_number = property['vagas']
+        bath_number = property['banheiros']        
+        parking_number = property['vagas']                
         
         Property.add(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)
 
