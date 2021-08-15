@@ -29,6 +29,6 @@ class District:
         if(len(data) == 0):
             data = District.get_by_name(name)
             if(len(data) == 0):
-                return 'Error: Get district id'
+                return 'District Error: Get district id'
 
         return data['id']

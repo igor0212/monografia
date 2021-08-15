@@ -29,6 +29,6 @@ class City:
         if(len(data) == 0):
             data = City.get_by_name(name)
             if(len(data) == 0):
-                return 'Error: Get city id'
+                return 'City Error: Get city id'
 
         return data['id']

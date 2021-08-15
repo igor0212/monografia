@@ -33,9 +33,9 @@ class Util:
             elif (type == 'str'):
                 field = str(request.args[name])
             else:
-                return "Error: Type {} not implemented.".format(type)
+                return "Util Error: Type {} not implemented.".format(type)
         except:
-            return "Error: No {} field provided. Please specify an {}.".format(name, name)
+            return "Util Error: No {} field provided. Please specify an {}.".format(name, name)
         return field
 
     def format_search(search):        
@@ -47,7 +47,7 @@ class Util:
         elif(location == 'bairros'):
             search = '{}_{}_{}'.format(name, city, state)
         else:
-            return 'Error: Location not implemented'
+            return 'Util Error: Location not implemented'
 
         return 'https://api.casamineira.com.br/busca/imoveis?finalidade={}&tipos[]={}&{}[]={}'.format(Util.format_search(goal), Util.format_search(type), Util.format_search(location), Util.format_search(search))          
     

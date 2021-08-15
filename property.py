@@ -27,6 +27,5 @@ class Property:
 
         query = """INSERT INTO public."Property"(
                     partner_id, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number)
-                    VALUES ({}, {}, {}, {}, {}, \'{}\', \'{}\', {}, {}, {}, {}, {})""".format(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)        
-        print(query)
+                    VALUES ({}, {}, {}, {}, {}, \'{}\', \'{}\', {}, {}, {}, {}, {})""".format(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)                
         return DataBase.insert(query)
