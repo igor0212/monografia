@@ -4,14 +4,21 @@ import requests
 from util import Util
 from property import Property
 from management import Management
+from repository import DataBase
 
 class Partner:   
 
     def get(goal, type, location, name, city, state='mg'):
-        url = Util.get_url(goal, type, location, name, city, state)        
-
+        url = Util.get_url(goal, type, location, name, city, state)
         response = requests.get(url = url)        
         return response.json()
+
+    def get_by_partner_id(id):
+        query = 'select * from "Property" where partner_id = \'{}\' '.format(id)
+        data = DataBase.select(query)           
+        if(data):
+            return data[0]
+        return {}
 
     def add(goal, type, location, name, city, state='mg'):       
         
@@ -26,21 +33,25 @@ class Partner:
             return('No properties added')
         
         for property in properties:
+            data = Partner.get_by_partner_id(property['codigo'])
+            if(data):
+                continue;
+
             try:
                 property_id = Partner.add_property(property)
             except Exception as error:
                 return "Partner Error: Add property error - {}".format(error)
 
             try:
-                management_id = Partner.add_management(property, property_id)
+                Partner.add_management(property, property_id)
             except Exception as error:
                 return "Partner Error: Add management error - {}".format(error)
 
-        return property_id, management_id
+        return('ok')
             
     
     def add_property(property):                
-        partner_id = property['codigo']            
+        partner_id = property['codigo']
         type_id =  Util.apartment if property['tipo']['nome'] == 'Apartamento' else Util.house                
         district_id = District.get_id(property['bairro']['nome'])                
         city_id = City.get_id(property['bairro']['cidade']['nome'])        

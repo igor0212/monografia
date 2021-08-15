@@ -1,4 +1,3 @@
-from util import Util
 from repository import DataBase
 from flask import jsonify
 
