@@ -42,6 +42,8 @@ class Partner:
                 Partner.add_management(property_id, property)
             except:
                 return "Partner Error: Add management error"
+
+        return ('ok')
             
     
     def add_property(property):

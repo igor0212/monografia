@@ -84,23 +84,31 @@ class Api:
     """ 
         Partner Control
     """
-    @app.route('/api/partner/street', methods=['GET'])
+    @app.route('/api/partner/street', methods=['GET', 'POST'])
     def api_partner_street():
         goal = Util.get_field('goal', 'str')
         type = Util.get_field('type', 'str')        
         name = Util.get_field('name', 'str')
         city = Util.get_field('city', 'str')
+        location = 'logradouros'
         
-        return Partner.get(goal, type, 'logradouros', name, city)
+        if request.method=='GET':       
+            return Partner.get(goal, type, location, name, city)
+        elif request.method=='POST':
+            return Partner.add(goal, type, location, name, city)   
 
-    @app.route('/api/partner/district', methods=['GET'])
+    @app.route('/api/partner/district', methods=['GET', 'POST'])
     def api_partner_district():
         goal = Util.get_field('goal', 'str')
         type = Util.get_field('type', 'str')        
         name = Util.get_field('name', 'str')
         city = Util.get_field('city', 'str')
-        
-        return Partner.get(goal, type, 'bairros', name, city)
+        location = 'bairros'
 
+        if request.method=='GET':        
+            return Partner.get(goal, type, location, name, city)
+        elif request.method=='POST':
+            return Partner.add(goal, type, location, name, city)       
+        
     app.run()	
     
