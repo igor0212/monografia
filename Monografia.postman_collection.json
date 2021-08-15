@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "1077c974-d259-4279-8070-3060c122971a",
+		"name": "Monografia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/management?property_id=1&price=2000&tax_rate=25&property_tax=31.5&is_available=False",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"management"
+					],
+					"query": [
+						{
+							"key": "property_id",
+							"value": "1"
+						},
+						{
+							"key": "price",
+							"value": "2000"
+						},
+						{
+							"key": "tax_rate",
+							"value": "25"
+						},
+						{
+							"key": "property_tax",
+							"value": "31.5"
+						},
+						{
+							"key": "is_available",
+							"value": "False"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/management?id=13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"management"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/management/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"management",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
