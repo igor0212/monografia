@@ -12,7 +12,7 @@ class DataBase:
             cursor.connection.close()
             return (r[0] if r else None) if one else r
         except:
-            return "Error: Query select error"
+            return "Error: Query select error" 
 
     def insert(query):
         try:            

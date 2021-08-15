@@ -6,6 +6,8 @@ from management import Management
 from city import City
 from district import District
 from property import Property
+from partner import Partner
+from util import Util
 
 class Api:
     app = flask.Flask(__name__)
@@ -79,4 +81,26 @@ class Api:
         elif request.method=='POST':
             return District.add()
 
+    """ 
+        Partner Control
+    """
+    @app.route('/api/partner/street', methods=['GET'])
+    def api_partner_street():
+        goal = Util.get_field('goal', 'str')
+        type = Util.get_field('type', 'str')        
+        name = Util.get_field('name', 'str')
+        city = Util.get_field('city', 'str')
+        
+        return Partner.get(goal, type, 'logradouros', name, city)
+
+    @app.route('/api/partner/district', methods=['GET'])
+    def api_partner_district():
+        goal = Util.get_field('goal', 'str')
+        type = Util.get_field('type', 'str')        
+        name = Util.get_field('name', 'str')
+        city = Util.get_field('city', 'str')
+        
+        return Partner.get(goal, type, 'bairros', name, city)
+
     app.run()	
+    

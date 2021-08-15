@@ -30,4 +30,7 @@ class Util:
         except:
             return "Error: No {} field provided. Please specify an {}.".format(name, name)
         return field
+
+    def format_search(search):        
+        return str(search).lower().replace(" ", "-")
     
