@@ -48,15 +48,21 @@ class Partner:
             return data[0]
         return {}
 
-    def add(goal, type, location, name, city, state='mg'):               
-        url = Util.get_url(goal, type, location, name, city, state)
-        response = requests.get(url = url)        
-        response_json = response.json()
-        properties = response_json['imoveis']
+    def add(goal, type, location, name, city, state='mg', pages=20):
+        for page in (number+1 for number in range(pages)):            
+            url = Util.get_url(goal, type, location, name, city, state, page)
+            response = requests.get(url = url)        
+            response_json = response.json()
+            properties = response_json['imoveis']
 
-        if(len(properties) == 0):
-            return('No properties added')
-        
+            if(len(properties) == 0):
+                continue
+
+            Partner.add_properties(properties)        
+
+        return('ok')
+
+    def add_properties(properties):                
         for property in properties:
             data = Partner.get_by_partner_id(property['codigo'])
             if(data):
@@ -71,8 +77,6 @@ class Partner:
                 Partner.add_management(property, property_id)
             except Exception as error:
                 return "Partner Error: Add management error - {}".format(error)
-
-        return('ok')
             
     
     def add_property(property):                

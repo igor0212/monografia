@@ -1,6 +1,7 @@
 import flask
 import decimal
 from flask import request
+from unidecode import unidecode
 
 class JSONEncoder(flask.json.JSONEncoder):    
     def default(self, obj):
@@ -39,9 +40,9 @@ class Util:
         return field
 
     def format_search(search):        
-        return str(search).lower().replace(" ", "-")
+        return unidecode(str(search).lower().replace(" ", "-"))
 
-    def get_url(goal, type, location, name, city, state):
+    def get_url(goal, type, location, name, city, state, page):
         if(location == 'logradouros'):
             search = 'logradouro_{}_{}_{}'.format(name, city, state)
         elif(location == 'bairros'):
@@ -49,5 +50,7 @@ class Util:
         else:
             return 'Util Error: Location not implemented'
 
-        return 'https://api.casamineira.com.br/busca/imoveis?finalidade={}&tipos[]={}&{}[]={}'.format(Util.format_search(goal), Util.format_search(type), Util.format_search(location), Util.format_search(search))          
+        complement = 'pagina={}'.format(page)
+
+        return 'https://api.casamineira.com.br/busca/imoveis?finalidade={}&tipos[]={}&{}[]={}&{}'.format(Util.format_search(goal), Util.format_search(type), Util.format_search(location), Util.format_search(search), complement)          
     
