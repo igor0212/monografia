@@ -12,7 +12,7 @@ class DataBase:
             cursor.connection.close()
             return (r[0] if r else None) if one else r
         except (Exception, psycopg2.DatabaseError) as error:
-            return "DataBase Error: Query select error -  {}".format(error)
+            print("DataBase Error: Query select error -  {}".format(error))
 
     def insert(query):
         id = None
@@ -25,9 +25,9 @@ class DataBase:
             conn.commit()                        
             cursor.close()            
         except (Exception, psycopg2.DatabaseError) as error:
-            return "DataBase Error: Query insert error -  {}".format(error)
+            print("DataBase Error: Query insert error -  {}".format(error))
         finally:
             if conn is not None:
                 conn.close()
 
-        return str(id)
+        return str(id)    

@@ -71,12 +71,12 @@ class Partner:
             try:
                 property_id = Partner.add_property(property)
             except Exception as error:
-                return "Partner Error: Add property error - {}".format(error)
+                print("Partner Error: Add property error - {}".format(error))
 
             try:
                 Partner.add_management(property, property_id)
             except Exception as error:
-                return "Partner Error: Add management error - {}".format(error)
+                print("Partner Error: Add management error - {}".format(error))
             
     
     def add_property(property):                
