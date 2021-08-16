@@ -15,13 +15,10 @@ class DataBase:
             print("DataBase Error: Query select error -  {}".format(error))
 
     def insert(query):
-        id = None
-        query = '{} RETURNING id;'.format(query)             
         try:            
             conn = psycopg2.connect(host=Util.host, database=Util.database, user=Util.user, password=Util.password)
             cursor = conn.cursor()
-            cursor.execute(query)                        
-            id = cursor.fetchone()[0]
+            cursor.execute(query)
             conn.commit()                        
             cursor.close()            
         except (Exception, psycopg2.DatabaseError) as error:
