@@ -8,8 +8,8 @@ from repository import DataBase
 
 class Partner:   
 
-    def get(goal, type, location, name, city, state='mg'):
-        url = Util.get_url(goal, type, location, name, city, state)
+    def get(goal, type, location, name, city, state='mg', page=1):
+        url = Util.get_url(goal, type, location, name, city, state, page)
         response = requests.get(url = url)        
         return response.json()
 
