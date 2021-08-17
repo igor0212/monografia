@@ -241,138 +241,12 @@
 			"name": "Partner",
 			"item": [
 				{
-					"name": "Get By Street",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://127.0.0.1:5000/api/partner/street?goal=venda&type=apartamento&name=avenida dos engenheiros&city=belo horizonte",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"partner",
-								"street"
-							],
-							"query": [
-								{
-									"key": "goal",
-									"value": "venda"
-								},
-								{
-									"key": "type",
-									"value": "apartamento"
-								},
-								{
-									"key": "name",
-									"value": "avenida dos engenheiros"
-								},
-								{
-									"key": "city",
-									"value": "belo horizonte"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get By District",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://127.0.0.1:5000/api/partner/district?goal=venda&type=apartamento&name=urca&city=belo horizonte",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"partner",
-								"district"
-							],
-							"query": [
-								{
-									"key": "goal",
-									"value": "venda"
-								},
-								{
-									"key": "type",
-									"value": "apartamento"
-								},
-								{
-									"key": "name",
-									"value": "urca"
-								},
-								{
-									"key": "city",
-									"value": "belo horizonte"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Add By Street",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "http://127.0.0.1:5000/api/partner/street?goal=venda&type=apartamento&name=avenida dos engenheiros&city=belo horizonte",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"partner",
-								"street"
-							],
-							"query": [
-								{
-									"key": "goal",
-									"value": "venda"
-								},
-								{
-									"key": "type",
-									"value": "apartamento"
-								},
-								{
-									"key": "name",
-									"value": "avenida dos engenheiros"
-								},
-								{
-									"key": "city",
-									"value": "belo horizonte"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Add By District",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/api/partner/district?goal=venda&type=apartamento&name=castelo&city=belo horizonte",
+							"raw": "http://127.0.0.1:5000/api/partner/district?goal=venda&type=apartamento&city=belo horizonte",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -397,7 +271,8 @@
 								},
 								{
 									"key": "name",
-									"value": "castelo"
+									"value": "Savassi",
+									"disabled": true
 								},
 								{
 									"key": "city",
