@@ -246,7 +246,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/api/partner/district?goal=venda&type=apartamento&city=belo horizonte",
+							"raw": "http://127.0.0.1:5000/api/partner/district?goal=venda&city=belo horizonte&type=casa",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -266,17 +266,12 @@
 									"value": "venda"
 								},
 								{
-									"key": "type",
-									"value": "apartamento"
-								},
-								{
-									"key": "name",
-									"value": "Savassi",
-									"disabled": true
-								},
-								{
 									"key": "city",
 									"value": "belo horizonte"
+								},
+								{
+									"key": "type",
+									"value": "casa"
 								}
 							]
 						}
