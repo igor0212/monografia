@@ -48,7 +48,7 @@ class Partner:
             return data[0]
         return {}
 
-    def add_property_by_district(goal, type, location, district, city, state, pages=10):
+    def add_property_by_district(goal, type, location, district, city, state, pages=20):
         query = ''
         for page in (number+1 for number in range(pages)):            
             url = Util.get_url(goal, type, location, district['name'], city, state, page)

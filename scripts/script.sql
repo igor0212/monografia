@@ -582,3 +582,50 @@ DROP TABLE "Type";
 DROP TABLE "Goal";
 DROP TABLE "City";
 DROP TABLE "District";
+
+
+
+--CHECK DUPLICATE ROWS
+select count(*) from "Property"
+select count(distinct partner_id) from "Property"
+
+select count(*) from "Management"
+select count(distinct partner_id) from "Management"
+
+SELECT
+    partner_id,
+    COUNT( partner_id )
+FROM
+    "Property"
+GROUP BY
+    partner_id
+HAVING
+    COUNT( partner_id )> 1
+ORDER BY
+    partner_id;
+
+DELETE FROM
+    "Property" a
+        USING "Property" b
+WHERE
+    a.id < b.id
+    AND a.partner_id = b.partner_id;
+
+SELECT
+    partner_id,
+    COUNT( partner_id )
+FROM
+    "Management"
+GROUP BY
+    partner_id
+HAVING
+    COUNT( partner_id )> 1
+ORDER BY
+    partner_id;
+
+DELETE FROM
+    "Management" a
+        USING "Management" b
+WHERE
+    a.id < b.id
+    AND a.partner_id = b.partner_id;
