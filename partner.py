@@ -69,10 +69,10 @@ class Partner:
         for district in districts:
             query += Partner.add_property_by_district(goal, type, location, district, city, state);                    
 
-        if(query):                   
-            #DataBase.insert(query)
+        if(query):                               
             arquivo = open('drafts/insert.txt','w')
             arquivo.write(query)
+            DataBase.insert(query)
             return('ok')
         else:
             return('erro')        
@@ -80,12 +80,11 @@ class Partner:
     def add_properties(properties, district_id):
         query = ""
         for property in properties:            
-            #data = Partner.get_by_partner_id(property['codigo'])
-            #if(data):
-            #    continue;            
+            data = Partner.get_by_partner_id(property['codigo'])
+            if(data):
+                continue;            
                 
             query += Partner.add_property(property, district_id)
-
             query += Partner.add_management(property)
         
         return query

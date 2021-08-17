@@ -565,8 +565,6 @@ INSERT INTO public."District" ("name") VALUES('Vila Vera Cruz I');
 INSERT INTO public."District" ("name") VALUES('Vila Vera Cruz II');
 
 
-
-
 --DELETE 
 DELETE FROM "Management";
 DELETE FROM "Property";
@@ -583,7 +581,9 @@ DROP TABLE "Goal";
 DROP TABLE "City";
 DROP TABLE "District";
 
-
+--ALTER TABLE
+ALTER TABLE "Property"
+ADD COLUMN "new_ad" BOOLEAN NOT NULL DEFAULT FALSE;
 
 --CHECK DUPLICATE ROWS
 select count(*) from "Property"

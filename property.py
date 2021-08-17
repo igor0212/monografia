@@ -1,4 +1,5 @@
 from repository import DataBase
+from util import Util
 
 class Property:
     def get(id):        
@@ -8,10 +9,10 @@ class Property:
             return data[0]
         return {}
 
-    def add(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number):
+    def add(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number, new_ad=False):
         query = """INSERT INTO public."Property"(
-                    partner_id, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number)
-                    VALUES (\'{}\', {}, {}, {}, {}, \'{}\', \'{}\', {}, {}, {}, {}, {}); """.format(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)                       
+                    partner_id, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad)
+                    VALUES (\'{}\', {}, {}, {}, {}, \'{}\', \'{}\', {}, {}, {}, {}, {}, {}); """.format(partner_id, type_id, district_id, city_id, goal_id, number, Util.format(street), size, bedroom_number, room_number, bath_number, parking_number, new_ad)                       
         return query
 
     def get_all(serialize=False):        

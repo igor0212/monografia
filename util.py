@@ -41,6 +41,9 @@ class Util:
     def format_search(search):        
         return unidecode(str(search).lower().replace(" ", "-"))
 
+    def format(search):        
+        return str(search).replace("'", "''")
+
     def get_url(goal, type, location, name, city, state, page):
         if(location == 'logradouros'):
             search = 'logradouro_{}_{}_{}'.format(name, city, state)
