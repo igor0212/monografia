@@ -1,4 +1,4 @@
-import requests
+"""import requests
 
 goal = 'venda'
 type = 'apartamento'
@@ -14,4 +14,4 @@ while line:
 
 file.close()
 
-print('Acabou')
+print('Acabou')"""
