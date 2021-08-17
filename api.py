@@ -75,33 +75,17 @@ class Api:
 
     @app.route('/api/partner/sold', methods=['GET'])
     def api_partner_sold():        
-        return Partner.check_sold()
+        return Partner.check_sold()    
 
-    @app.route('/api/partner/street', methods=['GET', 'POST'])
-    def api_partner_street():
-        goal = Util.get_field('goal', 'str')
-        type = Util.get_field('type', 'str')        
-        name = Util.get_field('name', 'str')
-        city = Util.get_field('city', 'str')
-        location = 'logradouros'
-        
-        if request.method=='GET':       
-            return Partner.get(goal, type, location, name, city)
-        elif request.method=='POST':
-            return Partner.add(goal, type, location, name, city)   
-
-    @app.route('/api/partner/district', methods=['GET', 'POST'])
+    @app.route('/api/partner/district', methods=['POST'])
     def api_partner_district():
         goal = Util.get_field('goal', 'str')
-        type = Util.get_field('type', 'str')        
-        name = Util.get_field('name', 'str')
+        type = Util.get_field('type', 'str')
         city = Util.get_field('city', 'str')
         location = 'bairros'
-
-        if request.method=='GET':        
-            return Partner.get(goal, type, location, name, city)
-        elif request.method=='POST':
-            return Partner.add(goal, type, location, name, city)       
+        
+        if request.method=='POST':
+            return Partner.add(goal, type, location, city)       
         
     app.run()	
     

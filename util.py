@@ -14,14 +14,13 @@ class Util:
     host = 'localhost'
     database = 'monografia'
     user = 'postgres'
-    password = '@Eliane9455'
+    password = '@Eliane9455'    
 
-    apartment = 1
-    house = 2
-    condo = 3
+    type = {'Apartamento': 1, 'Casa': 2 }
 
-    sell = 1
-    rent = 2    
+    goal = {'venda': 1, 'aluguel': 2 }    
+
+    city = {'Belo Horizonte': 1}
 
     def get_field(name, type):
         try:

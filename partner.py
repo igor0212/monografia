@@ -48,44 +48,54 @@ class Partner:
             return data[0]
         return {}
 
-    def add(goal, type, location, name, city, state='mg', pages=20):
-        query = ""
+    def add_property_by_district(goal, type, location, district, city, state, pages=10):
+        query = ''
         for page in (number+1 for number in range(pages)):            
-            url = Util.get_url(goal, type, location, name, city, state, page)
+            url = Util.get_url(goal, type, location, district['name'], city, state, page)
+            print(url)
             response = requests.get(url = url)        
             response_json = response.json()
             properties = response_json['imoveis']
-
             if(len(properties) == 0):
                 continue
 
-            query += Partner.add_properties(properties) 
+            query += Partner.add_properties(properties, district['id']) 
+
+        return query    
+
+    def add(goal, type, location, city, state='mg'):
+        districts = District.get_all()        
+        query = ''
+        for district in districts:
+            query += Partner.add_property_by_district(goal, type, location, district, city, state);                    
 
         if(query):                   
-            DataBase.insert(query)
+            #DataBase.insert(query)
+            arquivo = open('drafts/insert.txt','w')
+            arquivo.write(query)
             return('ok')
         else:
             return('erro')        
 
-    def add_properties(properties):
+    def add_properties(properties, district_id):
         query = ""
         for property in properties:            
-            data = Partner.get_by_partner_id(property['codigo'])
-            if(data):
-                continue;            
+            #data = Partner.get_by_partner_id(property['codigo'])
+            #if(data):
+            #    continue;            
                 
-            query += Partner.add_property(property)
+            query += Partner.add_property(property, district_id)
 
             query += Partner.add_management(property)
         
         return query
     
-    def add_property(property):                
+    def add_property(property, district_id):                
         partner_id = property['codigo']
-        type_id =  Util.apartment if property['tipo']['nome'] == 'Apartamento' else Util.house                
-        district_id = District.get_id(property['bairro']['nome'])                
-        city_id = City.get_id(property['bairro']['cidade']['nome'])        
-        goal_id =  Util.sell if property['finalidade'] == 'venda' else Util.rent                
+        type_id =  Util.type.get(property['tipo']['nome'], 'Casa')
+        district_id = district_id
+        city_id = Util.city[property['bairro']['cidade']['nome']]        
+        goal_id = Util.goal.get(property['finalidade'], 'aluguel')
         number = property['numero'] if property['numero'] else " "
         street = property['logradouro'] if property['logradouro'] else " "        
         size = property['area']        
