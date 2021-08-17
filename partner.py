@@ -23,7 +23,7 @@ class Partner:
         for property in properties:            
             response = Partner.get_by_code(property['partner_id']) 
             partner_properties = response['imoveis']
-            management = Management.get_by_partner_id(property['partner_id'])
+            management = Management.get_by_partner_id(property['partner_code'])
 
             #Check if property has been sold
             if(len(partner_properties) == 0):                
@@ -42,7 +42,7 @@ class Partner:
         return('ok')        
 
     def get_by_partner_id(id):
-        query = 'select * from "Property" where partner_id = \'{}\' '.format(id)
+        query = 'select * from "Property" where partner_code = \'{}\' '.format(id)
         data = DataBase.select(query)           
         if(data):
             return data[0]
