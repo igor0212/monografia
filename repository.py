@@ -11,8 +11,8 @@ class DataBase:
                     for i, value in enumerate(row)) for row in cursor.fetchall()]
             cursor.connection.close()
             return (r[0] if r else None) if one else r
-        except (Exception, psycopg2.DatabaseError) as error:
-            print("DataBase Error: Query select error -  {}".format(error))
+        except Exception as ex:
+            print("DataBase Error: Query select error - {}".format(ex))
 
     def insert(query):
         try:            
@@ -21,10 +21,8 @@ class DataBase:
             cursor.execute(query)
             conn.commit()                        
             cursor.close()            
-        except (Exception, psycopg2.DatabaseError) as error:
-            print("DataBase Error: Query insert error -  {}".format(error))
+        except Exception as ex:
+            print("DataBase Error: Query insert error - {}".format(ex))
         finally:
             if conn is not None:
-                conn.close()
-
-        return str(id)    
+                conn.close()       

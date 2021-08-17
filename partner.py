@@ -9,7 +9,7 @@ from repository import DataBase
 class Partner:   
 
     def get(goal, type, location, name, city, state='mg', page=1):
-        url = Util.get_url(goal, type, location, name, city, state, page)
+        url = Util.get_url(goal, type, location, name, city, state, page)        
         response = requests.get(url = url)        
         return response.json()
 
@@ -85,12 +85,13 @@ class Partner:
                 continue;            
                 
             query += Partner.add_property(property, district_id)
-            query += Partner.add_management(property)
+            query += Partner.add_management(property)            
         
         return query
     
     def add_property(property, district_id):                
-        partner_id = property['codigo']
+        partner_id = property['id']
+        partner_code = property['codigo']
         type_id =  Util.type.get(property['tipo']['nome'], 'Casa')
         district_id = district_id
         city_id = Util.city[property['bairro']['cidade']['nome']]        
@@ -103,10 +104,10 @@ class Partner:
         bath_number = property['banheiros']        
         parking_number = property['vagas']                
         
-        return Property.add(partner_id, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)
+        return Property.add(partner_id, partner_code, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)
 
     def add_management(management):
-        partner_id = management['codigo']
+        partner_id = management['id']
         price = management['preco']
         tax_rate = management['valor_iptu'] if management['valor_iptu'] else 0
         property_tax = management['valor_condominio'] if management['valor_condominio'] else 0        

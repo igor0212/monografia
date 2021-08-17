@@ -1,7 +1,6 @@
 import flask
 from flask import request, jsonify
 from util import JSONEncoder
-from repository import DataBase
 from management import Management
 from city import City
 from district import District
