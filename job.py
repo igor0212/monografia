@@ -12,9 +12,11 @@ def add(name, has_error=False):
     date_now = datetime.now()
     query = """INSERT INTO public."Job"(
                 name, created_on, has_error)
-                VALUES (\'{}\', \'{}\', {}); """.format(name, date_now, has_error)
-
-    DataBase.insert(query)
+                VALUES (\'{}\', \'{}\', {});\n""".format(name, date_now, has_error)
+    
+    arquivo = open('drafts/job.txt','w')
+    arquivo.write(query)
+    arquivo.close()
     return query
 
 def check_sold():

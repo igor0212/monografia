@@ -64,6 +64,7 @@ class Partner:
         if(query):                               
             arquivo = open('drafts/insert.txt','w')
             arquivo.write(query)
+            arquivo.close()
             DataBase.insert(query)
             return('ok')
         else:
