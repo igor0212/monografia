@@ -1,0 +1,3 @@
+INSERT INTO public."Job"(
+                name, created_on, has_error)
+                VALUES ('get_apartment', '2021-08-18 20:02:00.53098', False); 
