@@ -2,11 +2,15 @@ from repository import DataBase
 from datetime import datetime
 
 class Management:
-    def add(partner_id, price, tax_rate, property_tax, is_available):                
+    def add(partner_id, price, tax_rate, property_tax, is_available, execute_query = False):                
         date_now = datetime.now()
         query = """INSERT INTO public."Management"(
                     partner_id, price, tax_rate, property_tax, created_on, is_available)
                     VALUES (\'{}\', {}, {}, {}, \'{}\', {}); """.format(partner_id, price, tax_rate, property_tax, date_now, is_available)    
+
+        if(execute_query):
+            DataBase.insert(query)
+
         return query
 
     def get(id):        
