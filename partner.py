@@ -1,5 +1,4 @@
 from district import District
-from city import City
 import requests
 from util import Util
 from property import Property
@@ -21,32 +20,23 @@ class Partner:
     def check_sold():        
         properties = Property.get_all()
         for property in properties:            
-            response = Partner.get_by_code(property['partner_id']) 
-            partner_properties = response['imoveis']
-            management = Management.get_by_partner_id(property['partner_code'])
+            response = Partner.get_by_code(property['partner_code'])             
+            management = Management.get_by_partner_id(property['partner_id'])
+            partner_property = Property.get_valid_property(response['imoveis'], property['partner_id'])            
+
+            print(property['partner_code'])
 
             #Check if property has been sold
-            if(len(partner_properties) == 0):                
-                Management.add(property['id'], management['price'], management['tax_rate'], management['property_tax'], False)
-                continue
-            
-            #Check if property value has changed
-            partner_property = partner_properties[0]
-            if partner_property and partner_property['preco'] != management['price']:
+            if(not partner_property):                
+                Management.add(property['partner_id'], management['price'], management['tax_rate'], management['property_tax'], False)
+            #Check if property value has changed            
+            elif partner_property['preco'] != management['price']:
                 price = partner_property['preco']
                 tax_rate = partner_property['valor_iptu'] if partner_property['valor_iptu'] else 0
                 property_tax = partner_property['valor_condominio'] if partner_property['valor_condominio'] else 0                  
-                Management.add(property['id'], price, tax_rate, property_tax, True)
-                continue            
+                Management.add(property['id'], price, tax_rate, property_tax, True)                            
 
-        return('ok')        
-
-    def get_by_partner_id(id):
-        query = 'select * from "Property" where partner_code = \'{}\' '.format(id)
-        data = DataBase.select(query)           
-        if(data):
-            return data[0]
-        return {}
+        return('ok')           
 
     def add_property_by_district(goal, type, location, district, city, state, pages=20):
         query = ''
@@ -80,9 +70,9 @@ class Partner:
     def add_properties(properties, district_id):
         query = ""
         for property in properties:            
-            #data = Partner.get_by_partner_id(property['codigo'])
-            #f(data):
-            #   continue;            
+            data = Property.get_by_partner_id(property['id'])
+            if(data):
+                continue;            
                 
             query += Partner.add_property(property, district_id)
             query += Partner.add_management(property)            
@@ -104,7 +94,7 @@ class Partner:
         bath_number = property['banheiros']        
         parking_number = property['vagas']                
         
-        return Property.add(partner_id, partner_code, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number)
+        return Property.add(partner_id, partner_code, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number, True)
 
     def add_management(management):
         partner_id = management['id']

@@ -81,10 +81,9 @@ class Api:
         goal = Util.get_field('goal', 'str')
         type = Util.get_field('type', 'str')
         city = Util.get_field('city', 'str')
-        location = 'bairros'
+        location = 'bairros'        
         
-        if request.method=='POST':
-            return Partner.add(goal, type, location, city)       
+        return Partner.add(goal, type, location, city)       
         
     app.run()	
     
