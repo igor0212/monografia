@@ -22,19 +22,21 @@ class Partner:
         for property in properties:            
             response = Partner.get_by_code(property['partner_code'])             
             management = Management.get_by_partner_id(property['partner_id'])
-            partner_property = Property.get_valid_property(response['imoveis'], property['partner_id'])            
-
-            print(property['partner_code'])
+            partner_property = Property.get_valid_property(response['imoveis'], property['partner_id'])                        
 
             #Check if property has been sold
-            if(not partner_property):                
+            if(not partner_property):
+                print("vendido")
                 Management.add(property['partner_id'], management['price'], management['tax_rate'], management['property_tax'], False)
             #Check if property value has changed            
             elif partner_property['preco'] != management['price']:
+                print("preco alterado")
                 price = partner_property['preco']
                 tax_rate = partner_property['valor_iptu'] if partner_property['valor_iptu'] else 0
                 property_tax = partner_property['valor_condominio'] if partner_property['valor_condominio'] else 0                  
-                Management.add(property['id'], price, tax_rate, property_tax, True)                            
+                Management.add(property['partner_id'], price, tax_rate, property_tax, True)   
+            else:
+                print("{} não foi vendido nem teve o preco alterado".format(property['partner_code']))
 
         return('ok')           
 
