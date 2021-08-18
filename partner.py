@@ -80,9 +80,9 @@ class Partner:
     def add_properties(properties, district_id):
         query = ""
         for property in properties:            
-            data = Partner.get_by_partner_id(property['codigo'])
-            if(data):
-                continue;            
+            #data = Partner.get_by_partner_id(property['codigo'])
+            #f(data):
+            #   continue;            
                 
             query += Partner.add_property(property, district_id)
             query += Partner.add_management(property)            
