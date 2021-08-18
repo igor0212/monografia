@@ -18,6 +18,7 @@ def add(name, has_error=False):
     return query
 
 def check_sold():
+    print("Rodando check_sold")
     has_error = False
     try:
         Partner.check_sold()
@@ -27,6 +28,7 @@ def check_sold():
         add('check_sold', has_error)
 
 def get_house():
+    print("Rodando get_house")
     has_error = False
     try:
         Partner.add(goal, 'casa', location, city)
@@ -36,6 +38,7 @@ def get_house():
         add('get_house', has_error)
 
 def get_apartment():
+    print("Rodando get_apartment")
     has_error = False
     try:
         Partner.add(goal, 'apartamento', location, city)
