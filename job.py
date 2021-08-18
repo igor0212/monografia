@@ -12,12 +12,12 @@ def add(name, has_error=False):
     date_now = datetime.now()
     query = """INSERT INTO public."Job"(
                 name, created_on, has_error)
-                VALUES (\'{}\', \'{}\', {});\n""".format(name, date_now, has_error)
+                VALUES (\'{}\', \'{}\', {}); """.format(name, date_now, has_error)
     
     arquivo = open('drafts/job.txt','w')
     arquivo.write(query)
     arquivo.close()
-    return query
+    DataBase.insert(query)    
 
 def check_sold():
     print("Rodando check_sold")
@@ -49,14 +49,8 @@ def get_apartment():
     finally:
         add('get_apartment', has_error)
 
-def get_house():     
-    Partner.add(goal, 'casa', location, city)
-
-def get_apartment():    
-    Partner.add(goal, 'apartamento', location, city)
-
 schedule.every().day.at("08:00").do(get_house)
-schedule.every().day.at("17:00").do(get_apartment)
+schedule.every().day.at("15:00").do(get_apartment)
 schedule.every().day.at("23:00").do(check_sold)
 
 while True:
