@@ -18,7 +18,8 @@ class Partner:
         return response.json()
 
     def check_sold():        
-        properties = Property.get_all()
+        properties = Property.get_all_new_ad()
+        query = ""
         for property in properties:            
             response = Partner.get_by_code(property['partner_code'])             
             management = Management.get_by_partner_id(property['partner_id'])
@@ -27,18 +28,27 @@ class Partner:
             #Check if property has been sold
             if(not partner_property):
                 print("{} vendido".format(property['partner_code']))
-                Management.add(property['partner_id'], management['price'], management['tax_rate'], management['property_tax'], False, True)
+                query += Management.add(property['partner_id'], management['price'], management['tax_rate'], management['property_tax'], False)
             #Check if property value has changed            
             elif partner_property['preco'] != management['price']:                
                 print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(property['partner_code'], management['price'], partner_property['preco']))
                 price = partner_property['preco']
                 tax_rate = partner_property['valor_iptu'] if partner_property['valor_iptu'] else 0
                 property_tax = partner_property['valor_condominio'] if partner_property['valor_condominio'] else 0                  
-                Management.add(property['partner_id'], price, tax_rate, property_tax, True, True)   
+                query += Management.add(property['partner_id'], price, tax_rate, property_tax, True)   
             else:
                 print("{} não foi vendido e nem teve o preco alterado".format(property['partner_code']))
 
-        return('ok')           
+        path = "scripts/inserts_job.sql"
+
+        if(query):
+            Util.save_query_file(query, path)
+            DataBase.insert(query)
+            return("ok")
+        else:
+            text = "no property sold"
+            Util.save_query_file(text, path)
+            return(text)               
 
     def add_property_by_district(goal, type, location, district, city, state, pages=20):
         query = ''
@@ -61,14 +71,16 @@ class Partner:
         for district in districts:
             query += Partner.add_property_by_district(goal, type, location, district, city, state);                    
 
-        if(query):                               
-            arquivo = open('drafts/insert.txt','w')
-            arquivo.write(query)
-            arquivo.close()
+        path = 'scripts/inserts_properties.sql'
+
+        if(query):
+            Util.save_query_file(query, path)
             DataBase.insert(query)
-            return('ok')
+            return("ok")
         else:
-            return('erro')        
+            text = "properties not found"
+            Util.save_query_file(text, path)
+            return(text)
 
     def add_properties(properties, district_id):
         query = ""
@@ -107,6 +119,26 @@ class Partner:
         is_available = True
         
         return Management.add(partner_id, price, tax_rate, property_tax, is_available)
+
+    def add_all(goal, location, city, state="mg"):
+        districts = District.get_all()        
+        query = ""
+        for district in districts:
+            query += Partner.add_property_by_district(goal, "apartamento", location, district, city, state);
+            query += Partner.add_property_by_district(goal, "casa", location, district, city, state);
+
+        path = "scripts/inserts_properties.sql"
+
+        if(query):
+            Util.save_query_file(query, path)
+            DataBase.insert(query)
+            return("ok")
+        else:
+            text = "no new properties found"
+            Util.save_query_file(text, path)
+            return(text)
+
+    
 
             
 

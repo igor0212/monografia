@@ -36,3 +36,10 @@ class Property:
         if(data):
             return data[0]
         return {} 
+
+    def get_all_new_ad():        
+        query = 'select * from "Property" where new_ad = True'
+        data = DataBase.select(query)
+        if(data):
+            return data
+        return []

@@ -1,5 +1,5 @@
 import flask
-from flask import request, jsonify
+from flask import jsonify
 from util import JSONEncoder
 from management import Management
 from city import City
