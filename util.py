@@ -59,7 +59,7 @@ class Util:
 
     def save_query_file(query, path):        
         date_now = datetime.now()
-        text = "\n\n -------------------------------------------------------- Script shot in {} ------------------------------------------------------------------------------------------ \n {} \n\n".format(date_now, query)
+        text = "\n\n -------------------------------------------------------- Script shot in {} ------------------------------------------------------------------------------------------ \n\n {} \n\n".format(date_now, query)
         with open(path, 'a') as file:
             file.write(text)
             file.close()
