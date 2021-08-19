@@ -39,7 +39,7 @@ class Partner:
             else:
                 print("{} não foi vendido e nem teve o preco alterado".format(property['partner_code']))
 
-        path = "scripts/inserts_job.sql"
+        path = "scripts/inserts_check_sold.sql"
 
         if(query):
             Util.save_query_file(query, path)
@@ -120,7 +120,7 @@ class Partner:
         
         return Management.add(partner_id, price, tax_rate, property_tax, is_available)
 
-    def add_all(goal, location, city, state="mg"):
+    def routine(goal, location, city, state="mg"):
         districts = District.get_all()        
         query = ""
         for district in districts:
@@ -131,12 +131,12 @@ class Partner:
 
         if(query):
             Util.save_query_file(query, path)
-            DataBase.insert(query)
-            return("ok")
+            DataBase.insert(query)            
         else:
             text = "no new properties found"
             Util.save_query_file(text, path)
-            return(text)
+
+        Partner.check_sold()
 
     
 
