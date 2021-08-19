@@ -57,11 +57,10 @@ class Util:
 
         return 'https://api.casamineira.com.br/busca/imoveis?finalidade={}&tipos[]={}&{}[]={}&{}'.format(Util.format_search(goal), Util.format_search(type), Util.format_search(location), Util.format_search(search), complement)          
 
-    def save_query_file(query, path):
-        file = open(path,'w')
+    def save_query_file(query, path):        
         date_now = datetime.now()
         text = "\n\n -------------------------------------------------------- Script shot in {} ------------------------------------------------------------------------------------------ \n {} \n\n".format(date_now, query)
-        file.write(text)
-        file.close()
-
+        with open(path, 'a') as file:
+            file.write(text)
+            file.close()
     
