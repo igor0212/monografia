@@ -39,7 +39,7 @@ class Partner:
             else:
                 print("{} não foi vendido e nem teve o preco alterado".format(property['partner_code']))
 
-        path = "scripts/inserts_check_sold.sql"
+        path = "db/scripts/inserts_check_sold.sql"
 
         if(query):
             Util.save_query_file(query, path)
@@ -71,7 +71,7 @@ class Partner:
         for district in districts:
             query += Partner.add_property_by_district(goal, type, location, district, city, state);                    
 
-        path = 'scripts/inserts_properties.sql'
+        path = 'db/scripts/inserts_properties.sql'
 
         if(query):
             Util.save_query_file(query, path)
@@ -132,7 +132,7 @@ class Partner:
             query += Partner.add_property_by_district(goal, "apartamento", location, district, city, state);
             query += Partner.add_property_by_district(goal, "casa", location, district, city, state);
 
-        path = "scripts/inserts_properties.sql"
+        path = "db/scripts/inserts_properties.sql"
 
         if(query):
             Util.save_query_file(query, path)

@@ -8,7 +8,7 @@ from util import Util
 def add(name, has_error=False):
     date_now = datetime.now()
     query = """INSERT INTO public."Job"(name, created_on, has_error) VALUES (\'{}\', \'{}\', {});""".format(name, date_now, has_error)
-    path = "scripts/inserts_job.sql"
+    path = "db/scripts/inserts_job.sql"
     Util.save_query_file(query, path)
     DataBase.insert(query)
 
