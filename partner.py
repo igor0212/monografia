@@ -120,7 +120,12 @@ class Partner:
         
         return Management.add(partner_id, price, tax_rate, property_tax, is_available)
 
-    def routine(goal, location, city, state="mg"):
+    def add_all():
+        location = 'bairros'
+        goal = 'venda'
+        city = 'belo horizonte'  
+        state='mg'
+
         districts = District.get_all()        
         query = ""
         for district in districts:
@@ -136,6 +141,8 @@ class Partner:
             text = "no new properties found"
             Util.save_query_file(text, path)
 
+    def routine():
+        Partner.add_all()
         Partner.check_sold()
 
     
