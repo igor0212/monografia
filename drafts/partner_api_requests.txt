@@ -1,0 +1,5 @@
+By street
+url = 'https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&logradouros[]=logradouro_avenida-dos-engenheiros_belo-horizonte_mg'
+
+By district
+#url = 'https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&bairros[]=centro_belo-horizonte_mg'

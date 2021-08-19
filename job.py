@@ -49,7 +49,7 @@ def get_apartment():
     finally:
         add('get_apartment', has_error)
 
-schedule.every().day.at("07:00").do(get_house)
+schedule.every().day.at("20:40").do(get_house)
 schedule.every().day.at("15:00").do(get_apartment)
 schedule.every().day.at("23:00").do(check_sold)
 
