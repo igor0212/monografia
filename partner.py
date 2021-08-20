@@ -97,7 +97,7 @@ class Partner:
                 
             query += Partner.add_property(property, district_id)
             query += Partner.add_management(property)
-            list_id_query.append(property['id'])
+            list_id_query.append(id)
         
         return query
     
