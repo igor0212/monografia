@@ -20,6 +20,13 @@ class Property:
             return data
         return []
 
+    def get_all_id():        
+        query = 'select Id from "Property"'
+        data = DataBase.select(query)
+        if(data):
+            return data
+        return []
+
     def get_valid_property(properties_partner, id):
         response = {}
         for property_partner in properties_partner:

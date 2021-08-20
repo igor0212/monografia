@@ -5,6 +5,9 @@ from property import Property
 from management import Management
 from repository import DataBase
 
+list_id_query = []
+list_id_bd = Property.get_all_id()
+
 class Partner:   
 
     def get(goal, type, location, name, city, state='mg', page=1):
@@ -84,13 +87,17 @@ class Partner:
 
     def add_properties(properties, district_id):
         query = ""
-        for property in properties:            
-            data = Property.get_by_partner_id(property['id'])
-            if(data):
+        for property in properties:
+            id = property['id']            
+            if(id in list_id_bd or id in list_id_query):
+                print(list_id_bd)
+                print(list_id_query)
+                print("ja existe esse o id {} no bd ou na lista".format(id))
                 continue;            
                 
             query += Partner.add_property(property, district_id)
-            query += Partner.add_management(property)            
+            query += Partner.add_management(property)
+            list_id_query.append(property['id'])
         
         return query
     
