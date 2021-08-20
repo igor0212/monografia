@@ -53,9 +53,9 @@ class Util:
         return string if string else ""         
 
 class File:
-    check_property_sold = "db/scripts/inserts_check_sold.sql"
-    search_properties_by_district = "db/scripts/inserts_properties.sql"
-    routine = "db/scripts/inserts_job.sql"
+    check_property_sold = "../db/scripts/inserts_check_property_sold.sql"
+    search_properties_by_district = "../db/scripts/inserts_properties.sql"
+    routine = "../db/scripts/inserts_job.sql"
 
     def record_insert(query, path):        
         date_now = datetime.now()

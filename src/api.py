@@ -5,7 +5,7 @@ from Service.city import City
 from Service.district import District
 from Service.property import Property
 from Service.partner import Partner
-from util import Util, JSONEncoder
+from util import File, Util, JSONEncoder
 
 class Api:
     app = flask.Flask(__name__)
@@ -73,11 +73,13 @@ class Api:
 
     @app.route('/api/partner/sold', methods=['PATCH'])
     def api_partner_sold():        
-        Partner.check_property_sold()    
+        Partner.check_property_sold()
+        return('ok')    
 
     @app.route('/api/partner/district', methods=['POST'])
     def api_partner_district():
-        Partner.search_properties_by_district()       
+        Partner.search_properties_by_district()               
+        return('ok')
         
     app.run()	
     
