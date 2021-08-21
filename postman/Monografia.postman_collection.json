@@ -38,7 +38,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/api/management?id=1",
+							"raw": "http://127.0.0.1:5000/api/management?partner_id=5035898",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -53,8 +53,8 @@
 							],
 							"query": [
 								{
-									"key": "id",
-									"value": "1"
+									"key": "partner_id",
+									"value": "5035898"
 								}
 							]
 						}
@@ -72,7 +72,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/api/property?id=1",
+							"raw": "http://127.0.0.1:5000/api/property?partner_id=5035898",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -87,8 +87,8 @@
 							],
 							"query": [
 								{
-									"key": "id",
-									"value": "1"
+									"key": "partner_id",
+									"value": "5035898"
 								}
 							]
 						}
@@ -241,12 +241,12 @@
 			"name": "Partner",
 			"item": [
 				{
-					"name": "Add By District",
+					"name": "District",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/api/partner/district?goal=venda&city=belo horizonte&type=apartamento",
+							"raw": "http://127.0.0.1:5000/api/partner/district",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -259,20 +259,6 @@
 								"api",
 								"partner",
 								"district"
-							],
-							"query": [
-								{
-									"key": "goal",
-									"value": "venda"
-								},
-								{
-									"key": "city",
-									"value": "belo horizonte"
-								},
-								{
-									"key": "type",
-									"value": "apartamento"
-								}
 							]
 						}
 					},
@@ -308,9 +294,9 @@
 					"response": []
 				},
 				{
-					"name": "Check Sold",
+					"name": "Check Property Sold",
 					"request": {
-						"method": "GET",
+						"method": "PATCH",
 						"header": [],
 						"url": {
 							"raw": "http://127.0.0.1:5000/api/partner/sold",
