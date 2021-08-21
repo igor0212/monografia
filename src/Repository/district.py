@@ -2,7 +2,7 @@ from Repository.database import DataBase
 
 class District:    
     def get_all():        
-        query = 'select * from "District" where Id = 1'
+        query = 'select * from "District"'
         return DataBase.select(query)    
 
     def get_by_id(id):                

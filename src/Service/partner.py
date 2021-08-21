@@ -54,7 +54,7 @@ class Partner:
                 property_tax = Util.validate_number(property.get('valor_condominio', 0))
                 properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) 
             else:
-                Log.print("{} não foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')))
+                Log.print("{} nao foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')))
         
         text = properties_to_add if properties_to_add else "no property sold"
         File.record_insert(text, File.check_property_sold)
