@@ -576,20 +576,21 @@ INSERT INTO public."District" ("name") VALUES('Vila Vera Cruz I');
 INSERT INTO public."District" ("name") VALUES('Vila Vera Cruz II');
 
 --DELETE 
-DELETE FROM "Management";
+/*DELETE FROM "Management";
 DELETE FROM "Property";
---DELETE FROM "Type";
---DELETE FROM "Goal";
---DELETE FROM "City";
-DELETE FROM "District";
+DELETE FROM "Type";
+DELETE FROM "Goal";
+DELETE FROM "City";
+DELETE FROM "District";*/
 
 --DROP
-DROP TABLE "Management";
+/*DROP TABLE "Management";
 DROP TABLE "Property";
 DROP TABLE "Type";
 DROP TABLE "Goal";
 DROP TABLE "City";
 DROP TABLE "District";
+*/
 
 --CHECK DUPLICATE ROWS
 select count(*) from "Property"
@@ -610,12 +611,13 @@ HAVING
 ORDER BY
     partner_id;
 
-DELETE FROM
+/*DELETE FROM
     "Property" a
         USING "Property" b
 WHERE
     a.id < b.id
     AND a.partner_id = b.partner_id;
+*/
 
 SELECT
     partner_id,
@@ -629,9 +631,11 @@ HAVING
 ORDER BY
     partner_id;
 
-DELETE FROM
+/*DELETE FROM
     "Management" a
         USING "Management" b
 WHERE
     a.id < b.id
     AND a.partner_id = b.partner_id;
+
+*/
