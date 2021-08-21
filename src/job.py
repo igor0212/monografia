@@ -5,7 +5,7 @@ from Service.job import Job
 from util import File, Log
 
 def routine():
-    Log.print("Buscando novas casas/apartamentos e verificando se alguma propriedade foi vendida ou teve preco alterado")
+    Log.print("Rotina comecou")
     has_error = False
     try:
         Partner.routine()
@@ -14,6 +14,8 @@ def routine():
     finally:
         text = Job.add('routine', has_error)        
         File.record_insert(text, File.routine)
+
+    Log.print("Rotina terminou")
 
 schedule.every().day.at("01:00").do(routine)
 
