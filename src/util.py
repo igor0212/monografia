@@ -63,9 +63,9 @@ class File:
         File.record(text, path)
 
     def record_log(log):
-        path = "../log/log_error.txt"   
+        path = "../log/log.txt"   
         date_now = datetime.now()
-        text = "\n Date: {} Error: {} \n\n {} \n\n".format(date_now, log)     
+        text = "Date: {}\nLog: {} \n\n".format(date_now, log)     
         File.record(text, path)
 
     def record(text, path):
@@ -79,7 +79,7 @@ class Enum:
     city = {'Belo Horizonte': 1}
 
 class Log:
-    def print(text, show_screen=False):
+    def print(text, show_screen=True):
         File.record_log(text)
         if(show_screen):
             print(text)
