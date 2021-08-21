@@ -16,7 +16,7 @@ def routine():
         File.record_insert(text, File.routine)
         Log.print("Rotina terminou")
 
-schedule.every().day.at("01:00").do(routine)
+schedule.every().day.at("01:00").do(routine) 
 
 while True:
     schedule.run_pending()
