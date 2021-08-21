@@ -55,16 +55,31 @@ class Util:
 class File:
     check_property_sold = "../db/scripts/inserts_check_property_sold.sql"
     search_properties_by_district = "../db/scripts/inserts_properties.sql"
-    routine = "../db/scripts/inserts_job.sql"
+    routine = "../db/scripts/inserts_job.sql"    
 
     def record_insert(query, path):        
         date_now = datetime.now()
         text = "\n\n -------------------------------------------------------- Script shot in {} ------------------------------------------------------------------------------------------ \n\n {} \n\n".format(date_now, query)
+        File.record(text, path)
+
+    def record_log(log):
+        path = "../log/log_error.txt"   
+        date_now = datetime.now()
+        text = "\n Date: {} Error: {} \n\n {} \n\n".format(date_now, log)     
+        File.record(text, path)
+
+    def record(text, path):
         with open(path, 'a') as file:
             file.write(text)
-            file.close()   
+            file.close()
 
 class Enum:
     type = {'Apartamento': 1, 'Casa': 2 }
     goal = {'venda': 1, 'aluguel': 2 }   
     city = {'Belo Horizonte': 1}
+
+class Log:
+    def print(text, show_screen=False):
+        File.record_log(text)
+        if(show_screen):
+            print(text)

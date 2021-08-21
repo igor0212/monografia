@@ -2,26 +2,26 @@ from Service.district import District
 from Service.property import Property
 from Service.management import Management
 from Repository.partner import Partner as RepositoryPartner
-from util import Util, File, Enum
+from util import Util, File, Enum, Log
 
 class Partner:
     def get_properties_by_code(code):        
         data = RepositoryPartner.get_properties_by_code(code)    
         if(data):
-            return data['imoveis']
+            return data.get('imoveis', [])
         return []
 
     def get_properties(goal, type, location, district, city, state, page):
         url = Util.get_url(goal, type, location, district, city, state, page)
         data = RepositoryPartner.get_properties(url)    
         if(data):
-            return data['imoveis']
+            return data.get('imoveis', [])
         return []
 
     def check_valid_property(properties, id):
         result = {}
         for property in properties:
-            if(property['id'] == id):
+            if(property.get('id', 0) == id):
                 result = property
                 break
         return result
@@ -30,37 +30,37 @@ class Partner:
         properties_to_add = ""
         properties = Property.get_all_new_ad()        
         for property in properties:
-            partner_id = property['partner_id']
+            partner_id = property.get('partner_id', 0)
 
             #This route can return more than one property by the given code 
-            partner_properties = Partner.get_properties_by_code(property['partner_code'])
+            partner_properties = Partner.get_properties_by_code(property.get('partner_code', ''))
 
             #Then we need to validate the partner_id, as it is unique             
             partner_property = Partner.check_valid_property(partner_properties, partner_id)            
 
             #Check if property has been sold
             if(not partner_property):
-                print("{} vendido".format(property['partner_code'])) #@TODO-
+                Log.print("{} vendido".format(property.get('partner_code', '')))
                 management = Management.get_by_partner_id(partner_id)
-                properties_to_add += Management.add(property['partner_id'], management['price'], management['tax_rate'], management['property_tax'], False)
+                properties_to_add += Management.add(property.get('partner_id', 0), management.get('price', 0), management.get('tax_rate', 0), management.get('property_tax', 0), False)
                 continue
             
             #Check if property value has changed
             management = Management.get_by_partner_id(partner_id)
-            if partner_property['preco'] != management['price']:                
-                print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(property['partner_code'], management['price'], partner_property['preco'])) #@TODO-                
+            if partner_property.get('preco', 0) != management.get('price', 0):                
+                Log.print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(property.get('partner_code', ''), management.get('price', 0), partner_property.get('preco', 0)))
                 price = Util.validate_number(property.get('preco', 0))
                 tax_rate = Util.validate_number(property.get('valor_iptu', 0))
                 property_tax = Util.validate_number(property.get('valor_condominio', 0))
-                properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) #@TODO-
+                properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) 
             else:
-                print("{} não foi vendido e nem teve o preco alterado".format(property['partner_code'])) #@TODO-
+                Log.print("{} não foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')))
         
         text = properties_to_add if properties_to_add else "no property sold"
         File.record_insert(text, File.check_property_sold)
         Property.add_by_query(properties_to_add)
 
-    def get_properties_by_district(goal, location, district, city, state='mg', pages_number=2):        
+    def get_properties_by_district(goal, location, district, city, state='mg', pages_number=20):        
         list_properties = []
         for page in range(1, pages_number+1):                        
             apartments = Partner.get_properties(goal, "apartamento", location, district, city, state, page);
@@ -83,8 +83,9 @@ class Partner:
             has_property_in_query = partner_id in list_id_query
 
             #Check if property already exists in the database or in the list that will be inserted
-            if(has_property or has_property_in_query):                
-                print("ja existe esse id {} no bd ou na lista".format(partner_id)) #@TODO-
+            if(has_property or has_property_in_query):
+                text = "no bd" if has_property else "na lista"
+                Log.print("Ja existe o id {} {}".format(partner_id, text))
                 continue;            
                 
             properties_to_add += Partner.create_query_to_insert_property(property, district_id)            
