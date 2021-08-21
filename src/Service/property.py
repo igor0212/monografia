@@ -25,4 +25,4 @@ class Property:
 
     def add_by_query(query):
         if(query):
-            RepositoryProperty.add(query)          
+            RepositoryProperty.add_by_query(query)          
