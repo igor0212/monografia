@@ -1,8 +1,8 @@
-from Service.district import District
-from Service.property import Property
-from Service.management import Management
-from Repository.partner import Partner as RepositoryPartner
-from util import Util, File, Enum, Log
+from Service.District import District
+from Service.Property import Property
+from Service.Management import Management
+from Repository.Partner import Partner as RepositoryPartner
+from Util import Util, File, Enum, Log
 
 class Partner:
     def get_properties_by_code(code):        

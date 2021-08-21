@@ -1,4 +1,4 @@
-from Repository.district import District as RepositoryDistrict
+from Repository.District import District as RepositoryDistrict
 
 class District:
     def get_all():

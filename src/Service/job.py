@@ -1,4 +1,4 @@
-from Repository.job import Job as RepositoryJob
+from Repository.Job import Job as RepositoryJob
 from datetime import datetime
 
 class Job:

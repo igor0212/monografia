@@ -1,4 +1,4 @@
-from Repository.database import DataBase
+from Repository.Database import DataBase
 
 class Management:
     def get_all():        

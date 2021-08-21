@@ -1,8 +1,8 @@
 import schedule
 import time
-from Service.partner import Partner
-from Service.job import Job
-from util import File, Log
+from Service.Partner import Partner
+from Service.Job import Job
+from Util import File, Log
 
 def routine():
     Log.print("Rotina comecou")

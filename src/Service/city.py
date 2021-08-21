@@ -1,4 +1,4 @@
-from Repository.city import City as RepositoryCity
+from Repository.City import City as RepositoryCity
 
 class City:
     def get_all():        

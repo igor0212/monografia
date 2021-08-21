@@ -1,5 +1,5 @@
 import psycopg2
-from util import Log
+from Util import Log
 
 class DataBase:
     def get_connection():

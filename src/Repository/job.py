@@ -1,4 +1,4 @@
-from Repository.database import DataBase
+from Repository.Database import DataBase
 
 class Job:
     def add(name, has_error, date_now):            
