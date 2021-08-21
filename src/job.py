@@ -14,8 +14,7 @@ def routine():
     finally:
         text = Job.add('routine', has_error)        
         File.record_insert(text, File.routine)
-
-    Log.print("Rotina terminou")
+        Log.print("Rotina terminou")
 
 schedule.every().day.at("01:00").do(routine)
 
