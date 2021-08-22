@@ -22,3 +22,9 @@
 
  INSERT INTO public."Job"(name, created_on, has_error) VALUES ('routine', '2021-08-21 15:14:07.273071', False); 
 
+
+
+ -------------------------------------------------------- Script shot in 2021-08-22 05:49:40.469542 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Job"(name, created_on, has_error) VALUES ('routine', '2021-08-22 05:49:40.375779', False); 
+
