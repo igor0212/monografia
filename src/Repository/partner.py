@@ -3,11 +3,17 @@ from Util import Log
 
 class Partner:
     def get_properties_by_code(code):
-        url = 'https://api.casamineira.com.br/busca-por-codigo?codigo={}'.format(code)        
-        response = requests.get(url)        
-        return response.json() 
+        try:
+            url = 'https://api.casamineira.com.br/busca-por-codigo?codigo={}'.format(code)        
+            response = requests.get(url)        
+            return response.json() 
+        except Exception as ex:
+            Log.print("Partner Repository - get_properties_by_code error: {}".format(ex), True)
 
-    def get_properties(url):        
-        Log.print(url)
-        response = requests.get(url)        
-        return response.json()        
+    def get_properties(url):
+        try:
+            Log.print(url, show_screen=False)
+            response = requests.get(url)        
+            return response.json()        
+        except Exception as ex:
+            Log.print("Partner Repository - get_properties error: {}".format(ex), True)

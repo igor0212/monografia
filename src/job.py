@@ -7,16 +7,19 @@ from Util import File, Log
 def routine():
     Log.print("Rotina comecou")
     has_error = False
+    error_description = ""
     try:
         Partner.routine()
-    except:
+    except Exception as ex:
+        Log.print("Job - routine error: {}".format(ex), True)
         has_error = True
+        error_description = ex
     finally:
-        text = Job.add('routine', has_error)        
+        text = Job.add('routine', has_error, error_description)        
         File.record_insert(text, File.routine)
         Log.print("Rotina terminou")
 
-schedule.every().day.at("01:00").do(routine) 
+schedule.every().day.at("08:56").do(routine) 
 
 while True:
     schedule.run_pending()

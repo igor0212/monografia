@@ -73,6 +73,9 @@ CREATE TABLE public."Job" (
 	CONSTRAINT "PK_Job" PRIMARY KEY ("id")	
 );	
 
+ALTER TABLE "Job" 
+ADD COLUMN "error_description" varchar(300) NULL;
+
 --GOAL
 INSERT INTO public."Goal" ("name") VALUES('Sell');
 INSERT INTO public."Goal" ("name") VALUES('Rent');

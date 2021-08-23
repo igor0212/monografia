@@ -1,7 +1,11 @@
 from Repository.Database import DataBase
+from Util import Log
 
 class Job:
-    def add(name, has_error, date_now):            
-        query = 'INSERT INTO public."Job"(name, created_on, has_error) VALUES (\'{}\', \'{}\', {});'.format(name, date_now, has_error)
-        DataBase.insert(query)
-        return query
+    def add(name, has_error, date_now, error_description):            
+        try:
+            query = 'INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES (\'{}\', \'{}\', {}, \'{}\');'.format(name, date_now, has_error, error_description)
+            DataBase.insert(query)
+            return query
+        except Exception as ex:
+            Log.print("Job Repository - add error: {}".format(ex), True)
