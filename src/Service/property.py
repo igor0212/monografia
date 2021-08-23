@@ -11,14 +11,14 @@ class Property:
         except Exception as ex:
             Log.print("Property Service - get_all error: {}".format(ex), True)
     
-    def get_all_new_ad():
+    def get_all_new_ad_and_not_sold():
         try:
-            data = RepositoryProperty.get_all_new_ad()
+            data = RepositoryProperty.get_all_new_ad_and_not_sold()
             if(data):
                 return data
             return []
         except Exception as ex:
-            Log.print("Property Service - get_all_new_ad error: {}".format(ex), True)
+            Log.print("Property Service - get_all_new_ad_and_not_sold error: {}".format(ex), True)
 
     def get_by_partner_id(id):
         try:

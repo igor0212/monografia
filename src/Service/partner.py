@@ -38,7 +38,7 @@ class Partner:
     def check_property_sold():
         try:
             properties_to_add = ""
-            properties = Property.get_all_new_ad()        
+            properties = Property.get_all_new_ad_and_not_sold()        
             for property in properties:
                 partner_id = property.get('partner_id', 0)
 
