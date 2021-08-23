@@ -8,8 +8,10 @@ class City:
             if(data):
                 return data
             return []
-        except Exception as ex:
-            Log.print("City Service - get_all error: {}".format(ex), True)
+        except Exception as ex:            
+            error = "City Service - get_all error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
 
     def get_by_id(id):
         try:
@@ -18,4 +20,6 @@ class City:
                 return data[0]
             return {}
         except Exception as ex:
-            Log.print("City Service - get_by_id error: {}".format(ex), True)
+            error = "City Service - get_by_id error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            

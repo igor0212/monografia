@@ -12,7 +12,9 @@ class Partner:
                 return data.get('imoveis', [])
             return []
         except Exception as ex:
-            Log.print("Partner Service - get_properties error: {}".format(ex), True)
+            error = "Partner Service - get_properties_by_code error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            
 
     def get_properties(goal, type, location, district, city, state, page):
         try:
@@ -22,10 +24,12 @@ class Partner:
                 return data.get('imoveis', [])
             return []
         except Exception as ex:
-            Log.print("Partner Service - get_properties error: {}".format(ex), True)
+            error = "Partner Service - get_properties error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
 
     def check_valid_property(properties, id):
-        try:
+        try:            
             result = {}
             for property in properties:
                 if(property.get('id', 0) == id):
@@ -33,7 +37,9 @@ class Partner:
                     break
             return result
         except Exception as ex:
-            Log.print("Partner Service - check_valid_property error: {}".format(ex), True)
+            error = "Partner Service - check_valid_property error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
 
     def check_property_sold():
         try:
@@ -70,7 +76,9 @@ class Partner:
             File.record_insert(text, File.check_property_sold)
             Property.add_by_query(properties_to_add)
         except Exception as ex:
-            Log.print("Partner Service - check_property_sold error: {}".format(ex), True)
+            error = "Partner Service - check_property_sold error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            
 
     def get_properties_by_district(goal, location, district, city, state='mg', pages_number=20): 
         try:       
@@ -86,7 +94,9 @@ class Partner:
 
             return list_properties        
         except Exception as ex:
-            Log.print("Partner Service - get_properties_by_district error: {}".format(ex), True)
+            error = "Partner Service - get_properties_by_district error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
 
     def get_query_to_insert_property(properties, district_id):
         try:
@@ -109,7 +119,9 @@ class Partner:
             
             return properties_to_add
         except Exception as ex:
-            Log.print("Partner Service - get_query_to_insert_property error: {}".format(ex), True)
+            error = "Partner Service - get_query_to_insert_property error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            
     
     def create_query_to_insert_property(property, district_id):
         try:
@@ -137,7 +149,9 @@ class Partner:
 
             return properties_to_add    
         except Exception as ex:
-            Log.print("Partner Service - create_query_to_insert_property error: {}".format(ex), True)
+            error = "Partner Service - create_query_to_insert_property error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            
 
     def search_properties_by_district():
         try:
@@ -152,11 +166,15 @@ class Partner:
             File.record_insert(text, File.search_properties_by_district)
             Property.add_by_query(properties_to_add)
         except Exception as ex:
-            Log.print("Partner Service - search_properties_by_district error: {}".format(ex), True)
+            error = "Partner Service - search_properties_by_district error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            
 
     def routine():
         try:
             Partner.search_properties_by_district()
             Partner.check_property_sold()
         except Exception as ex:
-            Log.print("Partner Service - routine error: {}".format(ex), True)
+            error = "Partner Service - routine error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)          

@@ -7,7 +7,9 @@ class City:
             query = 'select * from "City"'
             return DataBase.select(query)            
         except Exception as ex:
-            Log.print("City Repository - get_all error: {}".format(ex), True)
+            error = "City Repository - get_all error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
         
 
     def get_by_id(id):
@@ -15,4 +17,6 @@ class City:
             query = 'select * from "City" where Id = {}'.format(id)
             return DataBase.select(query)           
         except Exception as ex:
-            Log.print("City Repository - get_by_id error: {}".format(ex), True)
+            error = "City Repository - get_by_id error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)

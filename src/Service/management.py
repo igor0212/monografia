@@ -10,7 +10,9 @@ class Management:
                 return data
             return []
         except Exception as ex:
-            Log.print("Management Service - get_all error: {}".format(ex), True)
+            error = "Management Service - get_all error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            
 
     def get_by_partner_id(id):
         try:
@@ -19,11 +21,15 @@ class Management:
                 return data[0]
             return {}
         except Exception as ex:
-            Log.print("Management Service - get_by_partner_id error: {}".format(ex), True)
+            error = "Management Service - get_by_partner_id error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            
 
     def add(partner_id, price, tax_rate, property_tax, is_available):
         try:
             date_now = datetime.now()                     
             return RepositoryManagement.add(partner_id, price, tax_rate, property_tax, is_available, date_now)      
         except Exception as ex:
-            Log.print("Management Service - add error: {}".format(ex), True)
+            error = "Management Service - add error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)           

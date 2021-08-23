@@ -8,7 +8,9 @@ class District:
             if(data):
                 return data
         except Exception as ex:
-            Log.print("District Service - get_all error: {}".format(ex), True)
+            error = "District Service - get_all error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            
 
     def get_by_id(id):    
         try:            
@@ -16,5 +18,7 @@ class District:
             if(data):
                 return data[0]
             return {}
-        except Exception as ex:
-            Log.print("District Service - get_by_id error: {}".format(ex), True)
+        except Exception as ex:            
+            error = "District Service - get_by_id error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)

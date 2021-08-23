@@ -19,7 +19,9 @@ class DataBase:
             cursor.connection.close()
             return (r[0] if r else None) if one else r
         except Exception as ex:
-            Log.print("DataBase Error: Query select error - {}".format(ex), True)
+            error = "DataBase Error: Query select error - {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)            
 
     def insert(query):
         try:
@@ -29,7 +31,9 @@ class DataBase:
             conn.commit()                        
             cursor.close()            
         except Exception as ex:
-            Log.print("DataBase Error: Query insert error - {}".format(ex), True)
+            error = "DataBase Error: Query insert error - {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
         finally:
             if conn is not None:
                 conn.close()       

@@ -7,5 +7,7 @@ class Job:
             query = 'INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES (\'{}\', \'{}\', {}, \'{}\');'.format(name, date_now, has_error, error_description)
             DataBase.insert(query)
             return query
-        except Exception as ex:
-            Log.print("Job Repository - add error: {}".format(ex), True)
+        except Exception as ex:            
+            error = "Job Repository - add error: {}".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
