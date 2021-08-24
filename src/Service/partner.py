@@ -46,7 +46,7 @@ class Partner:
             properties_to_add = ""
             properties = Property.get_all_new_ad_and_not_sold()        
             for property in properties:
-                partner_id = property.get('partner_id', 0)
+                partner_id = property.get('partner_id')
 
                 #This route can return more than one property by the given code 
                 partner_properties = Partner.get_properties_by_code(property.get('partner_code', ''))
@@ -58,16 +58,16 @@ class Partner:
                 if(not partner_property):
                     Log.print("{} vendido".format(property.get('partner_code', '')), show_screen=False)
                     management = Management.get_by_partner_id(partner_id)
-                    properties_to_add += Management.add(property.get('partner_id', 0), management.get('price', 0), management.get('tax_rate', 0), management.get('property_tax', 0), False)
+                    properties_to_add += Management.add(partner_id, management.get('price'), management.get('tax_rate', 0), management.get('property_tax', 0), False)
                     continue
                 
                 #Check if property value has changed
-                management = Management.get_by_partner_id(partner_id)
-                if partner_property.get('preco', 0) != management.get('price', 0):                
-                    Log.print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(property.get('partner_code', ''), management.get('price', 0), partner_property.get('preco', 0)), show_screen=False)
-                    price = Util.validate_number(property.get('preco', 0))
-                    tax_rate = Util.validate_number(property.get('valor_iptu', 0))
-                    property_tax = Util.validate_number(property.get('valor_condominio', 0))
+                management = Management.get_by_partner_id(partner_id)                
+                if partner_property.get('preco') != management.get('price'):                
+                    Log.print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(property.get('partner_code', ''), management.get('price'), partner_property.get('preco')), show_screen=False)                    
+                    price = Util.validate_number(partner_property.get('preco'))                    
+                    tax_rate = Util.validate_number(partner_property.get('valor_iptu', 0))
+                    property_tax = Util.validate_number(partner_property.get('valor_condominio', 0))                                        
                     properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) 
                 else:
                     Log.print("{} nao foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')), show_screen=False)
@@ -125,7 +125,7 @@ class Partner:
     
     def create_query_to_insert_property(property, district_id):
         try:
-            partner_id = property.get('id', 0)
+            partner_id = property.get('id')
             partner_code = property.get('codigo', '')
             type_id =  Enum.type.get(property.get('tipo').get('nome'), 0)
             district_id = district_id
@@ -138,7 +138,7 @@ class Partner:
             room_number = property.get('salas', 0) 
             bath_number = property.get('banheiros', 0)
             parking_number = property.get('vagas', 0)
-            price = Util.validate_number(property.get('preco', 0))
+            price = Util.validate_number(property.get('preco'))
             tax_rate = Util.validate_number(property.get('valor_iptu', 0))
             property_tax = Util.validate_number(property.get('valor_condominio', 0))                
             is_available = True
