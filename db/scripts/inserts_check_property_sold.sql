@@ -93,3 +93,13 @@ INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, creat
 INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5262301', 350000, 107, 639, '2021-08-24 06:01:44.051438', False); 
  
 
+
+
+ -------------------------------------------------------- Script shot in 2021-08-24 10:25:39.580567 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5162450', 769000, 260, 0, '2021-08-24 10:21:02.051519', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5090023', 590000, 261, 0, '2021-08-24 10:22:41.672194', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5187734', 440000, 0, 0, '2021-08-24 10:23:13.580204', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5187467', 520000, 189, 707, '2021-08-24 10:23:33.255294', True); 
+ 
+
