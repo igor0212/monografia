@@ -63,7 +63,7 @@ class File:
         File.record(text, path)
 
     def record_log(log, is_error):
-        path = "../log/log.txt"   
+        path = "../log/log.txt"
         date_now = datetime.now()
         type = "Erro" if is_error else "Log"
         text = "Date: {}\n{}: {} \n\n".format(date_now, type, log)     
