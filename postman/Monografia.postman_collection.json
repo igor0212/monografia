@@ -270,7 +270,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/api/partner?code=271850",
+							"raw": "http://127.0.0.1:5000/api/partner?code=341740",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -286,7 +286,7 @@
 							"query": [
 								{
 									"key": "code",
-									"value": "271850"
+									"value": "341740"
 								}
 							]
 						}
@@ -294,12 +294,12 @@
 					"response": []
 				},
 				{
-					"name": "Check Property Sold",
+					"name": "District By Name",
 					"request": {
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/api/partner/sold",
+							"raw": "http://127.0.0.1:5000/api/partner/district/name?name=Castelo",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -311,7 +311,45 @@
 							"path": [
 								"api",
 								"partner",
-								"sold"
+								"district",
+								"name"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Castelo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Property Sold By Code",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/partner/sold/code?code=IDL160",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"partner",
+								"sold",
+								"code"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "IDL160"
+								}
 							]
 						}
 					},
