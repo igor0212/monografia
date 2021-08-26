@@ -9,7 +9,7 @@ class Property:
                 return data
             return []    
         except Exception as ex:
-            error = "Partner Service - get_all error: {}".format(ex)
+            error = "Partner Service - get_all error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
     
@@ -20,7 +20,7 @@ class Property:
                 return data
             return []
         except Exception as ex:
-            error = "Partner Service - get_all_new_ad_and_not_sold error: {}".format(ex)
+            error = "Partner Service - get_all_new_ad_and_not_sold error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -31,7 +31,7 @@ class Property:
                 return data[0]
             return {}     
         except Exception as ex:
-            error = "Partner Service - get_by_partner_id error: {}".format(ex)
+            error = "Partner Service - get_by_partner_id error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -39,7 +39,7 @@ class Property:
         try:
             return RepositoryProperty.add(partner_id, partner_code, type_id, district_id, city_id, goal_id, number,  Util.format(street), size, bedroom_number, room_number, bath_number, parking_number, new_ad)          
         except Exception as ex:
-            error = "Partner Service - add error: {}".format(ex)
+            error = "Partner Service - add error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -48,6 +48,6 @@ class Property:
             if(query):
                 RepositoryProperty.add_by_query(query)          
         except Exception as ex:
-            error = "Partner Service - add_by_query error: {}".format(ex)
+            error = "Partner Service - add_by_query error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)

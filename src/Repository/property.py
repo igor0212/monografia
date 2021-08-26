@@ -7,7 +7,7 @@ class Property:
             query = 'select * from "Property"'
             return DataBase.select(query)           
         except Exception as ex:            
-            error = "Property Repository - get_all error: {}".format(ex)
+            error = "Property Repository - get_all error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
 
@@ -16,7 +16,7 @@ class Property:
             query = 'select * from "Property" where new_ad = True and True = (select is_available from "Management" where partner_id = "Property".partner_id order by created_on desc limit 1)'
             return DataBase.select(query)        
         except Exception as ex:
-            error = "Property Repository - get_all_new_ad_and_not_sold error: {}".format(ex)
+            error = "Property Repository - get_all_new_ad_and_not_sold error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -25,7 +25,7 @@ class Property:
             query = 'select * from "Property" where partner_id = {}'.format(id)
             return DataBase.select(query)                   
         except Exception as ex:
-            error = "Property Repository - get_by_partner_id error: {}".format(ex)
+            error = "Property Repository - get_by_partner_id error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
 
@@ -35,7 +35,7 @@ class Property:
                       VALUES ({}, \'{}\', {}, {}, {}, {}, \'{}\', \'{}\', {}, {}, {}, {}, {}, {}); """.format(partner_id, partner_code, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, 
                                                                                                               room_number, bath_number, parking_number, new_ad)
         except Exception as ex:            
-            error = "Property Repository - add error: {}".format(ex)
+            error = "Property Repository - add error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
                                                                                                           
@@ -43,6 +43,6 @@ class Property:
         try:
             DataBase.insert(query)
         except Exception as ex:
-            error = "Property Repository - add_by_query error: {}".format(ex)
+            error = "Property Repository - add_by_query error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)          

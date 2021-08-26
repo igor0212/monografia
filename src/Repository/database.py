@@ -19,7 +19,7 @@ class DataBase:
             cursor.connection.close()
             return (r[0] if r else None) if one else r
         except Exception as ex:
-            error = "DataBase Error: Query select error - {}".format(ex)
+            error = "DataBase Error: Query select error - {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -31,7 +31,7 @@ class DataBase:
             conn.commit()                        
             cursor.close()            
         except Exception as ex:
-            error = "DataBase Error: Query insert error - {}".format(ex)
+            error = "DataBase Error: Query insert error - {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
         finally:

@@ -1,6 +1,7 @@
 from Service.District import District
 from Service.Property import Property
 from Service.Management import Management
+from Service.Job import Job
 from Repository.Partner import Partner as RepositoryPartner
 from Util import Util, File, Enum, Log
 
@@ -12,7 +13,7 @@ class Partner:
                 return data.get('imoveis', [])
             return []
         except Exception as ex:
-            error = "Partner Service - get_properties_by_code error: {}".format(ex)
+            error = "Partner Service - get_properties_by_code error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -24,7 +25,7 @@ class Partner:
                 return data.get('imoveis', [])
             return []
         except Exception as ex:
-            error = "Partner Service - get_properties error: {}".format(ex)
+            error = "Partner Service - get_properties error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
 
@@ -37,7 +38,7 @@ class Partner:
                     break
             return result
         except Exception as ex:
-            error = "Partner Service - check_valid_property error: {}".format(ex)
+            error = "Partner Service - check_valid_property error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
 
@@ -46,37 +47,40 @@ class Partner:
         try:            
             properties = Property.get_all_new_ad_and_not_sold()        
             for property in properties:
-                partner_id = property.get('partner_id')
+                try:
+                    partner_id = property.get('partner_id')
 
-                #This route can return more than one property by the given code 
-                partner_properties = Partner.get_properties_by_code(property.get('partner_code', ''))
+                    #This route can return more than one property by the given code 
+                    partner_properties = Partner.get_properties_by_code(property.get('partner_code', ''))
 
-                #Then we need to validate the partner_id, as it is unique             
-                partner_property = Partner.check_valid_property(partner_properties, partner_id)            
+                    #Then we need to validate the partner_id, as it is unique             
+                    partner_property = Partner.check_valid_property(partner_properties, partner_id)            
 
-                #Check if property has been sold
-                if(not partner_property):
-                    Log.print("{} vendido".format(property.get('partner_code', '')), show_screen=False)
-                    management = Management.get_by_partner_id(partner_id)
-                    properties_to_add += Management.add(partner_id, management.get('price'), management.get('tax_rate', 0), management.get('property_tax', 0), False)
-                    continue
-                
-                #Check if property value has changed
-                management = Management.get_by_partner_id(partner_id)                
-                if partner_property.get('preco') != management.get('price'):                
-                    Log.print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(property.get('partner_code', ''), management.get('price'), partner_property.get('preco')), show_screen=False)                    
-                    price = Util.validate_number(partner_property.get('preco'))                    
-                    tax_rate = Util.validate_number(partner_property.get('valor_iptu', 0))
-                    property_tax = Util.validate_number(partner_property.get('valor_condominio', 0))                                        
-                    properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) 
-                else:
-                    Log.print("{} nao foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')), show_screen=False)            
+                    #Check if property has been sold
+                    if(not partner_property):
+                        Log.print("{} vendido".format(property.get('partner_code', '')), show_screen=False)
+                        management = Management.get_by_partner_id(partner_id)
+                        properties_to_add += Management.add(partner_id, management.get('price'), management.get('tax_rate', 0), management.get('property_tax', 0), False)
+                        continue
+                    
+                    #Check if property value has changed
+                    management = Management.get_by_partner_id(partner_id)                
+                    if partner_property.get('preco') != management.get('price'):                
+                        Log.print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(property.get('partner_code', ''), management.get('price'), partner_property.get('preco')), show_screen=False)                    
+                        price = Util.validate_number(partner_property.get('preco'))                    
+                        tax_rate = Util.validate_number(partner_property.get('valor_iptu', 0))
+                        property_tax = Util.validate_number(partner_property.get('valor_condominio', 0))                                        
+                        properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) 
+                    else:
+                        Log.print("{} nao foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')), show_screen=False)            
+                except Exception as ex:
+                    error = "Partner Service - property {} with error: {} \n".format(property.get('partner_code', ''), ex)
+                    Log.print(error, True)
 
             Property.add_by_query(properties_to_add)
         except Exception as ex:
-            error = "Partner Service - check_property_sold error: {}".format(ex)
-            Log.print(error, True)
-            raise Exception(error)
+            error = "Partner Service - check_property_sold error: {} \n".format(ex)
+            Log.print(error, True)            
         finally:
             text = properties_to_add if properties_to_add else "no property sold"
             File.record_insert(text, File.check_property_sold)
@@ -95,7 +99,7 @@ class Partner:
 
             return list_properties        
         except Exception as ex:
-            error = "Partner Service - get_properties_by_district error: {}".format(ex)
+            error = "Partner Service - get_properties_by_district error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
 
@@ -120,7 +124,7 @@ class Partner:
             
             return properties_to_add
         except Exception as ex:
-            error = "Partner Service - get_query_to_insert_property error: {}".format(ex)
+            error = "Partner Service - get_query_to_insert_property error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
     
@@ -150,7 +154,7 @@ class Partner:
 
             return properties_to_add    
         except Exception as ex:
-            error = "Partner Service - create_query_to_insert_property error: {}".format(ex)
+            error = "Partner Service - create_query_to_insert_property error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -158,25 +162,35 @@ class Partner:
         properties_to_add = ""        
         try:            
             districts = District.get_all()
-
             for district in districts:
-                properties = Partner.get_properties_by_district('venda', 'bairros', district.get('name', ''), 'belo horizonte');                        
-                properties_to_add += Partner.get_query_to_insert_property(properties, district.get('id', 0))
+
+                try:
+                    properties = Partner.get_properties_by_district('venda', 'bairros', district.get('name', ''), 'belo horizonte');                        
+                    properties_to_add += Partner.get_query_to_insert_property(properties, district.get('id', 0))
+                except Exception as ex:
+                    error = "Partner Service - district {} with error: {} \n".format(district.get('name', ''), ex)
+                    Log.print(error, True)
             
             Property.add_by_query(properties_to_add)
         except Exception as ex:
-            error = "Partner Service - search_properties_by_district error: {}".format(ex)
-            Log.print(error, True)
-            raise Exception(error)
+            error = "Partner Service - search_properties_by_district error: {} \n".format(ex)
+            Log.print(error, True)            
         finally:
             text = properties_to_add if properties_to_add else "no new properties found"
             File.record_insert(text, File.search_properties_by_district)
 
     def routine():
+        has_error = False
+        error_description = ''
         try:
             Partner.search_properties_by_district()
             Partner.check_property_sold()
         except Exception as ex:
-            error = "Partner Service - routine error: {}".format(ex)
-            Log.print(error, True)
-            raise Exception(error)          
+            error = "Partner Service - routine error: {} \n".format(ex)
+            has_error = True
+            error_description = ex
+            Log.print(error, True)  
+        finally:
+            text = Job.add('routine', has_error, error_description)        
+            File.record_insert(text, File.routine)
+            Log.print("Rotina terminou")                 

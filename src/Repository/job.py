@@ -8,6 +8,6 @@ class Job:
             DataBase.insert(query)
             return query
         except Exception as ex:            
-            error = "Job Repository - add error: {}".format(ex)
+            error = "Job Repository - add error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)

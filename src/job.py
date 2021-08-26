@@ -3,21 +3,12 @@ import time
 from Service.Partner import Partner
 from Service.Job import Job
 from Util import File, Log
+from datetime import datetime
 
 def routine():
-    Log.print("Rotina comecou")
-    has_error = False
-    error_description = ""
-    try:
-        Partner.routine()
-    except Exception as ex:
-        Log.print("Job - routine error: {}".format(ex), True)
-        has_error = True
-        error_description = ex
-    finally:
-        text = Job.add('routine', has_error, error_description)        
-        File.record_insert(text, File.routine)
-        Log.print("Rotina terminou")
+    Log.print("Rotina comecou: {}".format(datetime.now()))
+    Partner.routine()
+    Log.print("Rotina terminou: {}".format(datetime.now()))                
 
 schedule.every().day.at("01:00").do(routine) 
 

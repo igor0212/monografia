@@ -5,7 +5,7 @@ from Service.City import City
 from Service.District import District
 from Service.Property import Property
 from Service.Partner import Partner
-from Util import File, Util, JSONEncoder
+from Util import Util, JSONEncoder
 
 class Api:
     app = flask.Flask(__name__)

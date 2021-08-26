@@ -7,7 +7,7 @@ class District:
             query = 'select * from "District"'
             return DataBase.select(query)    
         except Exception as ex:            
-            error = "District Repository - get_all error: {}".format(ex)
+            error = "District Repository - get_all error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -16,6 +16,6 @@ class District:
             query = 'select * from "District" where Id = {} '.format(id)
             return DataBase.select(query)    
         except Exception as ex:
-            error = "District Repository - get_by_id error: {}".format(ex)
+            error = "District Repository - get_by_id error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)

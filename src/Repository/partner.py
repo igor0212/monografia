@@ -8,7 +8,7 @@ class Partner:
             response = requests.get(url)        
             return response.json() 
         except Exception as ex:
-            error = "Partner Repository - get_properties_by_code error: {}".format(ex)
+            error = "Partner Repository - get_properties_by_code error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -18,6 +18,6 @@ class Partner:
             response = requests.get(url)        
             return response.json()        
         except Exception as ex:            
-            error = "Partner Repository - get_properties error: {}".format(ex)
+            error = "Partner Repository - get_properties error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)

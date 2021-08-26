@@ -7,7 +7,7 @@ class Management:
             query = 'select * from "Management"'
             return DataBase.select(query)
         except Exception as ex:
-            error = "Management Repository - get_all error: {}".format(ex)
+            error = "Management Repository - get_all error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -16,7 +16,7 @@ class Management:
             query = 'select * from "Management" where partner_id = {} order by created_on desc'.format(id)
             return DataBase.select(query)            
         except Exception as ex:
-            error = "Management Repository - get_by_partner_id error: {}".format(ex)
+            error = "Management Repository - get_by_partner_id error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 
@@ -24,7 +24,7 @@ class Management:
         try:                     
             return 'INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES (\'{}\', {}, {}, {}, \'{}\', {}); \n'.format(partner_id, price, tax_rate, property_tax, date_now, is_available)
         except Exception as ex:            
-            error = "Management Repository - add error: {}".format(ex)
+            error = "Management Repository - add error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
     

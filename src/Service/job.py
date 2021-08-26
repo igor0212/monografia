@@ -8,6 +8,6 @@ class Job:
             date_now = datetime.now()    
             return RepositoryJob.add(name, has_error, date_now, error_description)  
         except Exception as ex:            
-            error = "Job Service - add error: {}".format(ex)
+            error = "Job Service - add error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
