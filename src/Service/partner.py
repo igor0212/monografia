@@ -194,6 +194,43 @@ class Partner:
             text = properties_to_add if properties_to_add else "no new properties found"
             File.record_insert(text)
 
+    def check_property_sold_by_code(code):
+        properties_to_add = ""
+        try:            
+            property = Property.get_by_partner_code(code)                
+            partner_id = property.get('partner_id')
+
+            #This route can return more than one property by the given code 
+            partner_properties = Partner.get_properties_by_code(property.get('partner_code', ''))
+
+            #Then we need to validate the partner_id, as it is unique             
+            partner_property = Partner.check_valid_property(partner_properties, partner_id)            
+
+            #Check if property has been sold
+            if(not partner_property):
+                Log.print("{} vendido".format(property.get('partner_code', '')), show_screen=False)
+                management = Management.get_by_partner_id(partner_id)
+                properties_to_add += Management.add(partner_id, management.get('price'), management.get('tax_rate', 0), management.get('property_tax', 0), False)                
+            
+            #Check if property value has changed
+            management = Management.get_by_partner_id(partner_id)                
+            if partner_property.get('preco') != management.get('price'):                
+                Log.print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(property.get('partner_code', ''), management.get('price'), partner_property.get('preco')), show_screen=False)                    
+                price = Util.validate_number(partner_property.get('preco'))                    
+                tax_rate = Util.validate_number(partner_property.get('valor_iptu', 0))
+                property_tax = Util.validate_number(partner_property.get('valor_condominio', 0))                                        
+                properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) 
+            else:
+                Log.print("{} nao foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')), show_screen=False)                     
+
+            Property.add_by_query(properties_to_add)
+        except Exception as ex:
+            error = "Partner Service - check_property_sold_by_code error: {} \n".format(ex)
+            Log.print(error, True)            
+        finally:
+            text = properties_to_add if properties_to_add else "no property sold"
+            File.record_insert(text)
+
     def routine():
         has_error = False
         error = ''

@@ -33,7 +33,18 @@ class Property:
         except Exception as ex:
             error = "Partner Service - get_by_partner_id error: {} \n".format(ex)
             Log.print(error, True)
-            raise Exception(error)            
+            raise Exception(error)  
+
+    def get_by_partner_code(code):
+        try:
+            data = RepositoryProperty.get_by_partner_code(code)          
+            if(data):
+                return data[0]
+            return {}     
+        except Exception as ex:
+            error = "Partner Service - get_by_partner_code error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)           
 
     def add(partner_id, partner_code, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number, new_ad):
         try:
