@@ -145,3 +145,25 @@ INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, creat
 INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5306882', 360000, 0, 150, '2021-08-25 05:51:16.712843', False); 
  
 
+
+
+ -------------------------------------------------------- Script shot in 2021-08-26 10:10:48.377341 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5036082', 179000, 0, 290, '2021-08-26 10:01:27.556253', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5035849', 980000, 222, 0, '2021-08-26 10:02:20.892521', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5035914', 600000, 163, 0, '2021-08-26 10:02:24.586276', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5089993', 310000, 0, 0, '2021-08-26 10:03:15.664286', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5090249', 850000, 0, 0, '2021-08-26 10:03:37.491270', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5090010', 455000, 0, 380, '2021-08-26 10:03:44.106448', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5035857', 625000, 135, 570, '2021-08-26 10:04:15.957410', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5162497', 750000, 0, 0, '2021-08-26 10:04:57.193582', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5089988', 750000, 97, 0, '2021-08-26 10:05:40.670547', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5162461', 505000, 230, 0, '2021-08-26 10:05:58.140338', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5262274', 270000, 0, 0, '2021-08-26 10:08:28.563192', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5306496', 360000, 0, 0, '2021-08-26 10:09:03.907402', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5298004', 97546, 0, 0, '2021-08-26 10:09:44.075478', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5306902', 322000, 1100, 250, '2021-08-26 10:09:51.664402', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5297961', 102068, 0, 0, '2021-08-26 10:10:33.232912', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5306493', 680000, 0, 0, '2021-08-26 10:10:34.276249', True); 
+ 
+

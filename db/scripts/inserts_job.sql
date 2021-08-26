@@ -52,3 +52,9 @@
 
  INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-08-26 05:35:24.917770', True, 'Partner Service - routine error: Partner Service - search_properties_by_district error: Partner Service - get_properties_by_district error: Partner Service - get_properties error: Partner Repository - get_properties error: Expecting value: line 1 column 1 (char 0)'); 
 
+
+
+ -------------------------------------------------------- Script shot in 2021-08-26 10:10:48.825353 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-08-26 10:10:48.636338', False, ''); 
+
