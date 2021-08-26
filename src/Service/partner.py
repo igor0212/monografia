@@ -83,7 +83,7 @@ class Partner:
             Log.print(error, True)            
         finally:
             text = properties_to_add if properties_to_add else "no property sold"
-            File.record_insert(text, File.check_property_sold)
+            File.record_insert(text)
 
     def get_properties_by_district(goal, location, district, city, state='mg', pages_number=20): 
         try:       
@@ -177,7 +177,7 @@ class Partner:
             Log.print(error, True)            
         finally:
             text = properties_to_add if properties_to_add else "no new properties found"
-            File.record_insert(text, File.search_properties_by_district)
+            File.record_insert(text)
 
     def routine():
         has_error = False
@@ -192,5 +192,5 @@ class Partner:
             Log.print(error, True)  
         finally:
             text = Job.add('routine', has_error, error_description)        
-            File.record_insert(text, File.routine)
+            File.record_insert(text)
             Log.print("Rotina terminou")                 
