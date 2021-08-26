@@ -181,16 +181,14 @@ class Partner:
 
     def routine():
         has_error = False
-        error_description = ''
+        error = ''
         try:
             Partner.search_properties_by_district()
             Partner.check_property_sold()
         except Exception as ex:
             error = "Partner Service - routine error: {} \n".format(ex)
-            has_error = True
-            error_description = ex
+            has_error = True            
             Log.print(error, True)  
         finally:
-            text = Job.add('routine', has_error, error_description)        
-            File.record_insert(text)
-            Log.print("Rotina terminou")                 
+            text = Job.add('routine', has_error, error)        
+            File.record_insert(text)                  
