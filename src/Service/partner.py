@@ -42,8 +42,8 @@ class Partner:
             raise Exception(error)
 
     def check_property_sold():
-        try:
-            properties_to_add = ""
+        properties_to_add = ""
+        try:            
             properties = Property.get_all_new_ad_and_not_sold()        
             for property in properties:
                 partner_id = property.get('partner_id')
@@ -70,15 +70,16 @@ class Partner:
                     property_tax = Util.validate_number(partner_property.get('valor_condominio', 0))                                        
                     properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) 
                 else:
-                    Log.print("{} nao foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')), show_screen=False)
-            
-            text = properties_to_add if properties_to_add else "no property sold"
-            File.record_insert(text, File.check_property_sold)
+                    Log.print("{} nao foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')), show_screen=False)            
+
             Property.add_by_query(properties_to_add)
         except Exception as ex:
             error = "Partner Service - check_property_sold error: {}".format(ex)
             Log.print(error, True)
-            raise Exception(error)            
+            raise Exception(error)
+        finally:
+            text = properties_to_add if properties_to_add else "no property sold"
+            File.record_insert(text, File.check_property_sold)
 
     def get_properties_by_district(goal, location, district, city, state='mg', pages_number=20): 
         try:       
@@ -154,21 +155,22 @@ class Partner:
             raise Exception(error)            
 
     def search_properties_by_district():
-        try:
-            properties_to_add = ""
+        properties_to_add = ""        
+        try:            
             districts = District.get_all()
 
             for district in districts:
                 properties = Partner.get_properties_by_district('venda', 'bairros', district.get('name', ''), 'belo horizonte');                        
                 properties_to_add += Partner.get_query_to_insert_property(properties, district.get('id', 0))
-
-            text = properties_to_add if properties_to_add else "no new properties found"
-            File.record_insert(text, File.search_properties_by_district)
+            
             Property.add_by_query(properties_to_add)
         except Exception as ex:
             error = "Partner Service - search_properties_by_district error: {}".format(ex)
             Log.print(error, True)
-            raise Exception(error)            
+            raise Exception(error)
+        finally:
+            text = properties_to_add if properties_to_add else "no new properties found"
+            File.record_insert(text, File.search_properties_by_district)
 
     def routine():
         try:
