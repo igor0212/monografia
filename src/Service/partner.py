@@ -4,6 +4,7 @@ from Service.Management import Management
 from Service.Job import Job
 from Repository.Partner import Partner as RepositoryPartner
 from Util import Util, File, Enum, Log
+from tqdm import tqdm
 
 class Partner:
     def get_properties_by_code(code):   
@@ -46,7 +47,7 @@ class Partner:
         properties_to_add = ""
         try:            
             properties = Property.get_all_new_ad_and_not_sold()        
-            for property in properties:
+            for property in tqdm(properties):
                 try:
                     partner_id = property.get('partner_id')
 
@@ -162,7 +163,7 @@ class Partner:
         properties_to_add = ""        
         try:            
             districts = District.get_all()
-            for district in districts:
+            for district in tqdm(districts):
 
                 try:
                     properties = Partner.get_properties_by_district('venda', 'bairros', district.get('name', ''), 'belo horizonte');                        
