@@ -1,8 +1,7 @@
 import schedule
 import time
 from Service.Partner import Partner
-from Service.Job import Job
-from Util import File, Log
+from Util import Log
 from datetime import datetime
 
 def routine():
