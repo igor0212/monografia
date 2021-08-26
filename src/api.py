@@ -80,6 +80,17 @@ class Api:
     def api_partner_district():
         Partner.search_properties_by_district()               
         return('ok')
+
+    @app.route('/api/partner/district/name', methods=['PATCH'])
+    def api_partner_district_name():
+        name = Util.get_field('name', 'str')
+        Partner.search_properties_by_district_name(name)               
+        return('ok')
+
+    @app.route('/api/partner/sold/name', methods=['PATCH'])
+    def api_partner_sold_name():        
+        Partner.check_property_sold()
+        return('ok')    
         
     app.run()	
     

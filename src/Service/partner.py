@@ -180,6 +180,20 @@ class Partner:
             text = properties_to_add if properties_to_add else "no new properties found"
             File.record_insert(text)
 
+    def search_properties_by_district_name(name):
+        properties_to_add = ""        
+        try:            
+            district = District.get_by_name(name)            
+            properties = Partner.get_properties_by_district('venda', 'bairros', district.get('name', ''), 'belo horizonte');                        
+            properties_to_add += Partner.get_query_to_insert_property(properties, district.get('id', 0))            
+            Property.add_by_query(properties_to_add)
+        except Exception as ex:
+            error = "Partner Service - search_properties_by_district_name error: {} \n".format(ex)
+            Log.print(error, True)            
+        finally:
+            text = properties_to_add if properties_to_add else "no new properties found"
+            File.record_insert(text)
+
     def routine():
         has_error = False
         error = ''

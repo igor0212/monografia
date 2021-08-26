@@ -22,3 +22,14 @@ class District:
             error = "District Service - get_by_id error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
+
+    def get_by_name(name):    
+        try:            
+            data = RepositoryDistrict.get_by_name(name)    
+            if(data):
+                return data[0]
+            return {}
+        except Exception as ex:            
+            error = "District Service - get_by_name error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
