@@ -59,10 +59,10 @@ class Partner:
                     partner_property = Partner.check_valid_property(partner_properties, partner_id)            
 
                     #Check if property has been sold
-                    if(not partner_property):
-                        Log.print("{} - {} propriedade vendida".format(partner_id, partner_code), show_screen=False)
+                    if(not partner_property):                        
                         management = Management.get_by_partner_id(partner_id)
                         if(management.get('is_available')):
+                            Log.print("{} - {} propriedade vendida".format(partner_id, partner_code), show_screen=False)
                             properties_to_add += Management.add(partner_id, management.get('price'), management.get('tax_rate', 0), management.get('property_tax', 0), False)                            
                         continue
                     
