@@ -241,30 +241,6 @@
 			"name": "Partner",
 			"item": [
 				{
-					"name": "District",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "http://127.0.0.1:5000/api/partner/district",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"partner",
-								"district"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get By Code",
 					"request": {
 						"method": "GET",
@@ -356,6 +332,78 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "API Casa Mineira",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&bairros[]=centro_belo-horizonte_mg",
+					"protocol": "https",
+					"host": [
+						"api",
+						"casamineira",
+						"com",
+						"br"
+					],
+					"path": [
+						"busca",
+						"imoveis"
+					],
+					"query": [
+						{
+							"key": "finalidade",
+							"value": "venda"
+						},
+						{
+							"key": "tipos[]",
+							"value": "apartamento"
+						},
+						{
+							"key": "bairros[]",
+							"value": "centro_belo-horizonte_mg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Casa Mineira Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.casamineira.com.br/busca/imoveis?finalidade=venda&tipos[]=apartamento&bairros[]=centro_belo-horizonte_mg",
+					"protocol": "https",
+					"host": [
+						"api",
+						"casamineira",
+						"com",
+						"br"
+					],
+					"path": [
+						"busca",
+						"imoveis"
+					],
+					"query": [
+						{
+							"key": "finalidade",
+							"value": "venda"
+						},
+						{
+							"key": "tipos[]",
+							"value": "apartamento"
+						},
+						{
+							"key": "bairros[]",
+							"value": "centro_belo-horizonte_mg"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
