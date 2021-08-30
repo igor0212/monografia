@@ -11,12 +11,12 @@ class Property:
             Log.print(error, True)
             raise Exception(error)
 
-    def get_all_new_ad_and_not_sold():
+    def get_all_new_ad():
         try:
-            query = 'select * from "Property" where new_ad = True and True = (select is_available from "Management" where partner_id = "Property".partner_id order by created_on desc limit 1)'
+            query = 'select * from "Property" where new_ad = True'
             return DataBase.select(query)        
         except Exception as ex:
-            error = "Property Repository - get_all_new_ad_and_not_sold error: {} \n".format(ex)
+            error = "Property Repository - get_all_new_ad error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 

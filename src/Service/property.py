@@ -13,14 +13,14 @@ class Property:
             Log.print(error, True)
             raise Exception(error)            
     
-    def get_all_new_ad_and_not_sold():
+    def get_all_new_ad():
         try:
-            data = RepositoryProperty.get_all_new_ad_and_not_sold()
+            data = RepositoryProperty.get_all_new_ad()
             if(data):
                 return data
             return []
         except Exception as ex:
-            error = "Partner Service - get_all_new_ad_and_not_sold error: {} \n".format(ex)
+            error = "Partner Service - get_all_new_ad error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)            
 

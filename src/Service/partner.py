@@ -46,36 +46,37 @@ class Partner:
     def check_property_sold():
         properties_to_add = ""
         try:            
-            properties = Property.get_all_new_ad_and_not_sold()        
+            properties = Property.get_all_new_ad()        
             for property in tqdm(properties):
                 try:
                     partner_id = property.get('partner_id')
+                    partner_code = property.get('partner_code', '')
 
                     #This route can return more than one property by the given code 
-                    partner_properties = Partner.get_properties_by_code(property.get('partner_code', ''))
+                    partner_properties = Partner.get_properties_by_code(partner_code)
 
                     #Then we need to validate the partner_id, as it is unique             
                     partner_property = Partner.check_valid_property(partner_properties, partner_id)            
 
                     #Check if property has been sold
                     if(not partner_property):
-                        Log.print("{} vendido".format(property.get('partner_code', '')), show_screen=False)
+                        Log.print("{} - {} propriedade vendida".format(partner_id, partner_code), show_screen=False)
                         management = Management.get_by_partner_id(partner_id)
-                        properties_to_add += Management.add(partner_id, management.get('price'), management.get('tax_rate', 0), management.get('property_tax', 0), False)
+                        if(management.get('is_available')):
+                            properties_to_add += Management.add(partner_id, management.get('price'), management.get('tax_rate', 0), management.get('property_tax', 0), False)                            
                         continue
                     
                     #Check if property value has changed
                     management = Management.get_by_partner_id(partner_id)                
                     if partner_property.get('preco') != management.get('price'):                
-                        Log.print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(property.get('partner_code', ''), management.get('price'), partner_property.get('preco')), show_screen=False)                    
+                        Log.print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(partner_code, management.get('price'), partner_property.get('preco')), show_screen=False)                    
                         price = Util.validate_number(partner_property.get('preco'))                    
                         tax_rate = Util.validate_number(partner_property.get('valor_iptu', 0))
                         property_tax = Util.validate_number(partner_property.get('valor_condominio', 0))                                        
                         properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) 
-                    else:
-                        Log.print("{} nao foi vendido e nem teve o preco alterado".format(property.get('partner_code', '')), show_screen=False)            
+                    
                 except Exception as ex:
-                    error = "Partner Service - property {} with error: {} \n".format(property.get('partner_code', ''), ex)
+                    error = "Partner Service - check_property_sold - property {} with error: {} \n".format(partner_code, ex)
                     Log.print(error, True)
 
             Property.add_by_query(properties_to_add)
