@@ -69,7 +69,7 @@ class Partner:
                     #Check if property value has changed
                     management = Management.get_by_partner_id(partner_id)                
                     if partner_property.get('preco') != management.get('price'):                
-                        Log.print("{} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(partner_code, management.get('price'), partner_property.get('preco')), show_screen=False)                    
+                        Log.print("{} - {} com preco de venda alterado. Preco antigo: {} Preco Novo: {}".format(partner_id, partner_code, management.get('price'), partner_property.get('preco')), show_screen=False)                    
                         price = Util.validate_number(partner_property.get('preco'))                    
                         tax_rate = Util.validate_number(partner_property.get('valor_iptu', 0))
                         property_tax = Util.validate_number(partner_property.get('valor_condominio', 0))                                        
