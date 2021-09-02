@@ -1,5 +1,5 @@
-from Repository.Database import DataBase
-from Util import Log
+from Repository.database import DataBase
+from util import Log
 
 class City:
     def get_all():

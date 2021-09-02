@@ -1,5 +1,5 @@
-from Repository.District import District as RepositoryDistrict
-from Util import Log
+from Repository.district import District as RepositoryDistrict
+from util import Log
 
 class District:
     def get_all():

@@ -1,9 +1,9 @@
-from Service.District import District
-from Service.Property import Property
-from Service.Management import Management
-from Service.Job import Job
-from Repository.Partner import Partner as RepositoryPartner
-from Util import Util, File, Enum, Log
+from Service.district import District
+from Service.property import Property
+from Service.management import Management
+from Service.job import Job
+from Repository.partner import Partner as RepositoryPartner
+from util import Util, File, Enum, Log
 from tqdm import tqdm
 
 class Partner:

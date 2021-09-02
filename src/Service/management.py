@@ -1,6 +1,6 @@
-from Repository.Management import Management as RepositoryManagement
+from Repository.management import Management as RepositoryManagement
 from datetime import datetime
-from Util import Log
+from util import Log
 
 class Management:
     def get_all():    

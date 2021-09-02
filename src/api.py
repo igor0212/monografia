@@ -1,11 +1,11 @@
 import flask
 from flask import jsonify
-from Service.Management import Management
-from Service.City import City
-from Service.District import District
-from Service.Property import Property
-from Service.Partner import Partner
-from Util import Util, JSONEncoder
+from Service.management import Management
+from Service.city import City
+from Service.district import District
+from Service.property import Property
+from Service.partner import Partner
+from util import Util, JSONEncoder
 
 class Api:
     app = flask.Flask(__name__)

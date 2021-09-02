@@ -1,5 +1,5 @@
-from Repository.Property import Property as RepositoryProperty
-from Util import Util, Log
+from Repository.property import Property as RepositoryProperty
+from util import Util, Log
 
 class Property:
     def get_all():

@@ -1,5 +1,5 @@
 import requests
-from Util import Log
+from util import Log
 
 class Partner:
     def get_properties_by_code(code):

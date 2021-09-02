@@ -1,6 +1,6 @@
-from Repository.Job import Job as RepositoryJob
+from Repository.job import Job as RepositoryJob
 from datetime import datetime
-from Util import Log
+from util import Log
 
 class Job:
     def add(name, has_error=False, error_description=""):

@@ -1,5 +1,5 @@
-from Repository.City import City as RepositoryCity
-from Util import Log
+from Repository.city import City as RepositoryCity
+from util import Log
 
 class City:
     def get_all():
