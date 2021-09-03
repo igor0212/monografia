@@ -579,20 +579,24 @@ INSERT INTO public."District" ("name") VALUES('Vila Vera Cruz I');
 INSERT INTO public."District" ("name") VALUES('Vila Vera Cruz II');
 
 --DELETE 
-/*DELETE FROM "Management";
+/*
+DELETE FROM "Management";
 DELETE FROM "Property";
 DELETE FROM "Type";
 DELETE FROM "Goal";
 DELETE FROM "City";
-DELETE FROM "District";*/
+DELETE FROM "District";
+DELETE FROM "Job";*/
 
 --DROP
-/*DROP TABLE "Management";
+/*
+DROP TABLE "Management";
 DROP TABLE "Property";
 DROP TABLE "Type";
 DROP TABLE "Goal";
 DROP TABLE "City";
 DROP TABLE "District";
+DROP TABLE "Job";
 */
 
 --CHECK DUPLICATE ROWS
