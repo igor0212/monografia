@@ -300,3 +300,21 @@ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, ci
 
  INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-09-08 05:49:14.822309', False, ''); 
 
+
+
+ -------------------------------------------------------- Script shot in 2021-09-08 14:20:26.585283 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703522, '344257', 1, 112, 1, 1, '', 'Rua Dom Aristides Porto', 180, 4, 0, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703522', 450000, 89, 300, '2021-09-08 11:45:44.828856', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703420, '344598', 1, 112, 1, 1, '', 'Rua Dom Joaquim Silverio', 137, 3, 0, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703420', 750000, 240, 960, '2021-09-08 11:45:45.052074', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703470, '340747', 1, 127, 1, 1, '', 'Rua Furtado de Menezes', 80, 3, 0, 3, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703470', 500000, 0, 160, '2021-09-08 11:59:29.326154', True); 
+ 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-09-08 14:20:26.978492 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-09-08 14:20:26.597022', False, ''); 
+
