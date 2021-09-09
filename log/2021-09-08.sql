@@ -318,3 +318,53 @@ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, ci
 
  INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-09-08 14:20:26.597022', False, ''); 
 
+
+
+ -------------------------------------------------------- Script shot in 2021-09-08 21:41:39.112660 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5695453, '347388', 1, 8, 1, 1, '', 'Rua Professor Anibal Mattos', 90, 3, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5695453', 450000, 170, 0, '2021-09-08 14:41:33.449934', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703562, '342656', 1, 24, 1, 1, '', 'Rua Terezinha Lopes de Azevedo', 60, 2, 0, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703562', 170000, 16, 170, '2021-09-08 15:19:49.796080', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703504, '344595', 1, 24, 1, 1, '', 'Praca Vicente Salles Rezende', 64, 3, 0, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703504', 360000, 95, 200, '2021-09-08 15:19:50.243994', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703476, '343916', 1, 24, 1, 1, '', 'Rua Francisco Augusto Rocha', 50, 2, 0, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703476', 320000, 115, 350, '2021-09-08 15:19:50.714445', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703428, '339596', 1, 24, 1, 1, '', 'Rua Francisco Augusto Rocha', 116, 3, 0, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703428', 450000, 90, 500, '2021-09-08 15:19:51.168445', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5604707, '943', 1, 24, 1, 1, '', 'Terezinha Lopes de Azevedo', 50, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5604707', 165000, 0, 173, '2021-09-08 15:19:51.577531', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703531, '346520', 1, 25, 1, 1, '', 'Rua Emanuel Marzano Matias', 76, 3, 0, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703531', 234000, 0, 240, '2021-09-08 15:24:25.202626', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703417, '347381', 1, 25, 1, 1, '', 'Avenida Joao Samaha', 64, 2, 0, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703417', 170000, 30, 200, '2021-09-08 15:24:25.681037', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703391, '339758', 1, 83, 1, 1, '', 'Rua Joao Edmundo Caldeira Brant', 106, 4, 0, 3, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703391', 590000, 137, 420, '2021-09-08 16:49:44.947440', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703522, '344257', 1, 112, 1, 1, '', 'Rua Dom Aristides Porto', 180, 4, 0, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703522', 450000, 89, 300, '2021-09-08 17:26:23.965937', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703420, '344598', 1, 112, 1, 1, '', 'Rua Dom Joaquim Silverio', 137, 3, 0, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703420', 750000, 240, 960, '2021-09-08 17:26:24.408939', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703470, '340747', 1, 127, 1, 1, '', 'Rua Furtado de Menezes', 80, 3, 0, 3, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703470', 500000, 0, 160, '2021-09-08 17:42:19.720405', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703481, '339753', 1, 145, 1, 1, '', 'Rua Industrial Jose Costa', 116, 2, 0, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703481', 400000, 100, 370, '2021-09-08 18:08:02.187151', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703408, '339590', 1, 145, 1, 1, '', 'Rua Belfort Roxo', 60, 2, 0, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703408', 450000, 0, 370, '2021-09-08 18:08:02.933609', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5703555, '345202', 1, 145, 1, 1, '', 'Rua Conselheiro Joaquim Caetano', 78, 2, 0, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5703555', 282000, 1, 195, '2021-09-08 18:08:06.227074', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5705239, 'GD0071', 1, 323, 1, 1, '', 'Rua Augusto Moreira', 89, 3, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5705239', 280000, 0, 0, '2021-09-08 20:19:15.934677', True); 
+ 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-09-08 22:12:37.652220 ------------------------------------------------------------------------------------------ 
+
+ no property sold 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-09-08 22:12:37.878952 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-09-08 22:12:37.664222', False, ''); 
+
