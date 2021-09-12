@@ -90,3 +90,25 @@ INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, creat
 
  INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-09-12 05:51:54.295078', False, ''); 
 
+
+
+ -------------------------------------------------------- Script shot in 2021-09-12 15:02:34.547255 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5743477, '348056', 1, 22, 1, 1, '', 'Rua Doutor Geraldo Zola Mesquita', 120, 3, 2, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5743477', 400000, 0, 0, '2021-09-12 10:37:44.105225', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5743475, '345900', 1, 116, 1, 1, '', 'Rua Aristoteles Caldeira', 251, 4, 1, 4, 3, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5743475', 1190000, 0, 0, '2021-09-12 11:44:00.930369', True); 
+ 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-09-12 15:04:53.209219 ------------------------------------------------------------------------------------------ 
+
+ no property sold 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-09-12 15:04:53.441681 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-09-12 15:04:53.225533', False, ''); 
+
