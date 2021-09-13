@@ -9,7 +9,7 @@ def routine():
     Partner.routine()
     Log.print("Rotina terminou: {}".format(datetime.now()))                
 
-schedule.every().day.at("01:00").do(routine) 
+schedule.every().day.at("00:01").do(routine) 
 
 while True:
     schedule.run_pending()
