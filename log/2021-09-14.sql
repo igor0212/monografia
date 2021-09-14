@@ -106,3 +106,25 @@ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, ci
 
  INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-09-14 03:14:35.640334', False, ''); 
 
+
+
+ -------------------------------------------------------- Script shot in 2021-09-14 12:15:48.100066 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (5748286, '348023', 1, 331, 1, 1, '', 'Noraldino de Lima', 57, 2, 2, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5748286', 315000, 0, 0, '2021-09-14 10:54:03.922662', True); 
+ 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-09-14 12:19:05.607686 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5743477', 400000, 0, 0, '2021-09-14 12:16:45.919550', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5731842', 330000, 125, 330, '2021-09-14 12:17:35.040975', True); 
+ 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-09-14 12:19:05.829076 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-09-14 12:19:05.615720', False, ''); 
+
