@@ -52,3 +52,29 @@ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, ci
                       VALUES (6120573, '364722', 1, 113, 1, 1, '', 'Rua Professor Leontino da Cunha', 75, 2, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6120573', 280000, 0, 0, '2021-10-13 01:27:45.595962', True); 
  
 
+
+
+ -------------------------------------------------------- Script shot in 2021-10-13 14:22:48.027919 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6139961, 'S893450196', 1, 24, 1, 1, '', 'Rua Joao Fernandes de Oliveira', 70, 2, 0, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6139961', 191000, 83, 140, '2021-10-13 09:44:59.921909', True); 
+ 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-10-13 15:24:12.234134 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5867701', 235000, 0, 334, '2021-10-13 14:41:59.993773', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5976014', 2060000, 0, 0, '2021-10-13 14:46:29.685826', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6094374', 540000, 125, 345, '2021-10-13 14:57:16.865643', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6089476', 1700000, 0, 0, '2021-10-13 15:03:54.814059', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6115408', 425000, 0, 230, '2021-10-13 15:18:34.413590', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6118067', 102068, 0, 0, '2021-10-13 15:22:20.614894', False); 
+ 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-10-13 15:24:12.508206 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-10-13 15:24:12.251148', False, ''); 
+
