@@ -152,3 +152,164 @@ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, ci
 
  INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-11-10 01:18:09.484125', False, ''); 
 
+
+
+ -------------------------------------------------------- Script shot in 2021-11-10 17:40:14.898882 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527756, '389600', 1, 1, 1, 1, '', 'Rua Joao Gualberto Filho', 50, 2, 1, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527756', 305000, 99, 200, '2021-11-10 12:47:14.696276', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527745, '389280', 1, 1, 1, 1, '', 'Rua Sao Joaquim', 85, 3, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527745', 540000, 157, 400, '2021-11-10 12:47:14.805650', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (3389002, '273552', 1, 2, 1, 1, '', 'Rua Henrique Furtado Portugal', 150, 4, 1, 4, 3, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('3389002', 950000, 0, 1050, '2021-11-10 12:48:09.788128', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527726, '389470', 1, 2, 1, 1, '', 'Rua Professora Bartira Mourao', 90, 3, 0, 3, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527726', 534000, 190, 553, '2021-11-10 12:48:31.318081', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527716, '389270', 1, 2, 1, 1, '', 'Avenida Deputado Cristovam Chiaradia', 103, 4, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527716', 600000, 165, 636, '2021-11-10 12:48:31.427456', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527679, '389618', 1, 2, 1, 1, '', 'Rua Professora Bartira Mourao', 140, 4, 1, 4, 3, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527679', 980000, 0, 0, '2021-11-10 12:48:31.552478', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527664, '388826', 1, 2, 1, 1, '', 'Rua Engenheiro Alberto Pontes', 100, 3, 1, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527664', 575000, 140, 750, '2021-11-10 12:48:31.646208', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527754, '389636', 1, 3, 1, 1, '', 'Rua Anchieta', 84, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527754', 325000, 0, 0, '2021-11-10 12:49:26.459814', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527688, '389278', 1, 3, 1, 1, '', 'Rua Coronel Jose Benjamim', 160, 3, 1, 3, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527688', 780000, 0, 0, '2021-11-10 12:49:26.569156', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6528578, 'S893471707', 1, 16, 1, 1, '', 'Rua dos Expedicionarios', 75, 2, 0, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6528578', 210000, 70, 285, '2021-11-10 13:03:14.062412', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527680, '389585', 1, 24, 1, 1, '', 'Rua Francisco Augusto Rocha', 86, 3, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527680', 310000, 0, 0, '2021-11-10 13:09:53.164306', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6515207, '2871', 1, 24, 1, 1, '', 'Padre Willian Silva', 130, 3, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6515207', 629000, 0, 0, '2021-11-10 13:10:10.322906', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6515212, '2873', 1, 24, 1, 1, '', 'Padre Willian Silva', 160, 3, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6515212', 645000, 0, 0, '2021-11-10 13:10:10.869783', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6515211, '2874', 1, 24, 1, 1, '', 'Padre Willian Silva', 70, 3, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6515211', 439000, 0, 0, '2021-11-10 13:10:16.889526', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6529647, '995', 1, 28, 1, 1, '', 'Jose Gomes Domingues', 53, 3, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6529647', 150000, 0, 173, '2021-11-10 13:14:33.030586', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6531022, 'CO0010_VER', 1, 78, 1, 1, '', 'Rua Frei Luiz de Souza', 120, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6531022', 330000, 0, 300, '2021-11-10 13:50:28.031468', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530870, 'AP0067_VER', 1, 78, 1, 1, '', 'ENDERECO NAO INFORMADO', 60, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530870', 255000, 0, 300, '2021-11-10 13:50:28.259469', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530867, 'AP0076_VER', 1, 78, 1, 1, '', 'ENDERECO NAO INFORMADO', 60, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530867', 258000, 0, 300, '2021-11-10 13:50:28.460471', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530714, 'AP0075_VER', 1, 78, 1, 1, '', 'ENDERECO NAO INFORMADO', 60, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530714', 254000, 0, 300, '2021-11-10 13:50:28.692472', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530671, 'AP0074_VER', 1, 78, 1, 1, '', 'ENDERECO NAO INFORMADO', 60, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530671', 247000, 0, 300, '2021-11-10 13:50:28.907473', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530610, 'CO0015_VER', 1, 78, 1, 1, '', 'ENDERECO NAO INFORMADO', 120, 2, 1, 1, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530610', 383000, 0, 300, '2021-11-10 13:50:29.122477', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530873, 'AP0079_VER', 1, 83, 1, 1, '', 'ENDERECO NAO INFORMADO', 125, 3, 1, 2, 3, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530873', 650000, 94, 1086, '2021-11-10 13:55:13.357214', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530851, 'AP0087_VER', 1, 83, 1, 1, '', 'ENDERECO NAO INFORMADO', 145, 3, 1, 1, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530851', 650000, 0, 0, '2021-11-10 13:55:13.568217', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530780, 'AP0077_VER', 1, 83, 1, 1, '', 'ENDERECO NAO INFORMADO', 75, 3, 1, 1, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530780', 539000, 0, 0, '2021-11-10 13:55:13.686215', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530726, 'AP0085_VER', 1, 83, 1, 1, '', 'ENDERECO NAO INFORMADO', 135, 2, 1, 1, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530726', 460000, 0, 0, '2021-11-10 13:55:13.904215', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530653, 'AP0084_VER', 1, 83, 1, 1, '', 'ENDERECO NAO INFORMADO', 115, 2, 1, 1, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530653', 450000, 0, 0, '2021-11-10 13:55:14.018216', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6530608, 'AP0086_VER', 1, 83, 1, 1, '', 'ENDERECO NAO INFORMADO', 145, 2, 1, 1, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6530608', 470000, 0, 0, '2021-11-10 13:55:14.123216', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527719, '389080', 1, 91, 1, 1, '', 'Rua Adauto Feitosa', 90, 3, 1, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527719', 350000, 100, 350, '2021-11-10 14:00:14.530422', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527758, '389467', 1, 92, 1, 1, '', 'Rua dos Timbiras', 90, 3, 0, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527758', 250000, 200, 800, '2021-11-10 14:01:04.366340', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527734, '389597', 1, 93, 1, 1, '', 'Rua Joao Antonio Azeredo', 240, 4, 1, 4, 4, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527734', 2480000, 14800, 2700, '2021-11-10 14:01:48.413262', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527712, '389603', 1, 102, 1, 1, '', 'Rua Outono', 65, 2, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527712', 680000, 0, 0, '2021-11-10 14:07:05.407025', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527710, '389274', 1, 102, 1, 1, '', 'Rua Oliveira', 115, 4, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527710', 1050000, 0, 600, '2021-11-10 14:07:05.518038', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6521767, '720358', 1, 109, 1, 1, '', 'Rua jovina gomes de souza', 67, 2, 0, 0, 0, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6521767', 102068, 0, 0, '2021-11-10 14:10:57.319865', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527660, '389590', 1, 112, 1, 1, '', 'Rua Dom Joao Pimenta', 123, 3, 2, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527660', 500000, 0, 310, '2021-11-10 14:12:47.952980', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527752, '389622', 1, 133, 1, 1, '', 'Rua Gustavo Ladeira', 72, 3, 1, 1, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527752', 400000, 0, 0, '2021-11-10 14:26:14.707018', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527728, '389473', 1, 133, 1, 1, '', 'Rua Jonas Vanucci Lins', 59, 2, 0, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527728', 290000, 70, 365, '2021-11-10 14:26:14.809318', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527663, '389472', 1, 133, 1, 1, '', 'Rua Maria Candida de Jesus', 50, 2, 0, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527663', 250000, 0, 350, '2021-11-10 14:26:14.917686', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527704, '388408', 1, 136, 1, 1, '', 'Rua Sao Joao Evangelista', 110, 3, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527704', 800000, 0, 950, '2021-11-10 14:28:20.429817', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527681, '389606', 1, 140, 1, 1, '', 'Rua Araguari', 47, 1, 1, 1, 0, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527681', 190000, 65, 405, '2021-11-10 14:31:17.108659', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527691, '389267', 1, 158, 1, 1, '', 'Rua Professor Benito do Carmo', 95, 3, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527691', 690000, 0, 500, '2021-11-10 14:43:47.133830', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6522063, '1641', 1, 162, 1, 1, '', 'Rua Julio Diniz', 52, 2, 0, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6522063', 299000, 0, 0, '2021-11-10 14:47:54.753474', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6517962, 'AP0050_VER', 1, 162, 1, 1, '', 'ENDERECO NAO INFORMADO', 70, 3, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6517962', 359000, 0, 0, '2021-11-10 14:47:54.973480', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527682, '389593', 1, 170, 1, 1, '', 'Rua Jatai', 70, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527682', 338000, 106, 0, '2021-11-10 14:52:54.323797', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527671, '389620', 1, 178, 1, 1, '', 'Rua Engenheiro Godofredo dos Santos', 75, 3, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527671', 260000, 0, 0, '2021-11-10 14:58:19.595329', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527737, '388373', 1, 202, 1, 1, '', 'Rua Nisio Batista de Oliveira', 90, 3, 2, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527737', 340000, 125, 470, '2021-11-10 15:11:15.562659', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527714, '389582', 1, 202, 1, 1, '', 'Rua Raul Hanriot', 95, 3, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527714', 350000, 124, 200, '2021-11-10 15:11:15.672699', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527674, '389592', 1, 202, 1, 1, '', 'Rua Raul Hanriot', 90, 3, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527674', 350000, 130, 200, '2021-11-10 15:11:15.786954', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527677, '389583', 1, 203, 1, 1, '', 'Rua Itabira', 45, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527677', 240000, 318, 190, '2021-11-10 15:11:47.955708', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527748, '389229', 1, 206, 1, 1, '', 'Rua Grao Mogol', 54, 2, 1, 1, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527748', 590000, 197, 0, '2021-11-10 15:13:33.295050', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527686, '389623', 1, 206, 1, 1, '', 'Rua Germano Torres', 75, 2, 1, 2, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527686', 780000, 0, 0, '2021-11-10 15:13:33.413050', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527718, '389660', 1, 216, 1, 1, '', 'Rua Soares do Couto', 120, 4, 1, 3, 2, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527718', 620000, 0, 0, '2021-11-10 15:18:32.796258', True); 
+INSERT INTO public."Property"(partner_id, partner_code, type_id, district_id, city_id, goal_id, "number", street, size, bedroom_number, room_number, bath_number, parking_number, new_ad) 
+                      VALUES (6527740, '389633', 1, 316, 1, 1, '', 'Rua Teixeira Mendes', 140, 4, 1, 2, 1, True); INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6527740', 650000, 150, 1000, '2021-11-10 16:10:30.263816', True); 
+ 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-11-10 19:17:34.089472 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5743476', 385000, 115, 320, '2021-11-10 17:42:21.992309', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5816690', 216000, 70, 300, '2021-11-10 17:46:55.394374', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5820761', 155000, 0, 230, '2021-11-10 17:48:11.903876', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5866679', 170000, 0, 0, '2021-11-10 17:56:37.796321', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('5866712', 195000, 0, 250, '2021-11-10 18:07:02.358184', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6059264', 930000, 384, 0, '2021-11-10 18:07:53.765182', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6097097', 170000, 0, 0, '2021-11-10 18:23:24.127228', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6089483', 750000, 219, 0, '2021-11-10 18:27:16.968815', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6140774', 390000, 153, 340, '2021-11-10 18:40:40.672273', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6140809', 385000, 0, 0, '2021-11-10 18:40:49.235669', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6177570', 200000, 87, 0, '2021-11-10 18:42:42.312663', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6096850', 195000, 0, 250, '2021-11-10 18:45:12.272209', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6209228', 400000, 0, 0, '2021-11-10 18:52:00.760834', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6209189', 260000, 70, 300, '2021-11-10 18:52:16.556800', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6209217', 475000, 250, 450, '2021-11-10 18:52:43.384638', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6231205', 490000, 93, 350, '2021-11-10 18:53:06.525565', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6292752', 850000, 213, 700, '2021-11-10 18:55:55.383420', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6292735', 1400000, 600, 0, '2021-11-10 18:56:18.235701', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6249130', 590000, 192, 400, '2021-11-10 18:56:23.620340', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6334377', 360000, 0, 0, '2021-11-10 18:59:52.199444', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6354244', 185000, 0, 0, '2021-11-10 19:00:13.728382', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6354128', 140000, 0, 0, '2021-11-10 19:00:30.564129', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6361232', 247000, 0, 0, '2021-11-10 19:02:35.557108', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6354313', 310000, 0, 0, '2021-11-10 19:02:44.454011', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6372739', 550000, 118, 350, '2021-11-10 19:04:28.488617', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6370593', 310000, 0, 0, '2021-11-10 19:05:30.766582', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6390286', 800000, 100, 430, '2021-11-10 19:06:16.827762', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6390274', 300000, 0, 0, '2021-11-10 19:06:26.155574', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6418691', 480000, 0, 550, '2021-11-10 19:08:16.518741', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6418660', 600000, 0, 650, '2021-11-10 19:08:18.154917', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6452270', 900000, 221, 1050, '2021-11-10 19:09:48.218163', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6452209', 890000, 0, 0, '2021-11-10 19:10:12.702159', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6482035', 400000, 96, 400, '2021-11-10 19:10:55.405814', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6464642', 320000, 0, 0, '2021-11-10 19:11:49.697884', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6510636', 159000, 0, 247, '2021-11-10 19:14:25.001925', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6494501', 740000, 0, 0, '2021-11-10 19:15:19.940768', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6513298', 102068, 0, 0, '2021-11-10 19:15:29.274250', False); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6515108', 498000, 0, 0, '2021-11-10 19:16:38.359376', True); 
+INSERT INTO public."Management"(partner_id, price, tax_rate, property_tax, created_on, is_available) VALUES ('6521767', 102068, 0, 0, '2021-11-10 19:17:16.582618', False); 
+ 
+
+
+
+ -------------------------------------------------------- Script shot in 2021-11-10 19:17:34.274985 ------------------------------------------------------------------------------------------ 
+
+ INSERT INTO public."Job"(name, created_on, has_error, error_description) VALUES ('routine', '2021-11-10 19:17:34.101424', False, ''); 
+
