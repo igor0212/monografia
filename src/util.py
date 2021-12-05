@@ -3,6 +3,8 @@ from unidecode import unidecode
 from datetime import datetime
 import flask
 import decimal
+import dateutil.relativedelta
+
 
 class JSONEncoder(flask.json.JSONEncoder):    
     def default(self, obj):
@@ -85,3 +87,9 @@ class Log:
         File.record_log(text, is_error)
         if(show_screen):
             print(text)
+
+class Date:
+    def get_mininum_date(month):
+        date_now = datetime.now()
+        date = date_now - dateutil.relativedelta.relativedelta(months=month)
+        return date.date()

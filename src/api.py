@@ -5,6 +5,7 @@ from Service.city import City
 from Service.district import District
 from Service.property import Property
 from Service.partner import Partner
+from Service.liquidity import Liquidity
 from util import Util, JSONEncoder
 
 class Api:
@@ -91,7 +92,22 @@ class Api:
     def api_partner_sold_code():
         code = Util.get_field('code', 'str')     
         Partner.check_property_sold_by_code(code)
-        return('ok')    
+        return('ok')  
+
+    """ 
+        Liquidity Controller
+    """
+    @app.route('/api/liquidity/district', methods=['GET'])
+    def api_liquidity_district():        
+        name = Util.get_field('name', 'str')
+        month = Util.get_field('month', 'int')
+        return jsonify(Liquidity.get_by_district(name, month))
+
+    @app.route('/api/liquidity/street', methods=['GET'])
+    def api_liquidity_street():        
+        name = Util.get_field('name', 'str')
+        month = Util.get_field('month', 'int')
+        return jsonify(Liquidity.get_by_street(name, month))
         
     app.run()	
     
