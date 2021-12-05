@@ -36,4 +36,19 @@ class DataBase:
             raise Exception(error)
         finally:
             if conn is not None:
+                conn.close()
+
+    def update(query):
+        try:
+            conn = DataBase.get_connection()
+            cursor = conn.cursor()
+            cursor.execute(query)
+            conn.commit()                        
+            cursor.close()            
+        except Exception as ex:
+            error = "DataBase Error: Query update error - {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
+        finally:
+            if conn is not None:
                 conn.close()       

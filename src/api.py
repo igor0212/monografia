@@ -6,6 +6,7 @@ from Service.district import District
 from Service.property import Property
 from Service.partner import Partner
 from Service.liquidity import Liquidity
+from Service.region import Region
 from util import Util, JSONEncoder
 
 class Api:
@@ -108,6 +109,14 @@ class Api:
         name = Util.get_field('name', 'str')
         month = Util.get_field('month', 'int')
         return jsonify(Liquidity.get_by_street(name, month))
+
+    """
+        Region Controller
+    """
+    @app.route('/api/region/link', methods=['GET'])
+    def api_region():                
+        Region.link()
+        return jsonify({})
         
     app.run()	
     
