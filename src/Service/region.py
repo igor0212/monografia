@@ -11,8 +11,7 @@ class Region:
                     region = row[0]
                     district = row[1]                    
                     region_id = RepositoryRegion.get_by_name(region)
-                    district_id = RepositoryRegion.get_district_by_name(district)
-                    print("---------")
+                    district_id = RepositoryRegion.get_district_by_name(district)                    
                     if(region_id > 0 and district_id > 0):
                         RepositoryRegion.link(region_id, district_id)
 

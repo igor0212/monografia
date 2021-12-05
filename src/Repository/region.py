@@ -17,8 +17,7 @@ class Region:
     def get_district_by_name(name):
         try:
             name_fmt = name.replace("'", "''")            
-            query = 'select id from "District" where name = \'{}\' and region_id is null'.format(name_fmt)
-            print(query)
+            query = 'select id from "District" where name = \'{}\' and region_id is null'.format(name_fmt)            
             response = DataBase.select(query)
             if(response):
                 return response[0]['id']
