@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1077c974-d259-4279-8070-3060c122971a",
+		"_postman_id": "eec45ba0-c040-4c16-8f05-ea1ff89cfb8f",
 		"name": "Monografia",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -325,6 +325,113 @@
 								{
 									"key": "code",
 									"value": "IDL160"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Liquidity",
+			"item": [
+				{
+					"name": "Region",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/liquidity/region?name=Barreiro&month=6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"liquidity",
+								"region"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Barreiro"
+								},
+								{
+									"key": "month",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "District",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/liquidity/district?name=Castelo&month=6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"liquidity",
+								"district"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Castelo"
+								},
+								{
+									"key": "month",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Street",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/liquidity/street?name=Avenida Alvares Cabral&month=6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"liquidity",
+								"street"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Avenida Alvares Cabral"
+								},
+								{
+									"key": "month",
+									"value": "6"
 								}
 							]
 						}
