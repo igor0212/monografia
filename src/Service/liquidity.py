@@ -80,3 +80,30 @@ class Liquidity:
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
+
+    def get_all_streets():
+        try:
+            data = RepositoryLiquidity.get_all_streets()    
+            if(data):
+                return data
+        except Exception as ex:
+            error = "Liquidity Service - get_all_streets error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
+
+    def get_by_street_all(month):    
+        try:
+            street_cache = Cache.get_cache_street()
+            streets = Liquidity.get_all_streets()
+            for street in streets:
+                name = street['name'].title()                
+                name_fmt = unidecode(name.replace(" ", "-"))
+                if name_fmt not in street_cache:
+                    liq = Liquidity.get_by_street(name, month)
+                    street_cache[name] = liq                    
+                    Cache.record_street(name, liq)                    
+            return street_cache
+        except Exception as ex:            
+            error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)

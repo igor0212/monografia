@@ -10,7 +10,8 @@ class Liquidity:
                     from "Property" p
                     inner join "Management" m on m.partner_id = p.partner_id 
                     inner join "District" d ON d.id = p.district_id 
-                    where m.is_available = false and d."name"  =  \'{}\'
+                    where m.is_available = false 
+                    and d."name"  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
             """.format(Util.format2(name), date)                    
             return DataBase.select(query)[0]['count']
@@ -42,9 +43,10 @@ class Liquidity:
                     select count(distinct (p.partner_id)) 
                     from "Property" p
                     inner join "Management" m on m.partner_id = p.partner_id 
-                    where m.is_available = false and p."street"  =  \'{}\'
+                    where m.is_available = false 
+                    and p."street"  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
-            """.format(Util.format2(name), date)
+            """.format(Util.format2(name), date)                             
             return DataBase.select(query)[0]['count']
         except Exception as ex:
             error = "Liquidity Repository - get_sold_properties_by_street error: {} \n".format(ex)
@@ -59,7 +61,7 @@ class Liquidity:
                     inner join "Management" m on m.partner_id = p.partner_id 
                     where p."street" =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
-            """.format(Util.format2(name), date)
+            """.format(Util.format2(name), date)                    
             return DataBase.select(query)[0]['count']
         except Exception as ex:
             error = "Liquidity Repository - get_properties_by_street error: {} \n".format(ex)
@@ -75,7 +77,8 @@ class Liquidity:
                     inner join "Management" m on m.partner_id = p.partner_id 
                     inner join "District" d ON d.id = p.district_id
                     inner join "Region" r ON r.id = d.region_id
-                    where m.is_available = false and r."name"  =  \'{}\'
+                    where m.is_available = false 
+                    and r."name"  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
             """.format(Util.format2(name), date)
             return DataBase.select(query)[0]['count']
@@ -101,3 +104,15 @@ class Liquidity:
             error = "Liquidity Repository - get_properties_by_region error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
+
+    def get_all_streets():
+        try:
+            query = """ select distinct (lower(p.street)) as name
+                        from "Property" p                        
+                        where length(street) > 3                        
+                        order by name"""
+            return DataBase.select(query)    
+        except Exception as ex:            
+            error = "Region Repository - get_all error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error) 
