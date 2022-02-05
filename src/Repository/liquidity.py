@@ -11,9 +11,10 @@ class Liquidity:
                     inner join "Management" m on m.partner_id = p.partner_id 
                     inner join "District" d ON d.id = p.district_id 
                     where m.is_available = false 
-                    and d."name"  =  \'{}\'
+                    and lower(unaccent(d."name"))  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
-            """.format(Util.format2(name), date)                    
+            """.format(Util.format2(name), date)
+            print(query)
             return DataBase.select(query)[0]['count']
         except Exception as ex:
             error = "Liquidity Repository - get_sold_properties_by_district error: {} \n".format(ex)
@@ -28,9 +29,10 @@ class Liquidity:
                     from "Property" p
                     inner join "Management" m on m.partner_id = p.partner_id 
                     inner join "District" d ON d.id = p.district_id
-                    where d."name"  =  \'{}\'
+                    where lower(unaccent(d."name"))  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
-            """.format(Util.format2(name), date)                             
+            """.format(Util.format2(name), date)        
+            print(query)                     
             return DataBase.select(query)[0]['count']
         except Exception as ex:
             error = "Liquidity Repository - get_properties_by_district error: {} \n".format(ex)
@@ -44,7 +46,7 @@ class Liquidity:
                     from "Property" p
                     inner join "Management" m on m.partner_id = p.partner_id 
                     where m.is_available = false 
-                    and p."street"  =  \'{}\'
+                    and lower(unaccent(p."street"))  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
             """.format(Util.format2(name), date)                             
             return DataBase.select(query)[0]['count']
@@ -59,7 +61,7 @@ class Liquidity:
                     select count(distinct (p.partner_id)) 
                     from "Property" p
                     inner join "Management" m on m.partner_id = p.partner_id 
-                    where p."street" =  \'{}\'
+                    where lower(unaccent(p."street")) =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
             """.format(Util.format2(name), date)                    
             return DataBase.select(query)[0]['count']
@@ -78,7 +80,7 @@ class Liquidity:
                     inner join "District" d ON d.id = p.district_id
                     inner join "Region" r ON r.id = d.region_id
                     where m.is_available = false 
-                    and r."name"  =  \'{}\'
+                    and lower(unaccent(r."name"))  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
             """.format(Util.format2(name), date)
             return DataBase.select(query)[0]['count']
@@ -96,7 +98,7 @@ class Liquidity:
                     inner join "Management" m on m.partner_id = p.partner_id 
                     inner join "District" d ON d.id = p.district_id
                     inner join "Region" r ON r.id = d.region_id
-                    where r."name"  =  \'{}\'
+                    where lower(unaccent(r."name"))  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
             """.format(Util.format2(name), date)
             return DataBase.select(query)[0]['count']
