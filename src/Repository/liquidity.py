@@ -13,8 +13,7 @@ class Liquidity:
                     where m.is_available = false 
                     and lower(unaccent(d."name"))  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
-            """.format(Util.format2(name), date)
-            print(query)
+            """.format(Util.format2(name), date)            
             return DataBase.select(query)[0]['count']
         except Exception as ex:
             error = "Liquidity Repository - get_sold_properties_by_district error: {} \n".format(ex)
@@ -31,8 +30,7 @@ class Liquidity:
                     inner join "District" d ON d.id = p.district_id
                     where lower(unaccent(d."name"))  =  \'{}\'
                     and DATE(m.created_on) >= \'{}\'
-            """.format(Util.format2(name), date)        
-            print(query)                     
+            """.format(Util.format2(name), date)                                  
             return DataBase.select(query)[0]['count']
         except Exception as ex:
             error = "Liquidity Repository - get_properties_by_district error: {} \n".format(ex)
