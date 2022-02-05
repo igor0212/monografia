@@ -1,5 +1,6 @@
 from Repository.liquidity import Liquidity as RepositoryLiquidity
 from Service.district import District
+from Service.region import Region
 from util import Log, Date, Cache
 from unidecode import unidecode
 
@@ -56,9 +57,25 @@ class Liquidity:
                 if name_fmt not in district_cache:
                     liq = Liquidity.get_by_district(name, month)
                     district_cache[name] = liq                    
-                    Cache.record_district(name, liq)
-                    
+                    Cache.record_district(name, liq)                    
             return district_cache
+        except Exception as ex:            
+            error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
+
+    def get_by_region_all(month):    
+        try:
+            region_cache = Cache.get_cache_region()
+            regions = Region.get_all()
+            for region in regions:
+                name = region['name']
+                name_fmt = unidecode(name.replace(" ", "-"))
+                if name_fmt not in region_cache:
+                    liq = Liquidity.get_by_region(name, month)
+                    region_cache[name] = liq                    
+                    Cache.record_region(name, liq)                    
+            return region_cache
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
             Log.print(error, True)

@@ -2,6 +2,15 @@ from Repository.database import DataBase
 from util import Util, Log
 
 class Region:
+    def get_all():
+        try:
+            query = 'select * from "Region"'
+            return DataBase.select(query)    
+        except Exception as ex:            
+            error = "Region Repository - get_all error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error) 
+
     def get_by_name(name):
         try:
             query = 'select id from "Region" where name = \'{}\' '.format(name)

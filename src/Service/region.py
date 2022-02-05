@@ -3,6 +3,16 @@ from util import Log
 from Repository.region import Region as RepositoryRegion
 
 class Region:
+    def get_all():
+        try:
+            data = RepositoryRegion.get_all()    
+            if(data):
+                return data
+        except Exception as ex:
+            error = "Region Service - get_all error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
+
     def link():
         try:
             with open('../drafts/region.csv', encoding="utf8") as csvfile:

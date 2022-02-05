@@ -121,6 +121,11 @@ class Api:
         month = Util.get_field('month', 'int')
         return jsonify(Liquidity.get_by_region(name, month))
 
+    @app.route('/api/liquidity/region/all', methods=['GET'])
+    def api_liquidity_region_all():                
+        month = Util.get_field('month', 'int')
+        return jsonify(Liquidity.get_by_region_all(month))
+
     """
         Region Controller
     """

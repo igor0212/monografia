@@ -86,6 +86,11 @@ class Cache:
         text = "{} {}\n".format(name_fmt, liq)
         File.record(text, "../cache/district.txt")
 
+    def record_region(name, liq):
+        name_fmt = unidecode(name.replace(" ", "-"))
+        text = "{} {}\n".format(name_fmt, liq)
+        File.record(text, "../cache/region.txt")
+
     def record(dic):                        
         File.record(text, district)    
 
@@ -100,6 +105,9 @@ class Cache:
 
     def get_cache_district():
         return Cache.file_to_dic("../cache/district.txt")
+    
+    def get_cache_region():
+        return Cache.file_to_dic("../cache/region.txt")
 
 class Enum:
     type = {'Apartamento': 1, 'Casa': 2 }
