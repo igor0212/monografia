@@ -666,3 +666,6 @@ INSERT INTO public."Region" ("name") VALUES('Venda Nova');
 ALTER TABLE "District"
 	ADD COLUMN region_id int4,
     ADD CONSTRAINT FK_District_Region_Id FOREIGN KEY (region_id) REFERENCES public."Region"("id") ON DELETE RESTRICT
+
+Select * from pg_available_extensions();
+CREATE EXTENSION unaccent;
