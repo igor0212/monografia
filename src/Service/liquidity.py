@@ -3,6 +3,7 @@ from Service.district import District
 from Service.region import Region
 from util import Log, Date, Cache
 from unidecode import unidecode
+import operator
 
 class Liquidity:
     def get_by_district(name, month):    
@@ -57,8 +58,8 @@ class Liquidity:
                 if name_fmt not in district_cache:
                     liq = Liquidity.get_by_district(name, month)
                     district_cache[name] = liq                    
-                    Cache.record_district(name, liq)                    
-            return district_cache
+                    Cache.record_district(name, liq)            
+            return sorted(district_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
             Log.print(error, True)
@@ -74,8 +75,8 @@ class Liquidity:
                 if name_fmt not in region_cache:
                     liq = Liquidity.get_by_region(name, month)
                     region_cache[name] = liq                    
-                    Cache.record_region(name, liq)                    
-            return region_cache
+                    Cache.record_region(name, liq)                                
+            return sorted(region_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
             Log.print(error, True)
@@ -101,8 +102,8 @@ class Liquidity:
                 if name_fmt not in street_cache:
                     liq = Liquidity.get_by_street(name, month)
                     street_cache[name] = liq                    
-                    Cache.record_street(name, liq)                    
-            return street_cache
+                    Cache.record_street(name, liq)                                
+            return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
             Log.print(error, True)
