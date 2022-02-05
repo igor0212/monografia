@@ -342,7 +342,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/api/liquidity/region?name=Barreiro&month=6",
+							"raw": "http://127.0.0.1:5000/api/liquidity/region?name=Norte&month=6",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -359,8 +359,39 @@
 							"query": [
 								{
 									"key": "name",
-									"value": "Barreiro"
+									"value": "Norte"
 								},
+								{
+									"key": "month",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Region All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/liquidity/region/all?month=6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"liquidity",
+								"region",
+								"all"
+							],
+							"query": [
 								{
 									"key": "month",
 									"value": "6"
@@ -376,7 +407,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/api/liquidity/district?name=Castelo&month=6",
+							"raw": "http://127.0.0.1:5000/api/liquidity/district?name=Padre Eustaquio&month=6",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -393,8 +424,39 @@
 							"query": [
 								{
 									"key": "name",
-									"value": "Castelo"
+									"value": "Padre Eustaquio"
 								},
+								{
+									"key": "month",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "District All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/liquidity/district/all?month=6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"liquidity",
+								"district",
+								"all"
+							],
+							"query": [
 								{
 									"key": "month",
 									"value": "6"
@@ -429,6 +491,37 @@
 									"key": "name",
 									"value": "Avenida Alvares Cabral"
 								},
+								{
+									"key": "month",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Street All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/liquidity/street/all?month=6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"liquidity",
+								"street",
+								"all"
+							],
+							"query": [
 								{
 									"key": "month",
 									"value": "6"
