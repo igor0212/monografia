@@ -48,7 +48,7 @@ class Property:
 
     def add(partner_id, partner_code, type_id, district_id, city_id, goal_id, number, street, size, bedroom_number, room_number, bath_number, parking_number, new_ad):
         try:
-            return RepositoryProperty.add(partner_id, partner_code, type_id, district_id, city_id, goal_id, number,  Util.format(street), size, bedroom_number, room_number, bath_number, parking_number, new_ad)          
+            return RepositoryProperty.add(partner_id, partner_code, type_id, district_id, city_id, goal_id, number, Util.format(street), size, bedroom_number, room_number, bath_number, parking_number, new_ad)          
         except Exception as ex:
             error = "Partner Service - add error: {} \n".format(ex)
             Log.print(error, True)

@@ -36,6 +36,9 @@ class Util:
     def format(search):        
         return unidecode(str(search).replace("'", "''"))
 
+    def format2(search):        
+        return str(search).replace("'", "''")
+
     def get_url(goal, type, location, name, city, state, page):
         if(location == 'logradouros'):
             search = 'logradouro_{}_{}_{}'.format(name, city, state)
@@ -76,6 +79,27 @@ class File:
         with open(path, 'a') as file:
             file.write(text)
             file.close()
+
+class Cache:    
+    def record_district(name, liq):
+        name_fmt = unidecode(name.replace(" ", "-"))
+        text = "{} {}\n".format(name_fmt, liq)
+        File.record(text, "../cache/district.txt")
+
+    def record(dic):                        
+        File.record(text, district)    
+
+    def file_to_dic(path):
+        dictionary = {}
+        file = open(path)        
+        for line in file:
+            key, value = line.split()
+            dictionary[key] = value
+
+        return dictionary
+
+    def get_cache_district():
+        return Cache.file_to_dic("../cache/district.txt")
 
 class Enum:
     type = {'Apartamento': 1, 'Casa': 2 }

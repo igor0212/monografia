@@ -1,5 +1,7 @@
 from Repository.liquidity import Liquidity as RepositoryLiquidity
-from util import Log, Date
+from Service.district import District
+from util import Log, Date, Cache
+from unidecode import unidecode
 
 class Liquidity:
     def get_by_district(name, month):    
@@ -7,7 +9,7 @@ class Liquidity:
             liquidity = 0
             date = Date.get_mininum_date(month)
             total_properties = RepositoryLiquidity.get_properties_by_district(name, date)
-            total_sold_properties = RepositoryLiquidity.get_sold_properties_by_district(name, date)
+            total_sold_properties = RepositoryLiquidity.get_sold_properties_by_district(name, date)            
             if(total_properties > 0):
                 liquidity = total_sold_properties/total_properties
             return liquidity                  
@@ -21,7 +23,7 @@ class Liquidity:
             liquidity = 0
             date = Date.get_mininum_date(month)
             total_properties = RepositoryLiquidity.get_properties_by_street(name, date)
-            total_sold_properties = RepositoryLiquidity.get_sold_properties_by_street(name, date)            
+            total_sold_properties = RepositoryLiquidity.get_sold_properties_by_street(name, date)
             if(total_properties > 0):
                 liquidity = total_sold_properties/total_properties            
             return liquidity
@@ -44,4 +46,20 @@ class Liquidity:
             Log.print(error, True)
             raise Exception(error)
 
-
+    def get_by_district_all(month):    
+        try:
+            district_cache = Cache.get_cache_district()
+            districts = District.get_all()
+            for district in districts:
+                name = district['name']
+                name_fmt = unidecode(name.replace(" ", "-"))
+                if name_fmt not in district_cache:
+                    liq = Liquidity.get_by_district(name, month)
+                    district_cache[name] = liq                    
+                    Cache.record_district(name, liq)
+                    
+            return district_cache
+        except Exception as ex:            
+            error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)

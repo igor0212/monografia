@@ -101,8 +101,13 @@ class Api:
     @app.route('/api/liquidity/district', methods=['GET'])
     def api_liquidity_district():        
         name = Util.get_field('name', 'str')
-        month = Util.get_field('month', 'int')
+        month = Util.get_field('month', 'int')        
         return jsonify(Liquidity.get_by_district(name, month))
+
+    @app.route('/api/liquidity/district/all', methods=['GET'])
+    def api_liquidity_district_all():                
+        month = Util.get_field('month', 'int')
+        return jsonify(Liquidity.get_by_district_all(month))
 
     @app.route('/api/liquidity/street', methods=['GET'])
     def api_liquidity_street():        
