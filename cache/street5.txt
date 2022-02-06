@@ -1,0 +1,10 @@
+Alameda-Interligacao 0.5
+Augusto-Franco 0.3333333333333333
+Avenida-Afonso-Pena 0.4444444444444444
+Avenida-Alvares-Cabral 0.1111111111111111
+Avenida-Amazonas 0.125
+Avenida-Artur-Guimaraes 0.5
+Avenida-Augusto-De-Lima 0.3235294117647059
+Avenida-Barbacena 0.25
+Avenida-Bernarda-Silvestre 0.35294117647058826
+Avenida-Bernardo-De-Vasconcelos 0.75

@@ -81,10 +81,11 @@ class File:
             file.close()
 
 class Cache:    
-    def record_district(name, liq):
+    def record_district(name, liq, month):
         name_fmt = unidecode(name.replace(" ", "-"))
         text = "{} {}\n".format(name_fmt, liq)
-        File.record(text, "../cache/district.txt")
+        file_name = "../cache/district{}.txt".format(month)
+        File.record(text, file_name)        
 
     def record_region(name, liq, month):
         name_fmt = unidecode(name.replace(" ", "-"))
@@ -92,10 +93,11 @@ class Cache:
         file_name = "../cache/region{}.txt".format(month)
         File.record(text, file_name)
     
-    def record_street(name, liq):
+    def record_street(name, liq, month):
         name_fmt = unidecode(name.replace(" ", "-"))
         text = "{} {}\n".format(name_fmt, liq)
-        File.record(text, "../cache/street.txt")
+        file_name = "../cache/street{}.txt".format(month)
+        File.record(text, file_name)        
 
     def record(dic):                        
         File.record(text, district)    
@@ -109,15 +111,17 @@ class Cache:
 
         return dictionary
 
-    def get_cache_district():
-        return Cache.file_to_dic("../cache/district.txt")
+    def get_cache_district(month):
+        file_name = "../cache/district{}.txt".format(month)        
+        return Cache.file_to_dic(file_name)
     
     def get_cache_region(month):
         file_name = "../cache/region{}.txt".format(month)        
         return Cache.file_to_dic(file_name)
     
-    def get_cache_street():
-        return Cache.file_to_dic("../cache/street.txt")
+    def get_cache_street(month):
+        file_name = "../cache/street{}.txt".format(month)        
+        return Cache.file_to_dic(file_name)        
 
 class Enum:
     type = {'Apartamento': 1, 'Casa': 2 }

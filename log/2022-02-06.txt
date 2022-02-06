@@ -58743,3 +58743,27 @@ Date: 2022-02-06 17:49:40.123500
 Erro: Liquidity Service - get_by_district_all error: [Errno 2] No such file or directory: '../cache/region6.txt' 
  
 
+Date: 2022-02-06 17:58:23.489828
+Erro: Liquidity Service - get_by_district_all error: name 'month' is not defined 
+ 
+
+Date: 2022-02-06 18:00:10.800764
+Erro: Liquidity Service - get_by_district_all error: [Errno 2] No such file or directory: '../cache/district6.txt' 
+ 
+
+Date: 2022-02-06 18:00:34.451923
+Erro: Liquidity Service - get_by_district_all error: record_street() takes 2 positional arguments but 3 were given 
+ 
+
+Date: 2022-02-06 18:02:16.004191
+Erro: Liquidity Service - get_by_district_all error: '<' not supported between instances of 'str' and 'float' 
+ 
+
+Date: 2022-02-06 18:05:50.445404
+Erro: Liquidity Service - get_by_district_all error: '<' not supported between instances of 'str' and 'float' 
+ 
+
+Date: 2022-02-06 18:06:47.884157
+Erro: Liquidity Service - get_by_district_all error: '<' not supported between instances of 'str' and 'float' 
+ 
+
