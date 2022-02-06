@@ -69,14 +69,16 @@ class Liquidity:
             raise Exception(error)
 
     def get_by_region_all(month):    
-        try:
-            region_cache = Cache.get_cache_region()
+        try:            
+            region_cache = Cache.get_cache_region(month)
             regions = Region.get_all()
             for region in regions:
                 name = region['name']
                 name_fmt = unidecode(name.replace(" ", "-"))                
-                liq = Liquidity.get_by_region(name, month)
-                region_cache[name] = liq                
+                if name_fmt not in region_cache:
+                    liq = Liquidity.get_by_region(name, month)
+                    region_cache[name] = liq
+                    Cache.record_region(name, liq, month)                
             return sorted(region_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)

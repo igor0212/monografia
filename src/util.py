@@ -86,10 +86,11 @@ class Cache:
         text = "{} {}\n".format(name_fmt, liq)
         File.record(text, "../cache/district.txt")
 
-    def record_region(name, liq):
+    def record_region(name, liq, month):
         name_fmt = unidecode(name.replace(" ", "-"))
         text = "{} {}\n".format(name_fmt, liq)
-        File.record(text, "../cache/region.txt")
+        file_name = "../cache/region{}.txt".format(month)
+        File.record(text, file_name)
     
     def record_street(name, liq):
         name_fmt = unidecode(name.replace(" ", "-"))
@@ -111,8 +112,9 @@ class Cache:
     def get_cache_district():
         return Cache.file_to_dic("../cache/district.txt")
     
-    def get_cache_region():
-        return Cache.file_to_dic("../cache/region.txt")
+    def get_cache_region(month):
+        file_name = "../cache/region{}.txt".format(month)        
+        return Cache.file_to_dic(file_name)
     
     def get_cache_street():
         return Cache.file_to_dic("../cache/street.txt")

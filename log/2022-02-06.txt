@@ -58695,3 +58695,51 @@ Date: 2022-02-06 17:05:05.016446
 Erro: Liquidity Service - get_by_district_all error: '<' not supported between instances of 'str' and 'float' 
  
 
+Date: 2022-02-06 17:38:19.755887
+Erro: Liquidity Service - get_by_district_all error: [Errno 2] No such file or directory: '../cache/region_1.txt' 
+ 
+
+Date: 2022-02-06 17:40:08.602493
+Erro: Liquidity Service - get_by_district_all error: not readable 
+ 
+
+Date: 2022-02-06 17:42:32.455270
+Erro: Liquidity Service - get_by_district_all error: not readable 
+ 
+
+Date: 2022-02-06 17:43:08.456919
+Erro: Liquidity Service - get_by_district_all error: not readable 
+ 
+
+Date: 2022-02-06 17:43:25.403424
+Erro: Liquidity Service - get_by_district_all error: not readable 
+ 
+
+Date: 2022-02-06 17:43:48.161073
+Erro: Liquidity Service - get_by_district_all error: not readable 
+ 
+
+Date: 2022-02-06 17:44:08.938559
+Erro: Liquidity Service - get_by_district_all error: not readable 
+ 
+
+Date: 2022-02-06 17:44:20.924319
+Erro: Liquidity Service - get_by_district_all error: not readable 
+ 
+
+Date: 2022-02-06 17:45:54.959838
+Erro: Liquidity Service - get_by_district_all error: not readable 
+ 
+
+Date: 2022-02-06 17:48:18.752237
+Erro: Liquidity Service - get_by_district_all error: not readable 
+ 
+
+Date: 2022-02-06 17:49:11.140096
+Erro: Liquidity Service - get_by_district_all error: [Errno 17] File exists: '../cache/region6.txt' 
+ 
+
+Date: 2022-02-06 17:49:40.123500
+Erro: Liquidity Service - get_by_district_all error: [Errno 2] No such file or directory: '../cache/region6.txt' 
+ 
+
