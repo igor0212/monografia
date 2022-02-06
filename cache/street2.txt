@@ -1,0 +1,10 @@
+Avenida-Afonso-Pena 0.5
+Avenida-Augusto-De-Lima 0.6
+Avenida-Carandai 0.75
+Avenida-Cristiano-Machado 0.3333333333333333
+Avenida-Do-Contorno 0.6666666666666666
+Avenida-Joao-Rolla-Filho 0.5
+Avenida-Miguel-Perrela 0.8333333333333334
+Avenida-Nossa-Senhora-Do-Carmo 0.6666666666666666
+Avenida-Professor-Clovis-Salgado 0.875
+Avenida-Professor-Mario-Werneck 0.5

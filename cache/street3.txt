@@ -1,0 +1,10 @@
+Augusto-Franco 0.3333333333333333
+Avenida-Afonso-Pena 0.5
+Avenida-Augusto-De-Lima 0.21428571428571427
+Avenida-Bernarda-Silvestre 0.5454545454545454
+Avenida-Bias-Fortes 0.5
+Avenida-Carandai 0.8
+Avenida-Cristiano-Machado 0.5
+Avenida-Da-Sinfonia 0.5
+Avenida-Deputado-Anuar-Menhen 0.8333333333333334
+Avenida-Do-Contorno 0.75

@@ -1,0 +1,10 @@
+Augusto-Franco 0.3333333333333333
+Avenida-Afonso-Pena 0.5
+Avenida-Alvares-Cabral 0.1111111111111111
+Avenida-Amazonas 0.14285714285714285
+Avenida-Artur-Guimaraes 0.5
+Avenida-Augusto-De-Lima 0.3103448275862069
+Avenida-Barbacena 0.25
+Avenida-Bernarda-Silvestre 0.35294117647058826
+Avenida-Bernardo-De-Vasconcelos 0.6666666666666666
+Avenida-Bias-Fortes 0.5714285714285714
