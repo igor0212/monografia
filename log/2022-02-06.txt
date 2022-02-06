@@ -58687,3 +58687,11 @@ Log: 6925484 - 400459 propriedade vendida
 Date: 2022-02-06 06:02:08.722219
 Log: Rotina terminou: 2022-02-06 06:02:08.722219 
 
+Date: 2022-02-06 17:03:22.682639
+Erro: Liquidity Service - get_by_district_all error: '<' not supported between instances of 'str' and 'float' 
+ 
+
+Date: 2022-02-06 17:05:05.016446
+Erro: Liquidity Service - get_by_district_all error: '<' not supported between instances of 'str' and 'float' 
+ 
+
