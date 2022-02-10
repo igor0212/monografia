@@ -1,0 +1,20 @@
+Date: 2022-02-10 16:08:17.551035
+Erro: Liquidity Service - get_district_liquidity error: not readable 
+ 
+
+Date: 2022-02-10 16:08:55.175935
+Erro: Liquidity Service - get_district_liquidity error: not readable 
+ 
+
+Date: 2022-02-10 16:09:18.091943
+Erro: Liquidity Service - get_district_liquidity error: not readable 
+ 
+
+Date: 2022-02-10 16:12:12.762377
+Erro: Liquidity Service - get_district_liquidity error: not readable 
+ 
+
+Date: 2022-02-10 16:13:27.569535
+Erro: Liquidity Service - get_district_liquidity error: write() argument must be str, not float 
+ 
+

@@ -117,12 +117,27 @@ class Cache:
         return Cache.file_to_dic(file_name)
     
     def get_cache_region(month):
-        file_name = "../cache/region{}.txt".format(month)        
+        file_name = "../cache/all/region{}.txt".format(month)        
         return Cache.file_to_dic(file_name)
     
     def get_cache_street(month):
-        file_name = "../cache/street{}.txt".format(month)        
-        return Cache.file_to_dic(file_name)        
+        file_name = "../cache/all/street{}.txt".format(month)        
+        return Cache.file_to_dic(file_name)
+
+    def get_cache_district_name(name, month):
+        name_fmt = unidecode(name.replace(" ", "-"))
+        file_name = "../cache/all/district/{}_{}.txt".format(name_fmt, month)    
+        file = open(file_name, "r")
+        if(file):
+            liquidity = file.read()
+            file.close()
+            return liquidity
+        return 0
+
+    def set_cache_district_name(name, month, liq):
+        name_fmt = unidecode(name.replace(" ", "-"))
+        file_name = "../cache/district/{}_{}.txt".format(name_fmt, month)
+        File.record(str(liq), file_name)
 
 class Enum:
     type = {'Apartamento': 1, 'Casa': 2 }

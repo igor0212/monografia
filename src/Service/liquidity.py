@@ -64,7 +64,7 @@ class Liquidity:
                 if(cont == 10):
                     break
                 name = district['name']
-                name_fmt = unidecode(name.replace(" ", "-"))                
+                name_fmt = unidecode(name.replace(" ", "-"))
                 if name_fmt not in district_cache:
                     liq = Liquidity.get_by_district(name, month)                
                     if(liq != 1 and liq != 0):
@@ -110,8 +110,8 @@ class Liquidity:
     def get_by_street_all(month):    
         try:
             street_cache = Cache.get_cache_street(month)
-            #if(street_cache):
-            #    return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)
+            if(street_cache):
+                return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)
 
             streets = Liquidity.get_all_streets()
             cont = 0
@@ -120,12 +120,12 @@ class Liquidity:
                    break
                 name = street['name'].title()                
                 name_fmt = unidecode(name.replace(" ", "-"))                    
-                #if name_fmt not in street_cache:
-                liq = Liquidity.get_by_street(name, month)
-                if(liq != 1 and liq != 0):
-                    street_cache[name] = liq
-                    cont += 1
-                    #Cache.record_street(name, liq, month)
+                if name_fmt not in street_cache:
+                    liq = Liquidity.get_by_street(name, month)
+                    if(liq != 1 and liq != 0):
+                        street_cache[name] = liq
+                        cont += 1
+                        Cache.record_street(name, liq, month)
             return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
@@ -133,7 +133,11 @@ class Liquidity:
             raise Exception(error)
 
     def get_district_liquidity(name, month):
-        try:            
+        try:
+            liquidity_cache = Cache.get_cache_district_name(name, month)
+            if(liquidity_cache):  
+                return liquidity_cache  
+
             total_properties = 0
             total_sold_properties = 0
             liquidity = 0
@@ -148,6 +152,7 @@ class Liquidity:
                     total_sold_properties += 1
             if(total_properties > 0):
                 liquidity = total_sold_properties/total_properties            
+            Cache.set_cache_district_name(name, month, liquidity)
             return liquidity            
         except Exception as ex:            
             error = "Liquidity Service - get_district_liquidity error: {} \n".format(ex)
