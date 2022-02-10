@@ -57,7 +57,7 @@ class Liquidity:
                         order by created_on desc 
                         limit 1
                     )
-            """.format(Util.format2(name), date)            
+            """.format(Util.format2(name), date)                   
             return DataBase.select(query)[0]['count']
         except Exception as ex:
             error = "Liquidity Repository - get_sold_properties_by_street error: {} \n".format(ex)
@@ -112,7 +112,7 @@ class Liquidity:
                     inner join "Management" m on m.partner_id = p.partner_id 
                     inner join "District" d ON d.id = p.district_id
                     inner join "Region" r ON r.id = d.region_id
-                    where lower(unaccent(r."name"))  =  \'{}\'                    
+                    where lower(unaccent(r."name"))  =  \'{}\'
             """.format(Util.format2(name))
             return DataBase.select(query)[0]['count']
         except Exception as ex:
@@ -131,3 +131,35 @@ class Liquidity:
             error = "Region Repository - get_all error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error) 
+
+    def get_duplicate():
+        try:
+            query = """ SELECT
+                            partner_id
+                        FROM
+                            "Management"
+                        where is_available = false
+                        GROUP BY
+                            partner_id
+                        HAVING
+                            COUNT( partner_id ) > 1
+                        ORDER BY
+                            partner_id
+                        """
+            return DataBase.select(query)    
+        except Exception as ex:            
+            error = "Region Repository - get_duplicate error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)  
+
+    def get_duplicate2(partner_id):
+        try:
+            query = """ select partner_code  
+                        from "Property" p
+                        where p.partner_id  =  {}
+                        """.format(partner_id)
+            return DataBase.select(query)    
+        except Exception as ex:            
+            error = "Region Repository - get_duplicate2 error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)           
