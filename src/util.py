@@ -102,7 +102,7 @@ class Cache:
 
     def file_to_dic(path):
         dictionary = {}
-        file = open(path)        
+        file = open(path, 'r')        
         for line in file:
             key, value = line.split()
             dictionary[key] = value
