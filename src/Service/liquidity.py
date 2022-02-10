@@ -70,7 +70,7 @@ class Liquidity:
                     if(liq > 0):
                         district_cache[name] = liq
                         cont += 1
-                    Cache.record_district(name, liq, month)
+                        Cache.record_district(name, liq, month)
             return sorted(district_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
