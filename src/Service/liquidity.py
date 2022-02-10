@@ -113,10 +113,10 @@ class Liquidity:
                 name_fmt = unidecode(name.replace(" ", "-"))                    
                 if name_fmt not in street_cache:
                     liq = Liquidity.get_street_liquidity(name, month)           
-                    if(liq != 0):
+                    if(liq != 0 and liq != 1):
                         street_cache[name] = liq
                         cont += 1
-                    Cache.record_street(name, liq, month)
+                        Cache.record_street(name, liq, month)
             return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
