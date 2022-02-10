@@ -73,7 +73,7 @@ class Partner:
                         price = Util.validate_number(partner_property.get('preco'))                    
                         tax_rate = Util.validate_number(partner_property.get('valor_iptu', 0))
                         property_tax = Util.validate_number(partner_property.get('valor_condominio', 0))                                        
-                        properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, management.get('is_available')) 
+                        properties_to_add += Management.add(partner_id, price, tax_rate, property_tax, 1) 
                     
                 except Exception as ex:
                     error = "Partner Service - check_property_sold - property {} with error: {} \n".format(partner_code, ex)
