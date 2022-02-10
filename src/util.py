@@ -98,10 +98,7 @@ class Cache:
         name_fmt = unidecode(name.replace(" ", "-"))
         text = "{} {}\n".format(name_fmt, liq)
         file_name = "../cache/street{}.txt".format(month)
-        File.record(text, file_name)        
-
-    def record(dic):                        
-        File.record(text, district)    
+        File.record(text, file_name)            
 
     def file_to_dic(path):
         dictionary = {}
@@ -113,7 +110,7 @@ class Cache:
         return dictionary
 
     def get_cache_district(month):
-        file_name = "../cache/district{}.txt".format(month)        
+        file_name = "../cache/all/district{}.txt".format(month)        
         return Cache.file_to_dic(file_name)
     
     def get_cache_region(month):
@@ -125,18 +122,51 @@ class Cache:
         return Cache.file_to_dic(file_name)
 
     def get_cache_district_name(name, month):
-        name_fmt = unidecode(name.replace(" ", "-"))
-        file_name = "../cache/all/district/{}_{}.txt".format(name_fmt, month)    
-        file = open(file_name, "r")
-        if(file):
+        try:
+            name_fmt = unidecode(name.replace(" ", "-"))
+            file_name = "../cache/district/{}_{}.txt".format(name_fmt, month)            
+            file = open(file_name, "r")        
             liquidity = file.read()
             file.close()
             return liquidity
-        return 0
+        except:
+            return 0
 
     def set_cache_district_name(name, month, liq):
         name_fmt = unidecode(name.replace(" ", "-"))
         file_name = "../cache/district/{}_{}.txt".format(name_fmt, month)
+        File.record(str(liq), file_name)
+
+    def get_cache_street_name(name, month):
+        try:
+            name_fmt = unidecode(name.replace(" ", "-"))
+            file_name = "../cache/street/{}_{}.txt".format(name_fmt, month)           
+            file = open(file_name, "r")        
+            liquidity = file.read()
+            file.close()
+            return liquidity
+        except:
+            return 0
+
+    def set_cache_street_name(name, month, liq):
+        name_fmt = unidecode(name.replace(" ", "-"))
+        file_name = "../cache/street/{}_{}.txt".format(name_fmt, month)
+        File.record(str(liq), file_name)
+
+    def get_cache_region_name(name, month):
+        try:
+            name_fmt = unidecode(name.replace(" ", "-"))
+            file_name = "../cache/region/{}_{}.txt".format(name_fmt, month)            
+            file = open(file_name, "r")            
+            liquidity = file.read()
+            file.close()
+            return liquidity
+        except:
+            return 0
+
+    def set_cache_region_name(name, month, liq):
+        name_fmt = unidecode(name.replace(" ", "-"))
+        file_name = "../cache/region/{}_{}.txt".format(name_fmt, month)
         File.record(str(liq), file_name)
 
 class Enum:

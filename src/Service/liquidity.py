@@ -136,7 +136,7 @@ class Liquidity:
         try:
             liquidity_cache = Cache.get_cache_district_name(name, month)
             if(liquidity_cache):  
-                return liquidity_cache  
+                return float(liquidity_cache)
 
             total_properties = 0
             total_sold_properties = 0
@@ -160,7 +160,11 @@ class Liquidity:
             raise Exception(error)
 
     def get_street_liquidity(name, month):
-        try:            
+        try:
+            liquidity_cache = Cache.get_cache_street_name(name, month)
+            if(liquidity_cache):  
+                return float(liquidity_cache)
+
             total_properties = 0
             total_sold_properties = 0
             liquidity = 0
@@ -175,6 +179,7 @@ class Liquidity:
                     total_sold_properties += 1
             if(total_properties > 0):
                 liquidity = total_sold_properties/total_properties            
+            Cache.set_cache_street_name(name, month, liquidity)
             return liquidity            
         except Exception as ex:            
             error = "Liquidity Service - get_street_liquidity error: {} \n".format(ex)
@@ -182,7 +187,11 @@ class Liquidity:
             raise Exception(error)
 
     def get_region_liquidity(name, month):
-        try:            
+        try:        
+            liquidity_cache = Cache.get_cache_region_name(name, month)
+            if(liquidity_cache):  
+                return float(liquidity_cache)
+
             total_properties = 0
             total_sold_properties = 0
             liquidity = 0
@@ -197,6 +206,7 @@ class Liquidity:
                     total_sold_properties += 1
             if(total_properties > 0):
                 liquidity = total_sold_properties/total_properties            
+            Cache.set_cache_region_name(name, month, liquidity)
             return liquidity            
         except Exception as ex:            
             error = "Liquidity Service - get_region_liquidity error: {} \n".format(ex)
