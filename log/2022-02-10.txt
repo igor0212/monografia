@@ -18,3 +18,30 @@ Date: 2022-02-10 16:13:27.569535
 Erro: Liquidity Service - get_district_liquidity error: write() argument must be str, not float 
  
 
+Date: 2022-02-10 19:52:40.571165
+Erro: DataBase Error: Query select error - connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+ 
+ 
+
+Date: 2022-02-10 19:52:40.584313
+Erro: Region Repository - get_all error: DataBase Error: Query select error - connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+ 
+ 
+ 
+
+Date: 2022-02-10 19:52:40.585289
+Erro: Liquidity Service - get_by_district_all error: Region Repository - get_all error: DataBase Error: Query select error - connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+ 
+ 
+ 
+ 
+

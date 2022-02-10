@@ -102,7 +102,7 @@ class Liquidity:
         try:
             street_cache = Cache.get_cache_street(month)
             if(street_cache):
-                return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)
+                return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)            
 
             streets = RepositoryLiquidity.get_all_streets()
             cont = 0
@@ -113,7 +113,7 @@ class Liquidity:
                 name_fmt = unidecode(name.replace(" ", "-"))                    
                 if name_fmt not in street_cache:
                     liq = Liquidity.get_street_liquidity(name, month)           
-                    if(liq > 0):
+                    if(liq != 0):
                         street_cache[name] = liq
                         cont += 1
                     Cache.record_street(name, liq, month)
