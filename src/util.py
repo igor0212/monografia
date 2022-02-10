@@ -100,14 +100,19 @@ class Cache:
         file_name = "../cache/all/street{}.txt".format(month)
         File.record(text, file_name)            
 
-    def file_to_dic(path):
-        dictionary = {}
-        file = open(path, 'r')        
-        for line in file:
-            key, value = line.split()
-            dictionary[key] = value
-
-        return dictionary
+    def file_to_dic(path):        
+        try:
+            dictionary = {}
+            file = open(path, 'r')        
+            for line in file:
+                key, value = line.split()
+                dictionary[key] = value
+            file.close()
+            return dictionary
+        except:
+            file = open(path, 'a')
+            file.close()
+            return {}
 
     def get_cache_district(month):
         file_name = "../cache/all/district{}.txt".format(month)        
