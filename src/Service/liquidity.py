@@ -67,8 +67,9 @@ class Liquidity:
                 name_fmt = unidecode(name.replace(" ", "-"))
                 if name_fmt not in district_cache:
                     liq = Liquidity.get_district_liquidity(name, month)
-                    district_cache[name] = liq
-                    cont += 1
+                    if(liq > 0):
+                        district_cache[name] = liq
+                        cont += 1
                     Cache.record_district(name, liq, month)
             return sorted(district_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
@@ -88,8 +89,9 @@ class Liquidity:
                 name_fmt = unidecode(name.replace(" ", "-"))                
                 if name_fmt not in region_cache:
                     liq = Liquidity.get_region_liquidity(name, month)
-                    region_cache[name] = liq
-                    Cache.record_region(name, liq, month)
+                    if(liq > 0):
+                        region_cache[name] = liq
+                        Cache.record_region(name, liq, month)
             return sorted(region_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
@@ -110,9 +112,10 @@ class Liquidity:
                 name = street['name'].title()                
                 name_fmt = unidecode(name.replace(" ", "-"))                    
                 if name_fmt not in street_cache:
-                    liq = Liquidity.get_street_liquidity(name, month)                    
-                    street_cache[name] = liq
-                    cont += 1
+                    liq = Liquidity.get_street_liquidity(name, month)           
+                    if(liq > 0):
+                        street_cache[name] = liq
+                        cont += 1
                     Cache.record_street(name, liq, month)
             return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
