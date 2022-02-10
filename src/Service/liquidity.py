@@ -66,11 +66,10 @@ class Liquidity:
                 name = district['name']
                 name_fmt = unidecode(name.replace(" ", "-"))
                 if name_fmt not in district_cache:
-                    liq = Liquidity.get_by_district(name, month)                
-                    if(liq != 1 and liq != 0):
-                        district_cache[name] = liq
-                        cont += 1
-                        Cache.record_district(name, liq, month)
+                    liq = Liquidity.get_district_liquidity(name, month)
+                    district_cache[name] = liq
+                    cont += 1
+                    Cache.record_district(name, liq, month)
             return sorted(district_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
@@ -88,22 +87,12 @@ class Liquidity:
                 name = region['name']
                 name_fmt = unidecode(name.replace(" ", "-"))                
                 if name_fmt not in region_cache:
-                    liq = Liquidity.get_by_region(name, month)
+                    liq = Liquidity.get_region_liquidity(name, month)
                     region_cache[name] = liq
                     Cache.record_region(name, liq, month)
             return sorted(region_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
-            Log.print(error, True)
-            raise Exception(error)
-
-    def get_all_streets():
-        try:
-            data = RepositoryLiquidity.get_all_streets()    
-            if(data):
-                return data
-        except Exception as ex:
-            error = "Liquidity Service - get_all_streets error: {} \n".format(ex)
             Log.print(error, True)
             raise Exception(error)
 
@@ -113,7 +102,7 @@ class Liquidity:
             if(street_cache):
                 return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)
 
-            streets = Liquidity.get_all_streets()
+            streets = RepositoryLiquidity.get_all_streets()
             cont = 0
             for street in streets:
                 if(cont == 10):
@@ -121,11 +110,10 @@ class Liquidity:
                 name = street['name'].title()                
                 name_fmt = unidecode(name.replace(" ", "-"))                    
                 if name_fmt not in street_cache:
-                    liq = Liquidity.get_by_street(name, month)
-                    if(liq != 1 and liq != 0):
-                        street_cache[name] = liq
-                        cont += 1
-                        Cache.record_street(name, liq, month)
+                    liq = Liquidity.get_street_liquidity(name, month)                    
+                    street_cache[name] = liq
+                    cont += 1
+                    Cache.record_street(name, liq, month)
             return sorted(street_cache.items(), key=operator.itemgetter(1), reverse=True)
         except Exception as ex:            
             error = "Liquidity Service - get_by_district_all error: {} \n".format(ex)
