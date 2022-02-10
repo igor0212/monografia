@@ -1,3 +1,4 @@
+import re
 from flask import request
 from unidecode import unidecode
 from datetime import datetime
@@ -139,3 +140,7 @@ class Date:
         date_now = datetime.now()
         date = date_now - dateutil.relativedelta.relativedelta(months=month)
         return date.date()
+
+    def sum_date_by_month(date, month):           
+        response = date + dateutil.relativedelta.relativedelta(months=month)        
+        return response

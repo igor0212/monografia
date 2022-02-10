@@ -102,7 +102,7 @@ class Api:
     def api_liquidity_district():        
         name = Util.get_field('name', 'str')
         month = Util.get_field('month', 'int')        
-        return jsonify(Liquidity.get_by_district(name, month))
+        return jsonify(Liquidity.get_district_liquidity(name, month))
 
     @app.route('/api/liquidity/district/all', methods=['GET'])
     def api_liquidity_district_all():                
@@ -113,13 +113,13 @@ class Api:
     def api_liquidity_street():        
         name = Util.get_field('name', 'str')
         month = Util.get_field('month', 'int')
-        return jsonify(Liquidity.get_by_street(name, month))
+        return jsonify(Liquidity.get_street_liquidity(name, month))
 
     @app.route('/api/liquidity/region', methods=['GET'])
     def api_liquidity_region():        
         name = Util.get_field('name', 'str')
         month = Util.get_field('month', 'int')
-        return jsonify(Liquidity.get_by_region(name, month))
+        return jsonify(Liquidity.get_region_liquidity(name, month))
 
     @app.route('/api/liquidity/region/all', methods=['GET'])
     def api_liquidity_region_all():                
@@ -129,11 +129,7 @@ class Api:
     @app.route('/api/liquidity/street/all', methods=['GET'])
     def api_liquidity_street_all():                
         month = Util.get_field('month', 'int')
-        return jsonify(Liquidity.get_by_street_all(month))
-
-    @app.route('/api/liquidity/duplicate', methods=['GET'])
-    def api_liquidity_duplicate():
-        return jsonify(Liquidity.get_duplicate())    
+        return jsonify(Liquidity.get_by_street_all(month))   
 
     """
         Region Controller

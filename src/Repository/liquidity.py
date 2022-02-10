@@ -130,36 +130,77 @@ class Liquidity:
         except Exception as ex:            
             error = "Region Repository - get_all error: {} \n".format(ex)
             Log.print(error, True)
-            raise Exception(error) 
+            raise Exception(error)
 
-    def get_duplicate():
+    def get_announcement_dates_by_district(name):
         try:
-            query = """ SELECT
-                            partner_id
-                        FROM
-                            "Management"
-                        where is_available = false
-                        GROUP BY
-                            partner_id
-                        HAVING
-                            COUNT( partner_id ) > 1
-                        ORDER BY
-                            partner_id
-                        """
-            return DataBase.select(query)    
-        except Exception as ex:            
-            error = "Region Repository - get_duplicate error: {} \n".format(ex)
+            query = """
+                    select distinct m.partner_id, min(DATE(m.created_on)) as announcement_date
+                    from "Property" p
+                    inner join "Management" m on p.partner_id = m.partner_id
+                    inner join "District" d ON d.id = p.district_id
+                    where lower(unaccent(d."name"))  =  \'{}\'
+                    group by m.partner_id 
+                    order by announcement_date
+            """.format(Util.format2(name))
+            return DataBase.select(query)
+        except Exception as ex:
+            error = "Liquidity Repository - get_announcement_dates_by_district error: {} \n".format(ex)
             Log.print(error, True)
-            raise Exception(error)  
+            raise Exception(error)
 
-    def get_duplicate2(partner_id):
+
+    def get_announcement_dates_by_street(name):
         try:
-            query = """ select partner_code  
-                        from "Property" p
-                        where p.partner_id  =  {}
-                        """.format(partner_id)
-            return DataBase.select(query)    
-        except Exception as ex:            
-            error = "Region Repository - get_duplicate2 error: {} \n".format(ex)
+            query = """
+                    select distinct m.partner_id, min(DATE(m.created_on)) as announcement_date
+                    from "Property" p
+                    inner join "Management" m on p.partner_id = m.partner_id                    
+                    where lower(unaccent(p."street")) = \'{}\'                    
+                    group by m.partner_id 
+                    order by announcement_date
+            """.format(Util.format2(name))
+            return DataBase.select(query)
+        except Exception as ex:
+            error = "Liquidity Repository - get_announcement_dates_by_street error: {} \n".format(ex)
             Log.print(error, True)
-            raise Exception(error)           
+            raise Exception(error)
+
+    def get_announcement_dates_by_region(name):
+        try:
+            query = """
+                    select distinct m.partner_id, min(DATE(m.created_on)) as announcement_date
+                    from "Property" p
+                    inner join "Management" m on p.partner_id = m.partner_id                    
+                    inner join "District" d ON d.id = p.district_id
+                    inner join "Region" r ON r.id = d.region_id
+                    where lower(unaccent(r."name")) = \'{}\'                    
+                    group by m.partner_id 
+                    order by announcement_date
+            """.format(Util.format2(name))
+            return DataBase.select(query)
+        except Exception as ex:
+            error = "Liquidity Repository - get_announcement_dates_by_region error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
+
+    def check_property_sold(partner_id, announcement_date, deadline):
+        try:
+            response = 0
+            query = """
+                    select count(*)
+                    from "Management"
+                    where partner_id = {}        
+                    and DATE(created_on) > \'{}\'            
+                    and DATE(created_on) <= \'{}\'
+                    and is_available = false
+                    group by partner_id
+            """.format(partner_id, announcement_date, deadline)
+            list = DataBase.select(query)
+            if(list):
+                response = list[0]['count']
+            return response
+        except Exception as ex:
+            error = "Liquidity Repository - check_property_sold error: {} \n".format(ex)
+            Log.print(error, True)
+            raise Exception(error)
