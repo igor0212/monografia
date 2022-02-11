@@ -45,3 +45,21 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
  
  
 
+Date: 2022-02-10 21:18:06.277844
+Erro: Liquidity Service - get_region_liquidity error: could not convert string to float: '0.230031948881789130.23003194888178913' 
+ 
+
+Date: 2022-02-10 21:18:06.278841
+Erro: Liquidity Service - get_by_district_all error: Liquidity Service - get_region_liquidity error: could not convert string to float: '0.230031948881789130.23003194888178913' 
+ 
+ 
+
+Date: 2022-02-10 21:18:07.707004
+Erro: Liquidity Service - get_region_liquidity error: could not convert string to float: '0.230031948881789130.23003194888178913' 
+ 
+
+Date: 2022-02-10 21:18:07.708010
+Erro: Liquidity Service - get_by_district_all error: Liquidity Service - get_region_liquidity error: could not convert string to float: '0.230031948881789130.23003194888178913' 
+ 
+ 
+
