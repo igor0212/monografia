@@ -72,3 +72,21 @@ Erro: Liquidity Service - get_by_district_all error: Liquidity Service - get_reg
  
  
 
+Date: 2022-02-10 21:19:23.722445
+Erro: Liquidity Service - get_region_liquidity error: could not convert string to float: '0.230031948881789130.23003194888178913' 
+ 
+
+Date: 2022-02-10 21:19:23.725446
+Erro: Liquidity Service - get_by_district_all error: Liquidity Service - get_region_liquidity error: could not convert string to float: '0.230031948881789130.23003194888178913' 
+ 
+ 
+
+Date: 2022-02-10 21:20:24.986292
+Erro: Liquidity Service - get_region_liquidity error: could not convert string to float: '0.230031948881789130.23003194888178913' 
+ 
+
+Date: 2022-02-10 21:20:24.988287
+Erro: Liquidity Service - get_by_district_all error: Liquidity Service - get_region_liquidity error: could not convert string to float: '0.230031948881789130.23003194888178913' 
+ 
+ 
+
