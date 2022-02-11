@@ -1,0 +1,10 @@
+Augusto-Franco 0.16666666666666666
+Augusto-Moreira 0.5
+Avenida--Djalma-Vieira-Cristo 0.8333333333333334
+Avenida-Abilio-Machado 0.5
+Avenida-Afonso-Pena 0.1111111111111111
+Avenida-Alphonsus-De-Guimaraes 0.125
+Avenida-Altamiro-Avelino-Soares 0.2
+Avenida-Alvares-Cabral 0.027777777777777776
+Avenida-Arthur-Bernardes 0.3333333333333333
+Avenida-Artur-Bernardes 0.058823529411764705
