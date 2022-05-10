@@ -5,12 +5,12 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
                   os.pardir)
 )
 sys.path.append(PROJECT_ROOT)
-import Repository.city as RepositoryCity
+from Repository.city import City as RepositoryCity
 from util import Log
 
 class City:
     def get_all():
-        try:
+        try:            
             data = RepositoryCity.get_all()    
             if(data):
                 return data

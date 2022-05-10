@@ -24,6 +24,8 @@ jobs:
           pip install Flask
           pip install Unidecode
           pip install python-dateutil
+          pip install mock
+          pip install pytest-mock
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Lint with flake8
         run: |
