@@ -1,13 +1,17 @@
+import os
+import sys
+PROJECT_ROOT = os.path.abspath(os.path.join(
+                  os.path.dirname(__file__), 
+                  os.pardir)
+)
+sys.path.append(PROJECT_ROOT)
+
 from Repository.liquidity import Liquidity as RepositoryLiquidity
 from Service.district import District
 from Service.region import Region
-from util import Log, Date, Cache, Util
+from util import Log, Date, Cache
 from unidecode import unidecode
 import operator
-from Service.partner import Partner as ServicePartner
-from Service.management import Management as ServiceManagement
-from Service.property import Property as ServiceProperty
-
 
 class Liquidity:
     def get_by_district(name, month):    

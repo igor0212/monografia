@@ -1,3 +1,10 @@
+import os
+import sys
+PROJECT_ROOT = os.path.abspath(os.path.join(
+                  os.path.dirname(__file__), 
+                  os.pardir)
+)
+sys.path.append(PROJECT_ROOT)
 from Repository.job import Job as RepositoryJob
 from datetime import datetime
 from util import Log

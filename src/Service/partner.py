@@ -1,3 +1,11 @@
+import os
+import sys
+PROJECT_ROOT = os.path.abspath(os.path.join(
+                  os.path.dirname(__file__), 
+                  os.pardir)
+)
+sys.path.append(PROJECT_ROOT)
+
 from Service.district import District
 from Service.property import Property
 from Service.management import Management
