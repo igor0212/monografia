@@ -1,4 +1,4 @@
-from Service.city import City
+from city import City
 
 class TestCity:
     def test_upper(self):
