@@ -6,6 +6,8 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 )
 sys.path.append(PROJECT_ROOT)
 import Repository.city as RepositoryCity
+from util import Log
+
 class City:
     def get_all():
         try:
