@@ -1,3 +1,11 @@
+import os
+import sys
+PROJECT_ROOT = os.path.abspath(os.path.join(
+                  os.path.dirname(__file__), 
+                  os.pardir)
+)
+sys.path.append(PROJECT_ROOT)
+
 from Service.city import City
 from Repository.city import City as RepositoryCity
 from unittest.mock import MagicMock
