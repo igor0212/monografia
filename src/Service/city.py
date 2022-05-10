@@ -1,6 +1,11 @@
-from Repository.city import City as RepositoryCity
-from util import Log
-
+import os
+import sys
+PROJECT_ROOT = os.path.abspath(os.path.join(
+                  os.path.dirname(__file__), 
+                  os.pardir)
+)
+sys.path.append(PROJECT_ROOT)
+import Repository.city as RepositoryCity
 class City:
     def get_all():
         try:
