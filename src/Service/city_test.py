@@ -1,8 +1,8 @@
+import pytest
+from util import Log
 from city import City
 from Repository.city import City as RepositoryCity
 from unittest.mock import MagicMock
-import pytest
-
 
 class TestCity:
     def test_get_all_when_it_finds_value(self):
@@ -16,6 +16,7 @@ class TestCity:
         assert cities == []
 
     def test_get_all_when_exception_occurs(self):
+        Log.print = MagicMock(return_value = None)
         RepositoryCity.get_all = MagicMock(side_effect=Exception)
         with pytest.raises(Exception, match=r".*City Service - get_all error:*") : City.get_all()
 
@@ -33,10 +34,12 @@ class TestCity:
     
     def test_get_by_id_when_retunr_is_invalid(self):
         id = 1
-        RepositoryCity.get_by_id = MagicMock(id, return_value = {'id': 1, 'name': 'Belo Horizonte'})
+        Log.print = MagicMock(return_value = None)
+        RepositoryCity.get_by_id = MagicMock(id, return_value = {'id': 1, 'name': 'Belo Horizonte'})        
         with pytest.raises(Exception, match=r".*City Service - get_by_id error:*") : City.get_by_id(id)
 
     def test_get_by_id_when_exception_occurs(self):
         id = 1
+        Log.print = MagicMock(return_value = None)
         RepositoryCity.get_by_id = MagicMock(side_effect=Exception)
         with pytest.raises(Exception, match=r".*City Service - get_by_id error:*") : City.get_by_id(id)
