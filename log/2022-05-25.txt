@@ -31,3 +31,44 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 Date: 2022-05-25 23:13:05.172523
 Erro: error 
 
+Date: 2022-05-25 23:25:39.036793
+Erro: error 
+
+Date: 2022-05-25 23:25:39.044561
+Erro: error 
+
+Date: 2022-05-25 23:25:39.053445
+Erro: error 
+
+Date: 2022-05-25 23:25:39.055830
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-25 23:25:39.071011
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-25 23:25:39.078263
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-25 23:25:39.091929
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-25 23:25:39.107987
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-25 23:25:39.116795
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-25 23:25:39.135665
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-25 23:25:39.143829
+Erro: District Service - get_by_name error:  
+ 
+
