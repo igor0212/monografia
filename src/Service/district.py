@@ -14,6 +14,7 @@ class District:
             data = RepositoryDistrict.get_all()    
             if(data):
                 return data
+            return []
         except Exception as ex:
             error = "District Service - get_all error: {} \n".format(ex)
             Log.print(error, True)
