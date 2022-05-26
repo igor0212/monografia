@@ -23,7 +23,7 @@ class Region:
 
     def link():
         try:
-            with open('../drafts/region.csv', encoding="utf8") as csvfile:
+            with open('drafts/region.csv', encoding="utf8") as csvfile:
                 spamreader = csv.reader(csvfile, delimiter=',')
                 for row in spamreader:                    
                     region = row[0]

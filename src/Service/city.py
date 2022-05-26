@@ -10,7 +10,8 @@ from util import Log
 
 class City:
     def get_all():
-        try:            
+        try:
+            Log.print("error", True)            
             data = RepositoryCity.get_all()    
             if(data):
                 return data

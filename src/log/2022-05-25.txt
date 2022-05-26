@@ -1,0 +1,33 @@
+Date: 2022-05-25 23:12:19.335805
+Erro: error 
+
+Date: 2022-05-25 23:12:23.432075
+Erro: DataBase Error: Query select error - connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+ 
+ 
+
+Date: 2022-05-25 23:12:23.433130
+Erro: City Repository - get_all error: DataBase Error: Query select error - connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+ 
+ 
+ 
+
+Date: 2022-05-25 23:12:23.436128
+Erro: City Service - get_all error: City Repository - get_all error: DataBase Error: Query select error - connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+ 
+ 
+ 
+ 
+
+Date: 2022-05-25 23:13:05.172523
+Erro: error 
+
