@@ -76,7 +76,7 @@ class File:
         File.record(text, path)
 
     def record_log(log, is_error):
-        path = "../log/{}.txt".format(datetime.now().date())
+        path = "log/{}.txt".format(datetime.now().date())
         date_now = datetime.now()
         type = "Erro" if is_error else "Log"
         text = "Date: {}\n{}: {} \n\n".format(date_now, type, log)     

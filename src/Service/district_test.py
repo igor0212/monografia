@@ -1,5 +1,4 @@
 import pytest
-from util import Log
 from district import District
 from Repository.district import District as RepositoryDistrict
 from unittest.mock import MagicMock
@@ -15,8 +14,7 @@ class TestDistrict:
         districts = District.get_all()  
         assert districts == []
 
-    def test_get_all_when_exception_occurs(self):
-        Log.print = MagicMock(return_value = None)
+    def test_get_all_when_exception_occurs(self):        
         RepositoryDistrict.get_all = MagicMock(side_effect=Exception)        
         with pytest.raises(Exception, match=r".*District Service - get_all error:*") : District.get_all()
 
@@ -33,14 +31,12 @@ class TestDistrict:
         assert district == {}
     
     def test_get_by_id_when_retunr_is_invalid(self):
-        id = 3
-        Log.print = MagicMock(return_value = None)
+        id = 3        
         RepositoryDistrict.get_by_id = MagicMock(id, return_value = {'id': 3, 'name': 'Camargos'})        
         with pytest.raises(Exception, match=r".*District Service - get_by_id error:*") : District.get_by_id(id)
 
     def test_get_by_id_when_exception_occurs(self):
-        id = 1
-        Log.print = MagicMock(return_value = None)
+        id = 1        
         RepositoryDistrict.get_by_id = MagicMock(side_effect=Exception)        
         with pytest.raises(Exception, match=r".*District Service - get_by_id error:*") : District.get_by_id(id)
 
@@ -57,14 +53,12 @@ class TestDistrict:
         assert district == {}
     
     def test_get_by_name_when_retunr_is_invalid(self):
-        name = 'Buritis'
-        Log.print = MagicMock(return_value = None)
+        name = 'Buritis'        
         RepositoryDistrict.get_by_name = MagicMock(id, return_value = {'id': 3, 'name': 'Camargos'})        
         with pytest.raises(Exception, match=r".*District Service - get_by_name error:*") : District.get_by_name(name)
 
     def test_get_by_name_when_exception_occurs(self):
-        name = 'Buritis'
-        Log.print = MagicMock(return_value = None)
+        name = 'Buritis'        
         RepositoryDistrict.get_by_name = MagicMock(side_effect=Exception)        
         with pytest.raises(Exception, match=r".*District Service - get_by_name error:*") : District.get_by_name(name)
 
