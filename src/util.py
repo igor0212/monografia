@@ -69,18 +69,26 @@ class File:
     search_properties_by_district = "db/scripts/inserts_properties.sql"
     routine = "db/scripts/inserts_job.sql"    
 
-    def record_insert(query):        
+    def record_insert(query):    
         date_now = datetime.now()
         text = "\n\n -------------------------------------------------------- Script shot in {} ------------------------------------------------------------------------------------------ \n\n {} \n\n".format(date_now, query)
-        path = "log/{}.sql".format(datetime.now().date())
-        File.record(text, path)
+        try:
+            path = "log/{}.sql".format(datetime.now().date())
+            File.record(text, path)
+        except:
+            path = "../log/{}.sql".format(datetime.now().date())
+            File.record(text, path)            
 
     def record_log(log, is_error):
-        path = "log/{}.txt".format(datetime.now().date())
         date_now = datetime.now()
         type = "Erro" if is_error else "Log"
         text = "Date: {}\n{}: {} \n\n".format(date_now, type, log)     
-        File.record(text, path)
+        try:
+            path = "log/{}.txt".format(datetime.now().date())            
+            File.record(text, path)
+        except:
+            path = "../log/{}.txt".format(datetime.now().date())            
+            File.record(text, path)
 
     def record(text, path):
         with open(path, 'a') as file:
