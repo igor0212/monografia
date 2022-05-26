@@ -1,17 +1,17 @@
 import os
 import sys
-from flask import request
-from unidecode import unidecode
-from datetime import datetime
-import flask
-import decimal
-import dateutil.relativedelta
 PROJECT_ROOT = os.path.abspath(os.path.join(
                   os.path.dirname(__file__), 
                   os.pardir)
 )
 sys.path.append(PROJECT_ROOT)
 
+from flask import request
+from unidecode import unidecode
+from datetime import datetime
+import flask
+import decimal
+import dateutil.relativedelta
 
 class JSONEncoder(flask.json.JSONEncoder):    
     def default(self, obj):
