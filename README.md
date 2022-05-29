@@ -1,6 +1,8 @@
 Grupo
 
 - Igor Oliveira Valente da Silveira
+- Renan Henrique de Melo Maia
+- Pedro Augusto Estevão de Souza
 
 Explicação do sistema
 
