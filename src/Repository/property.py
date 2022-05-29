@@ -54,4 +54,4 @@ class Property:
         except Exception as ex:
             error = "Property Repository - add_by_query error: {} \n".format(ex)
             Log.print(error, True)
-            raise Exception(error)          
+            raise Exception(error)
