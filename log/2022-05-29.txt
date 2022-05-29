@@ -1,0 +1,2532 @@
+Date: 2022-05-29 11:35:02.897692
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:35:02.908398
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:35:02.916463
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:35:02.927301
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:35:02.937310
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:35:02.944896
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:35:02.962372
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 11:35:02.968865
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 11:35:28.767212
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:35:28.778401
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:35:28.785067
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:35:28.796189
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:35:28.806838
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:35:28.813472
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:35:28.829395
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 11:35:28.836182
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 11:37:22.890642
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:37:22.902321
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:37:22.909148
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:37:22.921806
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:37:22.932928
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:37:22.939843
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:37:22.956467
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 11:37:22.963168
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 11:44:16.882773
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:44:16.894080
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:44:16.900744
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:44:16.914683
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:44:16.926329
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:44:16.932788
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:44:16.948322
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 11:44:16.955443
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 11:44:16.966330
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:45:03.676145
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:45:03.687439
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:45:03.695959
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:45:03.707544
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 11:45:03.718073
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 11:45:03.727010
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 11:45:03.743833
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 11:45:03.750538
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 11:45:03.763569
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:00:33.856634
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:00:33.867756
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:00:33.874737
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:00:33.888914
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:00:33.899533
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:00:33.906342
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:00:33.922417
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:00:33.930028
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:00:33.941217
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:01:05.201719
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:01:05.212699
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:01:05.219647
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:01:05.232043
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:01:05.242409
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:01:05.249222
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:01:05.265600
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:01:05.272400
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:01:05.283097
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:02:50.812225
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:02:50.824811
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:02:50.831696
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:02:50.842461
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:02:50.855249
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:02:50.862414
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:02:50.875925
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:02:50.884815
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:02:50.896099
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:05:13.245397
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:05:13.261748
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:05:13.268764
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:05:13.279643
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:05:13.292207
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:05:13.298992
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:05:13.313013
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:05:13.323593
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:05:13.335600
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:07:53.109234
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:07:53.120502
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:07:53.127162
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:07:53.140603
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:07:53.151353
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:07:53.158055
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:07:53.173408
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:07:53.180785
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:07:53.191541
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:12:22.687553
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:12:22.699933
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:12:22.707110
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:12:22.717555
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:12:22.730342
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:12:22.737075
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:12:22.751131
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:12:22.759517
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:12:22.770653
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:13:49.320229
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:13:49.331810
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:13:49.338842
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:13:49.352317
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:13:49.363470
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:13:49.370429
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:13:49.387788
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:13:49.394736
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:13:49.406206
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:14:02.035302
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:14:02.047361
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:14:02.054025
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:14:02.064684
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:14:02.077986
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:14:02.084937
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:14:02.100027
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:14:02.108515
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:14:02.119029
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:15:59.921148
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:15:59.933311
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:15:59.940118
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:15:59.954255
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:15:59.965750
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:15:59.974723
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:15:59.989898
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:15:59.996715
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:16:00.009112
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:17:38.767613
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:17:38.778688
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:17:38.786197
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:17:38.798495
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:17:38.809747
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:17:38.817246
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:17:38.832266
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:17:38.839676
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:17:38.852501
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:18:01.549545
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:18:01.560907
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:18:01.569379
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:18:01.580709
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:18:01.591165
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:18:01.598794
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:18:01.613841
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:18:01.620981
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:18:01.633528
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:18:23.876805
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:18:23.888546
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:18:23.896244
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:18:23.907457
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:18:23.919578
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:18:23.926478
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:18:23.941393
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:18:23.950845
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:18:23.962201
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:18:45.894871
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:18:45.906008
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:18:45.914582
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:18:45.925933
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:18:45.936441
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:18:45.944162
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:18:45.959231
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:18:45.966414
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:18:45.980688
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:19:04.516683
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:19:04.528696
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:19:04.537209
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:19:04.548494
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:19:04.559130
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:19:04.566778
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:19:04.582896
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:19:04.589773
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:19:04.602082
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:19:35.066782
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:19:35.079013
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:19:35.085993
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:19:35.097643
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:19:35.110486
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:19:35.117667
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:19:35.133632
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:19:35.141058
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:19:35.151948
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:21:28.098035
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:21:28.109600
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:21:28.116956
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:21:28.128147
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:21:28.140694
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:21:28.147748
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:21:28.168988
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:21:28.176154
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:21:28.187317
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:21:44.702657
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:21:44.714656
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:21:44.721332
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:21:44.734537
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:21:44.745185
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:21:44.751948
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:21:44.769635
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:21:44.776500
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:21:44.788165
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:22:24.710399
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:22:24.722137
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:22:24.730261
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:22:24.741330
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:22:24.752537
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:22:24.761744
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:22:24.775762
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:22:24.783164
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:22:24.796515
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:22:46.304848
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:22:46.317232
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:22:46.325934
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:22:46.336928
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:22:46.347897
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:22:46.356082
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:22:46.370109
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:22:46.376953
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:22:46.390171
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:23:20.256696
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:23:20.268438
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:23:20.275266
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:23:20.287828
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:23:20.299954
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:23:20.307061
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:23:20.322053
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:23:20.329762
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:23:20.340287
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:23:32.371440
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:23:32.384757
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:23:32.391321
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:23:32.401835
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:23:32.414064
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:23:32.421045
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:23:32.434764
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:23:32.441757
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:23:32.454911
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:24:40.562892
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:24:40.574786
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:24:40.581551
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:24:40.592308
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:24:40.607364
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:24:40.614117
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:24:40.629619
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:24:40.638095
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:24:40.648617
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:25:02.318712
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:25:02.330819
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:25:02.337517
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:25:02.350560
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:25:02.362360
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:25:02.369090
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:25:02.384307
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:25:02.391771
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:25:02.404007
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:28:44.156634
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:28:44.169431
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:28:44.176533
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:28:44.187160
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:28:44.199735
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:28:44.206826
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:28:44.221115
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:28:44.239167
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:28:44.250573
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:30:13.784674
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:30:13.796940
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:30:13.804162
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:30:13.814744
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:30:13.828197
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:30:13.835942
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:30:13.852407
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:30:13.859849
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:30:13.871048
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:30:35.785513
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:30:35.798052
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:30:35.805273
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:30:35.818656
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:30:35.830500
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:30:35.837711
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:30:35.853940
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:30:35.861255
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:30:35.872941
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:40:24.672336
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:40:24.684598
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:40:24.692407
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:40:24.705424
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:40:24.716183
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:40:24.723840
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:40:24.739532
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:40:24.746596
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:40:24.760725
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:40:59.659924
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:40:59.671599
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:40:59.678692
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:40:59.689775
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:40:59.701971
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:40:59.708856
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:40:59.723137
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:40:59.732291
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:40:59.743156
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:42:23.645334
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:42:23.657042
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:42:23.666149
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:42:23.677140
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:42:23.687973
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:42:23.697111
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:42:23.712514
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:42:23.719562
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:42:23.733494
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:42:46.342967
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:42:46.355287
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:42:46.362411
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:42:46.373855
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:42:46.386855
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:42:46.393790
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:42:46.407783
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:42:46.416270
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:42:46.427596
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:43:24.219972
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:43:24.232154
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:43:24.239134
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:43:24.249879
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:43:24.262446
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:43:24.269245
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:43:24.282884
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:43:24.291879
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:43:24.303652
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:43:40.982598
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:43:40.994378
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:43:41.001507
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:43:41.014941
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:43:41.025767
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:43:41.032808
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:43:41.048983
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:43:41.055979
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:43:41.067767
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:44:17.709783
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:44:17.720880
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:44:17.729081
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:44:17.740751
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:44:17.751138
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:44:17.759875
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:44:17.774499
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:44:17.781517
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:44:17.795022
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:44:54.927187
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:44:54.938342
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:44:54.947049
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:44:54.958257
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:44:54.969203
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:44:54.978028
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:44:54.992414
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:44:54.999378
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:44:55.013269
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:45:03.598834
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:45:03.610034
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:45:03.617101
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:45:03.627624
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:45:03.640076
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:45:03.647118
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:45:03.661366
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:45:03.669180
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:45:03.679934
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:45:32.043853
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:45:32.054961
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:45:32.061972
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:45:32.074847
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:45:32.085710
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:45:32.092977
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:45:32.108824
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:45:32.115809
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:45:32.126920
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:45:45.381220
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:45:45.392585
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:45:45.399490
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:45:45.410893
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:45:45.422861
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:45:45.430249
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:45:45.446447
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:45:45.453628
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:45:45.464821
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:49:37.788092
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:49:37.799390
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:49:37.806180
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:49:37.818601
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:49:37.830045
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:49:37.837033
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:49:37.853651
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:49:37.861046
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:49:37.872262
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:50:36.619120
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:50:36.632297
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:50:36.639471
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:50:36.650925
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:50:36.662461
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:50:36.669635
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:50:36.683975
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:50:36.691660
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:50:36.703965
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:51:27.967724
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:51:27.980388
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:51:27.987764
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:51:27.998636
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:51:28.011238
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:51:28.018352
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:51:28.032392
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:51:28.041575
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:51:28.053373
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:52:12.509091
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:52:12.520919
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:52:12.527977
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:52:12.542231
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:52:12.553974
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:52:12.560862
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:52:12.578055
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:52:12.585775
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:52:12.596913
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:52:37.844496
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:52:37.856257
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:52:37.863662
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:52:37.874641
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:52:37.887742
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:52:37.894670
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:52:37.908613
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:52:37.917415
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:52:37.928618
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:57:43.489001
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:57:43.500142
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:57:43.507794
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:57:43.519191
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:57:43.529683
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:57:43.538421
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:57:43.552256
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:57:43.559524
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:57:43.575126
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:59:48.312564
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:59:48.324347
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:59:48.331103
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:59:48.341747
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:59:48.355657
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:59:48.362542
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:59:48.376083
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:59:48.384263
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:59:48.395500
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:59:55.894945
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:59:55.906389
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:59:55.915123
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:59:55.926636
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 12:59:55.937614
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 12:59:55.946712
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 12:59:55.961772
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 12:59:55.968924
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 12:59:55.982442
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:09:30.310416
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:09:30.322982
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 13:09:30.330029
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 13:09:30.341332
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:09:30.355208
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 13:09:30.362261
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 13:09:30.376319
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 13:09:30.385803
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 13:09:30.397755
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:09:30.408899
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 13:12:55.771593
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:12:55.782867
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 13:12:55.791620
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 13:12:55.802737
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:12:55.813322
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 13:12:55.822353
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 13:12:55.837866
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 13:12:55.844782
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 13:12:55.858409
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:12:55.869951
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 13:12:55.876868
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 13:50:09.073655
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:50:09.085426
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 13:50:09.092274
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 13:50:09.104871
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:50:09.116219
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 13:50:09.123112
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 13:50:09.143118
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 13:50:09.150304
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 13:50:09.164102
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 13:50:09.175845
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 13:50:09.182672
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:09:12.572069
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:09:12.583195
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:09:12.591547
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:09:12.602655
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:09:12.613491
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:09:12.621974
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:09:12.636089
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:09:12.643308
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:09:12.656198
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:09:12.727946
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:09:12.734805
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:09:34.498263
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:09:34.519842
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:09:34.526817
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:09:34.540665
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:09:34.551876
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:09:34.558809
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:09:34.574876
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:09:34.582284
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:09:34.593492
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:09:34.666340
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:09:34.673213
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:09:51.490486
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:09:51.503660
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:09:51.511144
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:09:51.524122
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:09:51.536553
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:09:51.544258
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:09:51.560494
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:09:51.567844
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:09:51.580666
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:09:51.653944
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:09:51.661474
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:10:17.245625
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:10:17.258968
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:10:17.266396
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:10:17.280644
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:10:17.293565
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:10:17.301198
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:10:17.319737
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:10:17.327626
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:10:17.341777
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:10:17.357087
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:10:17.364738
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:10:22.262408
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:10:22.274220
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:10:22.281143
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:10:22.293098
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:10:22.303701
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:10:22.311260
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:10:22.326370
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:10:22.333510
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:10:22.346330
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:10:22.359217
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:10:22.366501
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:12:06.590307
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:12:06.601757
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:12:06.609790
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:12:06.621242
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:12:06.631918
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:12:06.640380
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:12:06.655179
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:12:06.662092
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:12:06.675302
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:12:06.687964
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:12:06.694788
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:15:29.665198
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:15:29.676719
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:15:29.685661
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:15:29.696788
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:15:29.707640
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:15:29.715856
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:15:29.730186
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:15:29.737251
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:15:29.752179
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:15:29.764760
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:15:29.771730
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:17:18.902808
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:17:18.914268
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:17:18.921968
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:17:18.932856
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:17:18.944271
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:17:18.952316
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:17:18.966612
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:17:18.973595
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:17:18.985898
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:17:18.997581
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:17:19.004701
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:19:08.656429
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:19:08.667469
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:19:08.675458
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:19:08.686358
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:19:08.698189
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:19:08.706663
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:19:08.721275
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:19:08.728510
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:19:08.741960
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:19:08.753426
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:19:08.760428
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:19:13.976356
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:19:13.987250
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:19:13.993864
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:19:14.007105
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:19:14.018211
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:19:14.027634
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:19:14.041240
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:19:14.047960
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:19:14.060941
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:19:14.072628
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:19:14.079407
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:19:31.414124
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:19:31.427531
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:19:31.434575
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:19:31.447611
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:19:31.459239
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:19:31.466284
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:19:31.481756
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:19:31.489182
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:19:31.500587
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:19:31.511845
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:19:31.519721
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:23:58.121193
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:23:58.132168
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:23:58.143669
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:23:58.154645
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:23:58.165176
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:23:58.173531
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:23:58.188263
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:23:58.195161
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:23:58.207699
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:23:58.219245
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:23:58.226166
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:24:05.788413
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:24:05.801360
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:24:05.808608
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:24:05.822148
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:24:05.834471
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:24:05.842065
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:24:05.859028
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:24:05.866524
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:24:05.879538
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:24:05.892796
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:24:05.900237
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-05-29 15:37:25.901596
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:37:25.913047
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:37:25.920108
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:37:25.933457
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:37:25.944837
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-05-29 15:37:25.954012
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-05-29 15:37:25.968521
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-05-29 15:37:25.975443
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-05-29 15:37:25.988370
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-05-29 15:37:26.000602
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-05-29 15:37:26.007419
+Erro: Management Service - get_by_partner_id error:  
+ 
+
