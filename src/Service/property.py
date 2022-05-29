@@ -24,7 +24,7 @@ class Property:
     def get_all_new_ad():
         try:
             data = RepositoryProperty.get_all_new_ad()
-            if(data):
+            if data:
                 return data
             return []
         except Exception as ex:
