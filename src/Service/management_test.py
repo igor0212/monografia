@@ -10,7 +10,7 @@ from unittest import mock
 
 class TestManagement:
 
-
+#TENTAIVA DE MOCK DE BANCO DE DADOS NAS FIXTURES
     def fixture_db_conecction(self):
         dbc = mock.MagicMock(spec = ['Repository.add'])
         return dbc
@@ -70,7 +70,7 @@ class TestManagement:
         management = RepositoryManagement.get_all()
         assert management == []
     
-    def test_get_all_when_excetpion_ocrrurs(self):
+    def test_get_all_when_excetpion_occurs(self):
         RepositoryManagement.get_all = MagicMock(side_effect=Exception)
         with pytest.raises(Exception, match=r".*Management Service - get_all error:*") : Management.get_all()
 
@@ -113,19 +113,20 @@ class TestManagement:
         RepositoryManagement.get_by_partner_id = MagicMock(side_effect = Exception)
         with pytest.raises(Exception, match=r".*Management Service - get_by_partner_id error*") : Management.get_by_partner_id (partner_id)
 
-    def test_adding_property(self):
-        data_atual = datetime.now()
-        row_tested = {'id': 1, 
-                       'partner_id': 1, 
-                       'price': 1,
-                       'tax_rate': 1,
-                       'property_tax': 1,
-                       'created_on': data_atual,
-                       'is_available': False
-                       }
-        self.fixture_db_conecction()
-        self.fixed_rows()
-        RepositoryManagement.add(1,1,1,1,datetime.now(),False)
-        # assert row_tested == RepositoryManagement.get_by_partner_id(1)
+    #TENTATIVA DE TESTE DE INSERÇÃO NO BANCO MOCKADO
+    # def test_adding_property(self):
+    #     data_atual = datetime.now()
+    #     row_tested = {'id': 1, 
+    #                    'partner_id': 1, 
+    #                    'price': 1,
+    #                    'tax_rate': 1,
+    #                    'property_tax': 1,
+    #                    'created_on': data_atual,
+    #                    'is_available': False
+    #                    }
+    #     self.fixture_db_conecction()
+    #     self.fixed_rows()
+    #     RepositoryManagement.add(1,1,1,1,datetime.now(),False)
+    #     # assert row_tested == RepositoryManagement.get_by_partner_id(1)
 
     
