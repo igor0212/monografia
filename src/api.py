@@ -1,12 +1,12 @@
 import flask
 from flask import jsonify
-from management import Management
-from city import City
-from district import District
-from property import Property
-from partner import Partner
-from liquidity import Liquidity
-from region import Region
+from Service.management import Management
+from Service.city import City
+from Service.district import District
+from Service.property import Property
+from Service.partner import Partner
+from Service.liquidity import Liquidity
+from Service.region import Region
 from util import Util, JSONEncoder
 
 app = flask.Flask(__name__)
