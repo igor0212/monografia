@@ -3,7 +3,7 @@ import os
 import sys
 from multiprocessing import managers
 import pytest
-from Service.management import Management
+from management import Management
 from Repository.management import Management as RepositoryManagement
 from unittest.mock import MagicMock
 from unittest import mock 

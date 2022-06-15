@@ -1,5 +1,5 @@
 import pytest
-from Service.district import District
+from district import District
 from Repository.district import District as RepositoryDistrict
 from unittest.mock import MagicMock
 

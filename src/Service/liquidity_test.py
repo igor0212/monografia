@@ -1,5 +1,5 @@
 import pytest
-from Service.liquidity import Liquidity
+from liquidity import Liquidity
 from Repository.liquidity import Liquidity as RepositoryLiquidity
 from unittest.mock import MagicMock
 from unittest import mock 

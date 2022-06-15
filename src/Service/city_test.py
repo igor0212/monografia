@@ -1,5 +1,5 @@
 import pytest
-from Service.city import City
+from city import City
 from Repository.city import City as RepositoryCity
 from unittest.mock import MagicMock
 
