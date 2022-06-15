@@ -1,5 +1,5 @@
 import pytest
-from property import Property
+from Service.property import Property
 from Repository.property import Property as RepositoryProperty
 from unittest.mock import MagicMock
 

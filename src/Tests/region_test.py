@@ -1,5 +1,5 @@
 import pytest
-from region import Region
+from Service.region import Region
 from Repository.region import Region as RepositoryRegion
 from unittest.mock import MagicMock
 
