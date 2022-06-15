@@ -11,9 +11,9 @@ from util import Log
 class DataBase:
     def get_connection():
         host = 'localhost'
-        database = 'monografia'
+        database = 'postgres'
         user = 'postgres'
-        password = '@Eliane9455'    
+        password = 'postgres'    
         return psycopg2.connect(host=host, database=database, user=user, password=password)   
 
     def select(query, args=(), one=False):
