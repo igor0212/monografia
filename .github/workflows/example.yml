@@ -41,7 +41,9 @@ jobs:
           cd src
       - name: Run Coverage
         run: |
-          python -m pytest --cov Tests/ --cov-branch --cov-report term-missing
+          coverage run -m pytest src/Service
+          coverage report -m          
+          coverage html
       - name: Test with pytest
         run: |
           python -m pytest 
