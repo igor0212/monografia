@@ -48,8 +48,4 @@ jobs:
         run: |
           python -m pytest 
       - name: Codecov
-        uses: codecov/codecov-action@v3.1.0
-      - name: Code Coverage Summary
-        uses: irongut/CodeCoverageSummary@v1.2.0
-        with:
-          filename: coverage.cobertura.xml
+        uses: codecov/codecov-action@v3.1.0    
