@@ -9,10 +9,11 @@ from Service.liquidity import Liquidity
 from Service.region import Region
 from util import Util, JSONEncoder
 
-class Api:
-    app = flask.Flask(__name__)
-    app.json_encoder = JSONEncoder
+app = flask.Flask(__name__)
+app.json_encoder = JSONEncoder
 
+class Api:        
+    
     @app.errorhandler(404)
     def page_not_found(e):
         return "<h1>404</h1><p>The resource could not be found.</p>", 404
