@@ -1962,3 +1962,1131 @@ Date: 2022-06-14 21:49:16.025747
 Erro: Region Service - get_all error:  
  
 
+Date: 2022-06-14 22:02:52.498624
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:02:52.506625
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:02:52.509625
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:02:52.517634
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:02:52.523633
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:02:52.526630
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:08:18.513673
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:08:18.528543
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:08:18.535994
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:08:18.551123
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:08:18.565507
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:08:18.573241
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:08:18.590134
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:08:18.597781
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:08:18.617827
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:08:18.637034
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:08:18.652872
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:08:18.669010
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:08:18.676498
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:08:18.693186
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:08:18.708987
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:08:18.723665
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:08:18.731796
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:08:18.747135
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:08:18.754394
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:08:18.769573
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:08:51.059769
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:08:51.066762
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:08:51.071767
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:08:51.079765
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:08:51.086762
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:08:51.088769
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:08:51.101764
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:08:51.105770
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:08:51.117768
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:08:51.125767
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:08:51.134770
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:08:51.145764
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:08:51.148766
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:16:59.176862
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:16:59.192007
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:16:59.198263
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:16:59.212765
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:16:59.227171
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:16:59.234710
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:16:59.251742
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:16:59.259023
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:16:59.277261
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:16:59.294386
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:16:59.308077
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:16:59.323033
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:16:59.329434
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:16:59.343211
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:16:59.357055
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:16:59.370831
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:16:59.377639
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:16:59.392045
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:16:59.399157
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:16:59.412890
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:18:12.725485
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:18:12.741839
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:18:12.749248
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:19:04.685283
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:19:04.691295
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:19:04.695287
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:19:04.703282
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:19:04.711303
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:19:04.715297
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:19:04.727301
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:19:04.730298
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:19:04.739306
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:19:04.750293
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:19:04.758282
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:19:04.768290
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:19:04.771296
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:19:04.779289
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:19:04.786296
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:19:04.795293
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:19:04.798289
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:19:04.806309
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:19:04.810289
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:33:23.506117
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:33:23.518763
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:33:23.525557
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:33:23.538491
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:33:23.551515
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:33:23.559148
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:33:23.575054
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:33:23.581738
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:33:23.600056
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:33:23.616556
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:33:23.629665
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:33:23.644017
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:33:23.650737
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:33:23.664310
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:33:23.677443
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:33:23.690599
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:33:23.696983
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:33:23.710759
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:33:23.717140
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:33:23.730543
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:33:42.759688
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:33:42.773449
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:33:42.780020
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:33:42.793077
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:33:42.805509
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:33:42.812286
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:33:42.827993
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:33:42.835507
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:33:42.853002
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:33:42.871367
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:33:42.884645
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:33:42.898553
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:33:42.904582
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:33:42.917425
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:33:42.930077
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:33:42.943091
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:33:42.949780
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:33:42.963754
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:33:42.970319
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:33:42.982689
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:34:16.208910
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:34:16.222479
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:34:16.229218
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:34:16.242505
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:34:16.255203
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:34:16.261176
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:34:16.276423
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:34:16.283292
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:34:16.300961
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:34:16.317428
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:34:16.331341
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:34:16.345809
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:34:16.352619
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:34:16.367446
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:34:16.381841
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:34:16.396806
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:34:16.403895
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:34:16.419202
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:34:16.425966
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:34:16.440746
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:09.104580
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:09.126019
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:09.134798
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:35:09.155544
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:09.177403
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:09.188270
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:35:09.214280
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:35:09.225133
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:35:09.247649
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:35:09.271306
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:35:09.286683
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:09.307280
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:09.315108
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:35:09.331450
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:09.346439
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:35:09.361470
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:09.367815
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:35:09.383445
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:35:09.389802
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:35:09.405180
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:18.767121
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:18.780152
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:18.787307
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:35:18.801969
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:18.815980
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:18.822220
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:35:18.837667
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:35:18.844048
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:35:18.860479
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:35:18.877294
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:35:18.891060
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:18.905165
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:18.912605
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:35:18.925174
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:18.937656
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:35:18.951753
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:18.958678
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:35:18.972747
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:35:18.979247
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:35:18.993732
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:26.904830
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:34.660505
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:34.676260
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:34.684041
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:35:34.700473
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:34.714527
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:34.722379
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:35:34.737774
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:35:34.745390
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:35:34.764836
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:35:34.782555
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:35:34.795256
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:34.808979
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:34.815496
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:35:34.829556
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:35:34.842472
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:35:34.856699
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:35:34.863965
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:35:34.877995
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:35:34.884896
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:35:34.900001
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:36:49.763160
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:36:49.776301
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:36:49.782548
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:36:49.795768
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:36:49.810161
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:36:49.817131
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:36:49.832699
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:36:49.840383
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:36:49.858091
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:36:49.874979
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:36:49.888282
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:36:49.903029
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:36:49.909820
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:36:49.923055
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:36:49.936676
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:36:49.951030
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:36:49.957313
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:36:49.971336
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:36:49.978051
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:36:49.990744
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:43:57.380397
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:43:57.394280
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:43:57.399439
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:43:57.411430
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:43:57.424169
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:43:57.429858
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:43:57.442643
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:43:57.448216
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:43:57.464541
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:43:57.480630
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:43:57.493375
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:43:57.506721
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:43:57.512273
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:43:57.524402
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:43:57.536229
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:43:57.548452
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:43:57.553847
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:43:57.565930
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:43:57.571705
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:43:57.584718
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:44:22.184775
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:44:22.198951
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:44:22.205695
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:44:22.218563
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:44:22.231809
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:44:22.239279
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:44:22.254698
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:44:22.261362
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:44:22.279812
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:44:22.296010
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:44:22.308822
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:44:22.323291
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:44:22.330377
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:44:22.342884
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:44:22.355726
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:44:22.370326
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:44:22.377294
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:44:22.391733
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:44:22.398435
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:44:22.411404
+Erro: Region Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:45:21.038640
+Erro: City Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:45:21.053776
+Erro: City Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:45:21.060149
+Erro: City Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:45:21.073917
+Erro: District Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:45:21.087789
+Erro: District Service - get_by_id error: 0 
+ 
+
+Date: 2022-06-14 22:45:21.094363
+Erro: District Service - get_by_id error:  
+ 
+
+Date: 2022-06-14 22:45:21.109189
+Erro: District Service - get_by_name error: 0 
+ 
+
+Date: 2022-06-14 22:45:21.115562
+Erro: District Service - get_by_name error:  
+ 
+
+Date: 2022-06-14 22:45:21.131079
+Erro: Liquidity Service - get_by_district error:  
+ 
+
+Date: 2022-06-14 22:45:21.145795
+Erro: Liquidity Service - get_by_street error:  
+ 
+
+Date: 2022-06-14 22:45:21.157153
+Erro: Management Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:45:21.171513
+Erro: Management Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:45:21.177764
+Erro: Management Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:45:21.189717
+Erro: Partner Service - get_all error:  
+ 
+
+Date: 2022-06-14 22:45:21.201937
+Erro: Partner Service - get_all_new_ad error:  
+ 
+
+Date: 2022-06-14 22:45:21.217003
+Erro: Partner Service - get_by_partner_id error: 0 
+ 
+
+Date: 2022-06-14 22:45:21.225204
+Erro: Partner Service - get_by_partner_id error:  
+ 
+
+Date: 2022-06-14 22:45:21.239110
+Erro: Partner Service - get_by_partner_code error: 0 
+ 
+
+Date: 2022-06-14 22:45:21.245470
+Erro: Partner Service - get_by_partner_code error:  
+ 
+
+Date: 2022-06-14 22:45:21.258338
+Erro: Region Service - get_all error:  
+ 
+
