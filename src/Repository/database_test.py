@@ -31,7 +31,7 @@ class TestDatabase:
     #     query = 'insert '
     
     def test_insertion_region(self):
-        query = 'INSERT INTO public."Region" ("name") VALUES("RegiãoTeste")';
+        query = 'INSERT INTO public."Region" VALUES ("RegiãoTeste");'
         regions = DataBase.insert(query)
         assert 'RegiãoTest' == DataBase.select('select name from public.Region where name = "RegiãoTest"')
     
