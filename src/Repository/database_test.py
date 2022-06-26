@@ -1,3 +1,4 @@
+from ast import Eq
 from database import DataBase
 
 class TestDatabase:
@@ -26,4 +27,11 @@ class TestDatabase:
         regions = DataBase.select(query)        
         assert len(regions) == 9
 
+    # def test_insertion_district(self):
+    #     query = 'insert '
+    
+    def test_insertion_region(self):
+        query = 'INSERT INTO public."Region" ("name") VALUES("RegiãoTeste")';
+        regions = DataBase.insert(query)
+        assert 'RegiãoTest' == DataBase.select('select name from public.Region where name = "RegiãoTest"')
     
