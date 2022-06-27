@@ -34,4 +34,4 @@ class TestDatabase:
         query = 'INSERT INTO "Region" ("id", "name") VALUES' + "(10, 'RegiaoTeste')"
         regions = DataBase.insert(query)
         existing = DataBase.select('select name from "Region" where id = 10')
-        assert  'RegiaoTeste' == existing
+        assert  [{'name': 'RegiaoTeste'}] == existing
