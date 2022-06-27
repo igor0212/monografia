@@ -35,13 +35,13 @@ class TestDatabase:
 
     def test_insertion_district(self):
         query = 'INSERT INTO "District" ("id", "name") VALUES' + "(1010, 'BairroTeste')"
-        district = DataBase.insert(query)
+        DataBase.insert(query)
         existing = DataBase.select('select name from "District" where id = 1010')
         assert [{'name': 'BairroTeste'}] == existing
     
     def test_insertion_region(self):
         query = 'INSERT INTO "Region" ("id", "name") VALUES' + "(1010, 'RegiaoTeste')"
-        regions = DataBase.insert(query)
+        DataBase.insert(query)
         existing = DataBase.select('select name from "Region" where id = 1010')
         assert  [{'name': 'RegiaoTeste'}] == existing
 
