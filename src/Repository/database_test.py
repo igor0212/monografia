@@ -1,15 +1,7 @@
 from ast import Eq
 from database import DataBase
-import pytest
 
 class TestDatabase:
-    @pytest.fixture
-    def default_data_base():
-        #setup que deixa o Banco de Dados limpo
-        DataBase.update('DELETE FROM "District" where name =' + "'BairroTeste'")
-        DataBase.update('DELETE FROM "Region" where id >= 10')
-
-
     def test_select_all_when_it_finds_cities(self):
         query = 'select * from "City"'            
         cities = DataBase.select(query)        
@@ -26,11 +18,17 @@ class TestDatabase:
         assert len(types) == 3
 
     def test_select_all_when_it_finds_districts(self):
+
+        #ajuste no Banco para limpá-lo de testes anteriores
+        DataBase.update('DELETE FROM "District" where name =' + "'BairroTeste'")
         query = 'select * from "District"'            
         districts = DataBase.select(query)        
         assert len(districts) == 488
 
     def test_select_all_when_it_finds_regions(self):
+        
+        #ajuste no Banco para limpá-lo de testes anteriores
+        DataBase.update('DELETE FROM "Region" where id >= 10')
         query = 'select * from "Region"'            
         regions = DataBase.select(query)        
         assert len(regions) == 9
