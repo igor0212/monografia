@@ -30,7 +30,7 @@ class TestDatabase:
     def test_insertion_district(self):
         query = 'INSERT INTO "District" ("id", "name") VALUES' + "(1000, 'BairroTeste')"
         district = DataBase.insert(query)
-        existing = DataBase.select('sele name from "District" where id = 1000')
+        existing = DataBase.select('select name from "District" where id = 1000')
         assert [{'name': 'BairroTeste'}] == existing
     
     def test_insertion_region(self):
