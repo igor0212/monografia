@@ -28,7 +28,7 @@ class TestDatabase:
         assert len(regions) == 9
 
     def test_insertion_district(self):
-        DataBase.update("DELETE FROM District where name = 'BairroTeste'")
+        DataBase.update('DELETE FROM "District" where name =' + "'BairroTeste'")
         query = 'INSERT INTO "District" ("id", "name") VALUES' + "(1010, 'BairroTeste')"
         district = DataBase.insert(query)
         existing = DataBase.select('select name from "District" where id = 1010')
