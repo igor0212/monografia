@@ -28,13 +28,13 @@ class TestDatabase:
         assert len(regions) == 9
 
     def test_insertion_district(self):
-        query = 'INSERT INTO "District" ("id", "name") VALUES' + "(1000, 'BairroTeste')"
+        query = 'INSERT INTO "District" ("id", "name") VALUES' + "(1001, 'BairroTeste')"
         district = DataBase.insert(query)
         existing = DataBase.select('select name from "District" where id = 1000')
         assert [{'name': 'BairroTeste'}] == existing
     
     def test_insertion_region(self):
-        query = 'INSERT INTO "Region" ("id", "name") VALUES' + "(1000, 'RegiaoTeste')"
+        query = 'INSERT INTO "Region" ("id", "name") VALUES' + "(1001, 'RegiaoTeste')"
         regions = DataBase.insert(query)
         existing = DataBase.select('select name from "Region" where id = 1000')
         assert  [{'name': 'RegiaoTeste'}] == existing
