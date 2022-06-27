@@ -33,6 +33,6 @@ class TestDatabase:
     def test_insertion_region(self):
         query = 'INSERT INTO "Region" ("name") VALUES' + "('RegiaoTeste')"
         regions = DataBase.insert(query)
-        existing = DataBase.select("select name from public.Region where name = 'RegiaoTest'")
+        existing = DataBase.select('select name from "Region" where name ='+ "'RegiaoTest'")
         assert existing 
     
