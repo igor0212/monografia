@@ -578,7 +578,6 @@ INSERT INTO public."District" ("name") VALUES('Sumaré');
 INSERT INTO public."District" ("name") VALUES('Vila Vera Cruz I');
 INSERT INTO public."District" ("name") VALUES('Vila Vera Cruz II');
 
-DELETE FROM "District" where name = 'BairroTeste'
 --DELETE 
 /*
 DELETE FROM "Management";
@@ -663,7 +662,6 @@ INSERT INTO public."Region" ("name") VALUES('Pampulha');
 INSERT INTO public."Region" ("name") VALUES('Nordeste');
 INSERT INTO public."Region" ("name") VALUES('Centro-Sul');
 INSERT INTO public."Region" ("name") VALUES('Venda Nova');
-DELETE FROM "Region" where  id >= 10    
 
 ALTER TABLE "District"
 	ADD COLUMN region_id int4,

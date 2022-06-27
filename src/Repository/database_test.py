@@ -28,12 +28,14 @@ class TestDatabase:
         assert len(regions) == 9
 
     def test_insertion_district(self):
+        DataBase.update("DELETE FROM 'District' where name = 'BairroTeste'")
         query = 'INSERT INTO "District" ("id", "name") VALUES' + "(1010, 'BairroTeste')"
         district = DataBase.insert(query)
         existing = DataBase.select('select name from "District" where id = 1010')
         assert [{'name': 'BairroTeste'}] == existing
     
     def test_insertion_region(self):
+        DataBase.update("DELETE FROM 'Region' where id >= 10")
         query = 'INSERT INTO "Region" ("id", "name") VALUES' + "(1010, 'RegiaoTeste')"
         regions = DataBase.insert(query)
         existing = DataBase.select('select name from "Region" where id = 1010')
